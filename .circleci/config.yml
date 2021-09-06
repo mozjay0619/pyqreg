@@ -131,6 +131,7 @@ jobs:
       - run:
           name: create packages
           command: |
+            sudo pip3 install numpy
             make package
       - run:
           name: upload to pypi
