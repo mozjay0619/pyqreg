@@ -11,7 +11,11 @@ pyqreg
 
 Pyqreg implements the quantile regression algorithm with fast estimation method using the interior point method (Portnoy and Koenker) following the preprocessing phase (Portnoy and Koenker). It provides methods for estimating the asymptotic covariance matrix for three different error structures: i.i.d errors, heteroskedastic errors, and clustered errors. 
 
-
+Reference
+---------
+* https://github.com/pkofod/QuantileRegressions.jl/blob/master/src/InteriorPoint.jl
+* https://people.eecs.berkeley.edu/~jordan/sail/readings/portnoy-koenker.pdf
+* http://people.exeter.ac.uk/RePEc/dpapers/DP1305.pdf
 
 Install
 -------
@@ -25,8 +29,3 @@ You can install the latest release with:
 ::
 	pip3 install pyqreg
 
-Reference
----------
-* https://github.com/pkofod/QuantileRegressions.jl/blob/master/src/InteriorPoint.jl
-* https://people.eecs.berkeley.edu/~jordan/sail/readings/portnoy-koenker.pdf
-* http://people.exeter.ac.uk/RePEc/dpapers/DP1305.pdf
