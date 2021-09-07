@@ -24,5 +24,6 @@ package:
 	#python setup.py bdist_wheel  # 
 
 test:
-	coverage run -m pytest tests/test_fit_coefs.py
+# 	coverage run -m pytest tests/test_fit_coefs.py
+	coverage run -m pytest --doctest-cython
 	

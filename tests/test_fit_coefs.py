@@ -6,6 +6,7 @@ from src.pyqreg.quantreg import QuantReg
 import numpy as np
 
 def test_fit_coefs():
+	print('asdfasdf')
 	assert 1==1
 
 	# X = np.hstack([
