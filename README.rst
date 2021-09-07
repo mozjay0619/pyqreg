@@ -1,1 +1,3 @@
-.. image:: https://img.shields.io/pypi/l/pyqreg   :alt: PyPI - License
+
+
+.. image:: https://img.shields.io/pypi/l/pyqreg?style=for-the-badge   :alt: PyPI - License
