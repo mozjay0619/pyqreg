@@ -132,7 +132,6 @@ jobs:
           name: create packages
           command: |
             sudo pip3 install numpy
-            sudo pip3 install cython
             make package
       - run:
           name: upload to pypi
