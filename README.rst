@@ -9,7 +9,7 @@
 Pyqreg
 ======
 
-Pyqreg implements the quantile regression algorithm with fast estimation method using the interior point method following the preprocessing procedure in Portnoy and Koenker (1997). It provides methods for estimating the asymptotic covariance matrix for i.i.d and heteroskedastic errors, as well as clustered errors as proposed by Parente and Silva (2013).
+Pyqreg implements the quantile regression algorithm with fast estimation method using the interior point method following the preprocessing procedure in Portnoy and Koenker (1997). It provides methods for estimating the asymptotic covariance matrix for i.i.d and heteroskedastic errors, as well as clustered errors following Parente and Silva (2013).
 
 Reference
 ---------
