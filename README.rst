@@ -1,9 +1,11 @@
-|downloads| |stars| 
+|CICD| |LICENCE| |VERSION|
 
-.. |downloads| image:: https://img.shields.io/circleci/build/github/mozjay0619/pyqreg?label=circleci&token=93f5878e444e751d779f2954eb5fce9bc9ab5b3e   
+.. |CICD| image:: https://img.shields.io/circleci/build/github/mozjay0619/pyqreg?label=circleci&token=93f5878e444e751d779f2954eb5fce9bc9ab5b3e   
 	:alt: CircleCI
-.. |stars| image:: https://img.shields.io/pypi/l/pyqreg?label=liscence   
+.. |LICENCE| image:: https://img.shields.io/pypi/l/pyqreg?label=liscence   
 	:alt: PyPI - License
+.. |VERSION| image:: https://img.shields.io/pypi/v/pyqreg   
+	:alt: PyPI
     
 
 Pyqreg
