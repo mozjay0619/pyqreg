@@ -21,7 +21,7 @@ docs:
 
 package:
 	python setup.py sdist
-	python setup.py bdist_wheel
+	#python setup.py bdist_wheel  # 
 
 test:
 	coverage run -m pytest tests/test_fit_coefs.py
