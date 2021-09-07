@@ -54,13 +54,13 @@ if USE_CYTHON:
 
 else:
     ext_modules += [
-        Extension('pyqreg.c.blas_lapack', ['src/pyqreg/c/blas_lapack.c']),
-        Extension('pyqreg.c.fit_coefs', ['src/pyqreg/c/fit_coefs.c']),
-        Extension('pyqreg.c.mat_vec_ops', ['src/pyqreg/c/mat_vec_ops.c']),
+        Extension('pyqreg.c.blas_lapack', ['src/pyqreg/c/blas_lapack.c'], **opts),
+        Extension('pyqreg.c.fit_coefs', ['src/pyqreg/c/fit_coefs.c'], **opts),
+        Extension('pyqreg.c.mat_vec_ops', ['src/pyqreg/c/mat_vec_ops.c'], **opts),
     ]
 
 # circleci.py version
-VERSION = "v0.0.b6"
+VERSION = "v0.0.b7"
 
 # circleci version verfication
 class VerifyVersionCommand(install):
