@@ -12,10 +12,10 @@ pyqreg
 Pyqreg implements the following algorithms:
 
 1. Interior Point Method
-
-<https://keras.io/getting-started/functional-api-guide/>
-
-2. 
+* https://github.com/pkofod/QuantileRegressions.jl/blob/master/src/InteriorPoint.jl
+* https://people.eecs.berkeley.edu/~jordan/sail/readings/portnoy-koenker.pdf
+2. Cluster Robust Standard Error
+* http://people.exeter.ac.uk/RePEc/dpapers/DP1305.pdf
 
 Install
 -------
