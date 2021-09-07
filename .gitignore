@@ -26,6 +26,7 @@ var/
 version.info
 venv3
 sdist-env
+make_pypirc.sh
 
 # Gradle
 .gradle/*
