@@ -1,3 +1,12 @@
+"""
+A Frisch-Newton algorithm as described in http://projecteuclid.org/euclid.ss/1030037960
+qreg_ip_coef is a modified lp_fnm of Daniel Morillo & Roger Koenker
+Translated from Ox to Matlab by Paul Eilers 1999
+Modified by Roger Koenker 2000
+More changes by Paul Eilers 2004
+Translated to Julia by Patrick Kofod Mogensen 2015
+"""
+
 from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil
 from libc.stdlib cimport malloc, free
 

@@ -66,3 +66,6 @@ nosetests.xml
 
 # Extension modules
 *.so
+
+# Notes
+notes.txt
