@@ -9,6 +9,14 @@
 pyqreg
 ======
 
+Pyqreg implements the following algorithms:
+
+1. Interior Point Method
+
+<https://keras.io/getting-started/functional-api-guide/>
+
+2. 
+
 Install
 -------
 
