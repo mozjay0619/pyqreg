@@ -60,7 +60,7 @@ else:
     ]
 
 # circleci.py version
-VERSION = "v0.0.b5"
+VERSION = "v0.0.b6"
 
 # circleci version verfication
 class VerifyVersionCommand(install):
@@ -97,6 +97,7 @@ setup(
     ext_modules=ext_modules,
     package_dir={'': 'src'},
     packages=find_packages("src"),
+    package_data={'': ['*.pxd', '*.pyx']},
     python_requires='>=3',
     include_package_data=True
 )
