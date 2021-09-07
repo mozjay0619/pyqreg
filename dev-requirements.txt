@@ -1,6 +1,8 @@
 twine
 coverage
 pytest
+pytest-cython
 codecov
 numpy
+scipy
 cython

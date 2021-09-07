@@ -478,4 +478,3 @@ def fit_coefs(np.ndarray[DOUBLE_t, ndim=2] X_input,
     free(tmp1_n)
 
     return _coefs
-
