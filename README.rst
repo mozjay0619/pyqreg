@@ -9,3 +9,14 @@
 pyqreg
 ======
 
+Install
+-------
+
+pyqreg requires
+
+* Python >= 3.6
+
+
+You can install the latest release with:
+::
+	pip3 install pyqreg
