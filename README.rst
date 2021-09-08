@@ -6,9 +6,8 @@
 	:alt: CircleCI
 .. |LICENCE| image:: https://img.shields.io/pypi/l/pyqreg?label=liscence   
 	:alt: PyPI - License
-.. |VERSION| image:: https://img.shields.io/pypi/v/pyqreg   
+.. |VERSION| .. image:: https://img.shields.io/pypi/v/pyqreg?color=green&label=pypi%20version   
 	:alt: PyPI
-    
 
 Pyqreg
 ======
