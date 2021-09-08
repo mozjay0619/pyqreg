@@ -1,4 +1,6 @@
-|CICD| |LICENCE| |VERSION|
+.. -*- mode: rst -*-
+
+|CICD| |VERSION| |LICENCE| 
 
 .. |CICD| image:: https://img.shields.io/circleci/build/github/mozjay0619/pyqreg?label=circleci&token=93f5878e444e751d779f2954eb5fce9bc9ab5b3e   
 	:alt: CircleCI
@@ -28,6 +30,7 @@ pyqreg requires
 
 
 You can install the latest release with:
-::
-	pip3 install pyqreg
 
+.. code:: python
+
+	pip3 install pyqreg
