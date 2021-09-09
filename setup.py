@@ -60,7 +60,7 @@ else:
     ]
 
 # circleci.py version
-VERSION = "v0.1.0"
+VERSION = "v0.2.b1"
 
 # circleci version verfication
 class VerifyVersionCommand(install):
@@ -99,7 +99,13 @@ setup(
     packages=find_packages("src"),
     package_data={'': ['*.pxd', '*.pyx']},
     python_requires='>=3',
-    include_package_data=True
+    include_package_data=True,
+    classifiers=[ 
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9'
+    ]
 )
 
 # python3 setup.py build_ext --inplace
