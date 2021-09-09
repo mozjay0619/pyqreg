@@ -99,8 +99,9 @@ cdef void _matrix_opaccum(double* varlist,
 def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,
                    np.ndarray[int, ndim=1] _group,
                    np.ndarray[DOUBLE_t, ndim=1] _opvar):
-    """Uses the following identity:
-
+    """Computes $$\sum_{g=1}^{G} X_g^T e_g e_g^T X_g$$,
+    using the following identity:
+    $$
     \sum_{g=1}^{G} X_g^T e_g e_g^T X_g =
     \left[
       \begin{array}{cccc}
@@ -118,6 +119,7 @@ def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,
           e_G^T X_G\\
       \end{array}
     \right]
+    $$
 
     We calculate e^T X instead of X^T e since X is Fortran contiguous.
     We use inner for loop to accumulate the dot products while traversing 

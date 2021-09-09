@@ -1698,7 +1698,7 @@ static void (*__pyx_f_6pyqreg_1c_11mat_vec_ops_row_add)(double *, double *, int)
 /* Module declarations from 'pyqreg.c.matrix_opaccum' */
 static int __pyx_f_6pyqreg_1c_14matrix_opaccum_get_num_groups(int *, int); /*proto*/
 static void __pyx_f_6pyqreg_1c_14matrix_opaccum_get_group_counts(int *, int *, int, int); /*proto*/
-static void __pyx_f_6pyqreg_1c_14matrix_opaccum__group_matrix_opaccum(double *, double *, int *, double *, double *, int, int, int); /*proto*/
+static void __pyx_f_6pyqreg_1c_14matrix_opaccum__matrix_opaccum(double *, double *, int *, double *, double *, int, int, int); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_14matrix_opaccum_DOUBLE_t = { "DOUBLE_t", NULL, sizeof(__pyx_t_6pyqreg_1c_14matrix_opaccum_DOUBLE_t), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_int = { "int", NULL, sizeof(int), { 0 }, 0, IS_UNSIGNED(int) ? 'U' : 'I', IS_UNSIGNED(int), 0 };
 #define __Pyx_MODULE_NAME "pyqreg.c.matrix_opaccum"
@@ -1735,8 +1735,8 @@ static const char __pyx_k_opvar_2[] = "opvar";
 static const char __pyx_k_varlist[] = "_varlist";
 static const char __pyx_k_varlist_2[] = "varlist";
 static const char __pyx_k_ImportError[] = "ImportError";
+static const char __pyx_k_matrix_opaccum[] = "matrix_opaccum";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static const char __pyx_k_group_matrix_opaccum[] = "group_matrix_opaccum";
 static const char __pyx_k_pyqreg_c_matrix_opaccum[] = "pyqreg.c.matrix_opaccum";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_src_pyqreg_c_matrix_opaccum_pyx[] = "src/pyqreg/c/matrix_opaccum.pyx";
@@ -1754,9 +1754,9 @@ static PyObject *__pyx_n_s_dtype;
 static PyObject *__pyx_n_s_float64;
 static PyObject *__pyx_n_s_group;
 static PyObject *__pyx_n_s_group_2;
-static PyObject *__pyx_n_s_group_matrix_opaccum;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_main;
+static PyObject *__pyx_n_s_matrix_opaccum;
 static PyObject *__pyx_n_s_n;
 static PyObject *__pyx_n_s_name;
 static PyObject *__pyx_n_s_np;
@@ -1774,7 +1774,7 @@ static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_varlist;
 static PyObject *__pyx_n_s_varlist_2;
 static PyObject *__pyx_n_s_zeros;
-static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v__varlist, PyArrayObject *__pyx_v__group, PyArrayObject *__pyx_v__opvar); /* proto */
+static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_matrix_opaccum(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v__varlist, PyArrayObject *__pyx_v__group, PyArrayObject *__pyx_v__opvar); /* proto */
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
 static PyObject *__pyx_tuple__3;
@@ -2032,12 +2032,12 @@ static void __pyx_f_6pyqreg_1c_14matrix_opaccum_get_group_counts(int *__pyx_v_gr
 /* "pyqreg/c/matrix_opaccum.pyx":55
  * @wraparound(False)
  * @cdivision(True)
- * cdef void _group_matrix_opaccum(double* varlist,             # <<<<<<<<<<<<<<
+ * cdef void _matrix_opaccum(double* varlist,             # <<<<<<<<<<<<<<
  *                           double* opvar,
  *                           int* group,
  */
 
-static void __pyx_f_6pyqreg_1c_14matrix_opaccum__group_matrix_opaccum(double *__pyx_v_varlist, double *__pyx_v_opvar, int *__pyx_v_group, double *__pyx_v_Xe, double *__pyx_v_XeeX, int __pyx_v_n, int __pyx_v_p, int __pyx_v_G) {
+static void __pyx_f_6pyqreg_1c_14matrix_opaccum__matrix_opaccum(double *__pyx_v_varlist, double *__pyx_v_opvar, int *__pyx_v_group, double *__pyx_v_Xe, double *__pyx_v_XeeX, int __pyx_v_n, int __pyx_v_p, int __pyx_v_G) {
   int __pyx_v_i;
   int __pyx_v_j;
   int *__pyx_v_group_counts;
@@ -2052,7 +2052,7 @@ static void __pyx_f_6pyqreg_1c_14matrix_opaccum__group_matrix_opaccum(double *__
   int __pyx_t_6;
   int __pyx_t_7;
   int __pyx_t_8;
-  __Pyx_RefNannySetupContext("_group_matrix_opaccum", 0);
+  __Pyx_RefNannySetupContext("_matrix_opaccum", 0);
 
   /* "pyqreg/c/matrix_opaccum.pyx":66
  *     cdef int i, j
@@ -2223,7 +2223,7 @@ static void __pyx_f_6pyqreg_1c_14matrix_opaccum__group_matrix_opaccum(double *__
   /* "pyqreg/c/matrix_opaccum.pyx":55
  * @wraparound(False)
  * @cdivision(True)
- * cdef void _group_matrix_opaccum(double* varlist,             # <<<<<<<<<<<<<<
+ * cdef void _matrix_opaccum(double* varlist,             # <<<<<<<<<<<<<<
  *                           double* opvar,
  *                           int* group,
  */
@@ -2235,16 +2235,16 @@ static void __pyx_f_6pyqreg_1c_14matrix_opaccum__group_matrix_opaccum(double *__
 /* "pyqreg/c/matrix_opaccum.pyx":99
  * @wraparound(False)
  * @cdivision(True)
- * def group_matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,             # <<<<<<<<<<<<<<
+ * def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,             # <<<<<<<<<<<<<<
  *                    np.ndarray[int, ndim=1] _group,
  *                    np.ndarray[DOUBLE_t, ndim=1] _opvar):
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum[] = "Uses the following identity:\n\n    \\sum_{g=1}^{G} X_g^T e_g e_g^T X_g =\n    \\left[\n      \010egin{array}{cccc}\n          e_1^T X_1\\\n          e_2^T X_2\\\n          \013dots\\\n          e_G^T X_G\\\n      \\end{array}\n    \right]^T\n    \\left[\n      \010egin{array}{cccc}\n          e_1^T X_1\\\n          e_2^T X_2\\\n          \013dots\\\n          e_G^T X_G\\\n      \\end{array}\n    \right]\n\n    We calculate e^T X instead of X^T e since X is Fortran contiguous.\n    We use inner for loop to accumulate the dot products while traversing \n    down each column.\n    ";
-static PyMethodDef __pyx_mdef_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum = {"group_matrix_opaccum", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum};
-static PyObject *__pyx_pw_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6pyqreg_1c_14matrix_opaccum_1matrix_opaccum(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6pyqreg_1c_14matrix_opaccum_matrix_opaccum[] = "Computes $$\\sum_{g=1}^{G} X_g^T e_g e_g^T X_g$$,\n    using the following identity:\n    $$\n    \\sum_{g=1}^{G} X_g^T e_g e_g^T X_g =\n    \\left[\n      \010egin{array}{cccc}\n          e_1^T X_1\\\n          e_2^T X_2\\\n          \013dots\\\n          e_G^T X_G\\\n      \\end{array}\n    \right]^T\n    \\left[\n      \010egin{array}{cccc}\n          e_1^T X_1\\\n          e_2^T X_2\\\n          \013dots\\\n          e_G^T X_G\\\n      \\end{array}\n    \right]\n    $$\n\n    We calculate e^T X instead of X^T e since X is Fortran contiguous.\n    We use inner for loop to accumulate the dot products while traversing \n    down each column.\n    ";
+static PyMethodDef __pyx_mdef_6pyqreg_1c_14matrix_opaccum_1matrix_opaccum = {"matrix_opaccum", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6pyqreg_1c_14matrix_opaccum_1matrix_opaccum, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6pyqreg_1c_14matrix_opaccum_matrix_opaccum};
+static PyObject *__pyx_pw_6pyqreg_1c_14matrix_opaccum_1matrix_opaccum(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v__varlist = 0;
   PyArrayObject *__pyx_v__group = 0;
   PyArrayObject *__pyx_v__opvar = 0;
@@ -2253,7 +2253,7 @@ static PyObject *__pyx_pw_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum(PyOb
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("group_matrix_opaccum (wrapper)", 0);
+  __Pyx_RefNannySetupContext("matrix_opaccum (wrapper)", 0);
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_varlist,&__pyx_n_s_group,&__pyx_n_s_opvar,0};
     PyObject* values[3] = {0,0,0};
@@ -2279,17 +2279,17 @@ static PyObject *__pyx_pw_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum(PyOb
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_group)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("group_matrix_opaccum", 1, 3, 3, 1); __PYX_ERR(0, 99, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("matrix_opaccum", 1, 3, 3, 1); __PYX_ERR(0, 99, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_opvar)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("group_matrix_opaccum", 1, 3, 3, 2); __PYX_ERR(0, 99, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("matrix_opaccum", 1, 3, 3, 2); __PYX_ERR(0, 99, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "group_matrix_opaccum") < 0)) __PYX_ERR(0, 99, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "matrix_opaccum") < 0)) __PYX_ERR(0, 99, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -2304,16 +2304,16 @@ static PyObject *__pyx_pw_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum(PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("group_matrix_opaccum", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 99, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("matrix_opaccum", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 99, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pyqreg.c.matrix_opaccum.group_matrix_opaccum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pyqreg.c.matrix_opaccum.matrix_opaccum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v__varlist), __pyx_ptype_5numpy_ndarray, 1, "_varlist", 0))) __PYX_ERR(0, 99, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v__group), __pyx_ptype_5numpy_ndarray, 1, "_group", 0))) __PYX_ERR(0, 100, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v__opvar), __pyx_ptype_5numpy_ndarray, 1, "_opvar", 0))) __PYX_ERR(0, 101, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(__pyx_self, __pyx_v__varlist, __pyx_v__group, __pyx_v__opvar);
+  __pyx_r = __pyx_pf_6pyqreg_1c_14matrix_opaccum_matrix_opaccum(__pyx_self, __pyx_v__varlist, __pyx_v__group, __pyx_v__opvar);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2324,7 +2324,7 @@ static PyObject *__pyx_pw_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum(PyOb
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v__varlist, PyArrayObject *__pyx_v__group, PyArrayObject *__pyx_v__opvar) {
+static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_matrix_opaccum(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v__varlist, PyArrayObject *__pyx_v__group, PyArrayObject *__pyx_v__opvar) {
   int __pyx_v_n;
   int __pyx_v_p;
   int *__pyx_v_group;
@@ -2356,7 +2356,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("group_matrix_opaccum", 0);
+  __Pyx_RefNannySetupContext("matrix_opaccum", 0);
   __pyx_pybuffer__Xe.pybuffer.buf = NULL;
   __pyx_pybuffer__Xe.refcount = 0;
   __pyx_pybuffernd__Xe.data = NULL;
@@ -2393,7 +2393,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
   }
   __pyx_pybuffernd__opvar.diminfo[0].strides = __pyx_pybuffernd__opvar.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd__opvar.diminfo[0].shape = __pyx_pybuffernd__opvar.rcbuffer->pybuffer.shape[0];
 
-  /* "pyqreg/c/matrix_opaccum.pyx":126
+  /* "pyqreg/c/matrix_opaccum.pyx":128
  *     down each column.
  *     """
  *     cdef int n = _varlist.shape[0]             # <<<<<<<<<<<<<<
@@ -2402,7 +2402,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
  */
   __pyx_v_n = (__pyx_v__varlist->dimensions[0]);
 
-  /* "pyqreg/c/matrix_opaccum.pyx":127
+  /* "pyqreg/c/matrix_opaccum.pyx":129
  *     """
  *     cdef int n = _varlist.shape[0]
  *     cdef int p = _varlist.shape[1]             # <<<<<<<<<<<<<<
@@ -2411,7 +2411,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
  */
   __pyx_v_p = (__pyx_v__varlist->dimensions[1]);
 
-  /* "pyqreg/c/matrix_opaccum.pyx":129
+  /* "pyqreg/c/matrix_opaccum.pyx":131
  *     cdef int p = _varlist.shape[1]
  * 
  *     cdef int* group = <int*>(np.PyArray_DATA(_group))             # <<<<<<<<<<<<<<
@@ -2420,7 +2420,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
  */
   __pyx_v_group = ((int *)PyArray_DATA(((PyArrayObject *)__pyx_v__group)));
 
-  /* "pyqreg/c/matrix_opaccum.pyx":130
+  /* "pyqreg/c/matrix_opaccum.pyx":132
  * 
  *     cdef int* group = <int*>(np.PyArray_DATA(_group))
  *     cdef int G = get_num_groups(group, n)             # <<<<<<<<<<<<<<
@@ -2429,7 +2429,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
  */
   __pyx_v_G = __pyx_f_6pyqreg_1c_14matrix_opaccum_get_num_groups(__pyx_v_group, __pyx_v_n);
 
-  /* "pyqreg/c/matrix_opaccum.pyx":132
+  /* "pyqreg/c/matrix_opaccum.pyx":134
  *     cdef int G = get_num_groups(group, n)
  * 
  *     cdef double* varlist = <double*>(np.PyArray_DATA(_varlist))             # <<<<<<<<<<<<<<
@@ -2438,7 +2438,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
  */
   __pyx_v_varlist = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v__varlist)));
 
-  /* "pyqreg/c/matrix_opaccum.pyx":133
+  /* "pyqreg/c/matrix_opaccum.pyx":135
  * 
  *     cdef double* varlist = <double*>(np.PyArray_DATA(_varlist))
  *     cdef double* opvar = <double*>(np.PyArray_DATA(_opvar))             # <<<<<<<<<<<<<<
@@ -2447,23 +2447,23 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
  */
   __pyx_v_opvar = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v__opvar)));
 
-  /* "pyqreg/c/matrix_opaccum.pyx":135
+  /* "pyqreg/c/matrix_opaccum.pyx":137
  *     cdef double* opvar = <double*>(np.PyArray_DATA(_opvar))
  * 
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _Xe = np.zeros([G, p], dtype=DTYPE, order="F")             # <<<<<<<<<<<<<<
  *     cdef double* Xe = <double*>(np.PyArray_DATA(_Xe))
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_G); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_G); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
   PyList_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
@@ -2471,30 +2471,30 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
   PyList_SET_ITEM(__pyx_t_4, 1, __pyx_t_3);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 135, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 137, __pyx_L1_error)
   __pyx_t_5 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd__Xe.rcbuffer->pybuffer, (PyObject*)__pyx_t_5, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_14matrix_opaccum_DOUBLE_t, PyBUF_FORMAT| PyBUF_F_CONTIGUOUS, 2, 0, __pyx_stack) == -1)) {
       __pyx_v__Xe = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd__Xe.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 135, __pyx_L1_error)
+      __PYX_ERR(0, 137, __pyx_L1_error)
     } else {__pyx_pybuffernd__Xe.diminfo[0].strides = __pyx_pybuffernd__Xe.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd__Xe.diminfo[0].shape = __pyx_pybuffernd__Xe.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd__Xe.diminfo[1].strides = __pyx_pybuffernd__Xe.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd__Xe.diminfo[1].shape = __pyx_pybuffernd__Xe.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -2502,7 +2502,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
   __pyx_v__Xe = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyqreg/c/matrix_opaccum.pyx":136
+  /* "pyqreg/c/matrix_opaccum.pyx":138
  * 
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _Xe = np.zeros([G, p], dtype=DTYPE, order="F")
  *     cdef double* Xe = <double*>(np.PyArray_DATA(_Xe))             # <<<<<<<<<<<<<<
@@ -2511,23 +2511,23 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
  */
   __pyx_v_Xe = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v__Xe)));
 
-  /* "pyqreg/c/matrix_opaccum.pyx":138
+  /* "pyqreg/c/matrix_opaccum.pyx":140
  *     cdef double* Xe = <double*>(np.PyArray_DATA(_Xe))
  * 
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _XeeX = np.zeros([p, p], dtype=DTYPE, order="F")             # <<<<<<<<<<<<<<
  *     cdef double* XeeX = <double*>(np.PyArray_DATA(_XeeX))
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -2535,30 +2535,30 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
   PyList_SET_ITEM(__pyx_t_2, 1, __pyx_t_3);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 138, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 140, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd__XeeX.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_14matrix_opaccum_DOUBLE_t, PyBUF_FORMAT| PyBUF_F_CONTIGUOUS, 2, 0, __pyx_stack) == -1)) {
       __pyx_v__XeeX = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd__XeeX.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 138, __pyx_L1_error)
+      __PYX_ERR(0, 140, __pyx_L1_error)
     } else {__pyx_pybuffernd__XeeX.diminfo[0].strides = __pyx_pybuffernd__XeeX.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd__XeeX.diminfo[0].shape = __pyx_pybuffernd__XeeX.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd__XeeX.diminfo[1].strides = __pyx_pybuffernd__XeeX.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd__XeeX.diminfo[1].shape = __pyx_pybuffernd__XeeX.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -2566,26 +2566,26 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
   __pyx_v__XeeX = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyqreg/c/matrix_opaccum.pyx":139
+  /* "pyqreg/c/matrix_opaccum.pyx":141
  * 
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _XeeX = np.zeros([p, p], dtype=DTYPE, order="F")
  *     cdef double* XeeX = <double*>(np.PyArray_DATA(_XeeX))             # <<<<<<<<<<<<<<
  * 
- *     _group_matrix_opaccum(varlist, opvar, group, Xe, XeeX, n, p, G)
+ *     _matrix_opaccum(varlist, opvar, group, Xe, XeeX, n, p, G)
  */
   __pyx_v_XeeX = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v__XeeX)));
 
-  /* "pyqreg/c/matrix_opaccum.pyx":141
+  /* "pyqreg/c/matrix_opaccum.pyx":143
  *     cdef double* XeeX = <double*>(np.PyArray_DATA(_XeeX))
  * 
- *     _group_matrix_opaccum(varlist, opvar, group, Xe, XeeX, n, p, G)             # <<<<<<<<<<<<<<
+ *     _matrix_opaccum(varlist, opvar, group, Xe, XeeX, n, p, G)             # <<<<<<<<<<<<<<
  * 
  *     return _XeeX
  */
-  __pyx_f_6pyqreg_1c_14matrix_opaccum__group_matrix_opaccum(__pyx_v_varlist, __pyx_v_opvar, __pyx_v_group, __pyx_v_Xe, __pyx_v_XeeX, __pyx_v_n, __pyx_v_p, __pyx_v_G);
+  __pyx_f_6pyqreg_1c_14matrix_opaccum__matrix_opaccum(__pyx_v_varlist, __pyx_v_opvar, __pyx_v_group, __pyx_v_Xe, __pyx_v_XeeX, __pyx_v_n, __pyx_v_p, __pyx_v_G);
 
-  /* "pyqreg/c/matrix_opaccum.pyx":143
- *     _group_matrix_opaccum(varlist, opvar, group, Xe, XeeX, n, p, G)
+  /* "pyqreg/c/matrix_opaccum.pyx":145
+ *     _matrix_opaccum(varlist, opvar, group, Xe, XeeX, n, p, G)
  * 
  *     return _XeeX             # <<<<<<<<<<<<<<
  * 
@@ -2599,7 +2599,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
   /* "pyqreg/c/matrix_opaccum.pyx":99
  * @wraparound(False)
  * @cdivision(True)
- * def group_matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,             # <<<<<<<<<<<<<<
+ * def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,             # <<<<<<<<<<<<<<
  *                    np.ndarray[int, ndim=1] _group,
  *                    np.ndarray[DOUBLE_t, ndim=1] _opvar):
  */
@@ -2620,7 +2620,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_14matrix_opaccum_group_matrix_opaccum(CYTHO
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd__opvar.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd__varlist.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("pyqreg.c.matrix_opaccum.group_matrix_opaccum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pyqreg.c.matrix_opaccum.matrix_opaccum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -3713,9 +3713,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_float64, __pyx_k_float64, sizeof(__pyx_k_float64), 0, 0, 1, 1},
   {&__pyx_n_s_group, __pyx_k_group, sizeof(__pyx_k_group), 0, 0, 1, 1},
   {&__pyx_n_s_group_2, __pyx_k_group_2, sizeof(__pyx_k_group_2), 0, 0, 1, 1},
-  {&__pyx_n_s_group_matrix_opaccum, __pyx_k_group_matrix_opaccum, sizeof(__pyx_k_group_matrix_opaccum), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
+  {&__pyx_n_s_matrix_opaccum, __pyx_k_matrix_opaccum, sizeof(__pyx_k_matrix_opaccum), 0, 0, 1, 1},
   {&__pyx_n_s_n, __pyx_k_n, sizeof(__pyx_k_n), 0, 0, 1, 1},
   {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
   {&__pyx_n_s_np, __pyx_k_np, sizeof(__pyx_k_np), 0, 0, 1, 1},
@@ -3772,14 +3772,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "pyqreg/c/matrix_opaccum.pyx":99
  * @wraparound(False)
  * @cdivision(True)
- * def group_matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,             # <<<<<<<<<<<<<<
+ * def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,             # <<<<<<<<<<<<<<
  *                    np.ndarray[int, ndim=1] _group,
  *                    np.ndarray[DOUBLE_t, ndim=1] _opvar):
  */
   __pyx_tuple__3 = PyTuple_Pack(13, __pyx_n_s_varlist, __pyx_n_s_group, __pyx_n_s_opvar, __pyx_n_s_n, __pyx_n_s_p, __pyx_n_s_group_2, __pyx_n_s_G, __pyx_n_s_varlist_2, __pyx_n_s_opvar_2, __pyx_n_s_Xe, __pyx_n_s_Xe_2, __pyx_n_s_XeeX, __pyx_n_s_XeeX_2); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(3, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pyqreg_c_matrix_opaccum_pyx, __pyx_n_s_group_matrix_opaccum, 99, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(3, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pyqreg_c_matrix_opaccum_pyx, __pyx_n_s_matrix_opaccum, 99, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -3827,7 +3827,7 @@ static int __Pyx_modinit_function_export_code(void) {
   /*--- Function export code ---*/
   if (__Pyx_ExportFunction("get_num_groups", (void (*)(void))__pyx_f_6pyqreg_1c_14matrix_opaccum_get_num_groups, "int (int *, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   if (__Pyx_ExportFunction("get_group_counts", (void (*)(void))__pyx_f_6pyqreg_1c_14matrix_opaccum_get_group_counts, "void (int *, int *, int, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  if (__Pyx_ExportFunction("_group_matrix_opaccum", (void (*)(void))__pyx_f_6pyqreg_1c_14matrix_opaccum__group_matrix_opaccum, "void (double *, double *, int *, double *, double *, int, int, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ExportFunction("_matrix_opaccum", (void (*)(void))__pyx_f_6pyqreg_1c_14matrix_opaccum__matrix_opaccum, "void (double *, double *, int *, double *, double *, int, int, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -4177,13 +4177,13 @@ if (!__Pyx_RefNanny) {
   /* "pyqreg/c/matrix_opaccum.pyx":99
  * @wraparound(False)
  * @cdivision(True)
- * def group_matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,             # <<<<<<<<<<<<<<
+ * def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,             # <<<<<<<<<<<<<<
  *                    np.ndarray[int, ndim=1] _group,
  *                    np.ndarray[DOUBLE_t, ndim=1] _opvar):
  */
-  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_6pyqreg_1c_14matrix_opaccum_1group_matrix_opaccum, NULL, __pyx_n_s_pyqreg_c_matrix_opaccum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_6pyqreg_1c_14matrix_opaccum_1matrix_opaccum, NULL, __pyx_n_s_pyqreg_c_matrix_opaccum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_group_matrix_opaccum, __pyx_t_3) < 0) __PYX_ERR(0, 99, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_matrix_opaccum, __pyx_t_3) < 0) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "pyqreg/c/matrix_opaccum.pyx":1
