@@ -35,12 +35,3 @@ def test_cholesky_inv():
 	B = np.array(B, np.double, copy=False, order='F', ndmin=1)
 
 	assert np.all(np.isclose(inv(B), lapack_cholesky_inv(B)))
-
-	rng = rng_generator(1111)
-	n = 10000
-
-	A = rng.normal(size=[n, n])
-	B = np.dot(A, A.transpose())
-	B = np.array(B, np.double, copy=False, order='F', ndmin=1)
-
-	assert np.all(np.isclose(inv(B), lapack_cholesky_inv(B)))
