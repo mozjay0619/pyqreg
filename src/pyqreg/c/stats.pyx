@@ -87,7 +87,6 @@ cdef double _invnormal(double p):
         x = x - u/(1.0 + x*u/2.0)
 
     return x
-    
 
 @boundscheck(False)  
 @wraparound(False)
@@ -95,7 +94,6 @@ cdef double _invnormal(double p):
 def invnormal(double p):
 
     return _invnormal(p)
-
 
 @boundscheck(False)
 @wraparound(False)

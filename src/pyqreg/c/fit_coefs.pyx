@@ -27,8 +27,6 @@ from .mat_vec_ops cimport vv_mul
 from .mat_vec_ops cimport greater_than_0
 from .mat_vec_ops cimport equals_0
 
-from .stats cimport _invnormal
-
 
 DTYPE = np.float64
 
@@ -54,6 +52,7 @@ cdef double dot_sub_dot_plus_dot(double* c, double* x, double* y, double* b, dou
         gap -= (y[i] * b[i])
         
     return gap
+
 
 @boundscheck(False)  
 @wraparound(False)
