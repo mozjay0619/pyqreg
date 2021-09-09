@@ -48,6 +48,7 @@ if USE_CYTHON:
         Extension('pyqreg.c.blas_lapack', ['src/pyqreg/c/blas_lapack.pyx'], **opts),
         Extension('pyqreg.c.fit_coefs', ['src/pyqreg/c/fit_coefs.pyx'], **opts),
         Extension('pyqreg.c.mat_vec_ops', ['src/pyqreg/c/mat_vec_ops.pyx'], **opts),
+        Extension('pyqreg.c.matrix_opaccum', ['src/pyqreg/c/matrix_opaccum.pyx'], **opts),
         Extension('pyqreg.c.stats', ['src/pyqreg/c/stats.pyx'], **opts),
     ]
     # First argument is the compilation target location.
@@ -58,11 +59,12 @@ else:
         Extension('pyqreg.c.blas_lapack', ['src/pyqreg/c/blas_lapack.c'], **opts),
         Extension('pyqreg.c.fit_coefs', ['src/pyqreg/c/fit_coefs.c'], **opts),
         Extension('pyqreg.c.mat_vec_ops', ['src/pyqreg/c/mat_vec_ops.c'], **opts),
+        Extension('pyqreg.c.matrix_opaccum', ['src/pyqreg/c/matrix_opaccum.c'], **opts),
         Extension('pyqreg.c.stats', ['src/pyqreg/c/stats.c'], **opts),
     ]
 
 # circleci.py version
-VERSION = "v0.3.0"
+VERSION = "v0.3.1"
 
 # circleci version verfication
 class VerifyVersionCommand(install):
