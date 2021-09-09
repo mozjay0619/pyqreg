@@ -28,7 +28,7 @@ Install
 pyqreg requires
 
 * Python >= 3.6
-
+* Numpy
 
 You can install the latest release with:
 
