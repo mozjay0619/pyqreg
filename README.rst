@@ -35,3 +35,4 @@ You can install the latest release with:
 .. code:: python
 
 	pip3 install pyqreg
+
