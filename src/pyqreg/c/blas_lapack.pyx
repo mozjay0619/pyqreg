@@ -1,6 +1,7 @@
 from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil
+
 # https://github.com/scipy/scipy/blob/v1.7.1/scipy/linalg/lapack.py
-from scipy.linalg.cython_lapack cimport dpotrf, dpotrs  
+from scipy.linalg.cython_lapack cimport dpotrf, dpotrs, dpotri
 # https://github.com/scipy/scipy/blob/v1.7.1/scipy/linalg/blas.py
 from scipy.linalg.cython_blas cimport dgemv, daxpy, dgemm, dscal, dcopy 
 
@@ -113,3 +114,34 @@ cdef void mv_dot(double* A,
         
     else:
         dgemv('N', &N, &D, &ALPHA, A, &LDA, X, &INCX, &BETA, Y, &INCY)
+
+@boundscheck(False)
+@wraparound(False)
+@cdivision(True)
+cdef void _lapack_cholesky_inv(double* A, int N):
+    """
+    http://www.netlib.org/lapack/explore-html/d1/d7a/ \
+    group__double_p_ocomputational_ga9dfc04beae56a3b1c1f75eebc838c14c.html
+    """
+    cdef int info = 0
+    cdef int i, j
+    
+    dpotrf('L', &N, A, &N, &info)
+    dpotri('L', &N, A, &N, &info)
+    
+    for i in range(1, N, 1):
+        for j in range(0, i, 1):
+            A[i*N + j] = A[j*N + i]
+    
+
+@boundscheck(False)
+@wraparound(False)
+@cdivision(True)
+def lapack_cholesky_inv(np.ndarray[DOUBLE_t, ndim=2] _A):
+    
+    cdef int n = _A.shape[0]
+    cdef double* A = <double*>(np.PyArray_DATA(_A))
+    
+    _lapack_cholesky_inv(&A[0], n)
+    
+    return _A

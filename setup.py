@@ -46,6 +46,7 @@ log.debug('opts:\n%s', pprint.pformat(opts))
 if USE_CYTHON:
     ext_modules += [
         Extension('pyqreg.c.blas_lapack', ['src/pyqreg/c/blas_lapack.pyx'], **opts),
+        Extension('pyqreg.c.cluster_cov', ['src/pyqreg/c/cluster_cov.pyx'], **opts),
         Extension('pyqreg.c.fit_coefs', ['src/pyqreg/c/fit_coefs.pyx'], **opts),
         Extension('pyqreg.c.mat_vec_ops', ['src/pyqreg/c/mat_vec_ops.pyx'], **opts),
         Extension('pyqreg.c.matrix_opaccum', ['src/pyqreg/c/matrix_opaccum.pyx'], **opts),
@@ -57,6 +58,7 @@ if USE_CYTHON:
 else:
     ext_modules += [
         Extension('pyqreg.c.blas_lapack', ['src/pyqreg/c/blas_lapack.c'], **opts),
+        Extension('pyqreg.c.cluster_cov', ['src/pyqreg/c/cluster_cov.c'], **opts),
         Extension('pyqreg.c.fit_coefs', ['src/pyqreg/c/fit_coefs.c'], **opts),
         Extension('pyqreg.c.mat_vec_ops', ['src/pyqreg/c/mat_vec_ops.c'], **opts),
         Extension('pyqreg.c.matrix_opaccum', ['src/pyqreg/c/matrix_opaccum.c'], **opts),
@@ -64,7 +66,7 @@ else:
     ]
 
 # circleci.py version
-VERSION = "v0.3.1"
+VERSION = "v0.3.2"
 
 # circleci version verfication
 class VerifyVersionCommand(install):
