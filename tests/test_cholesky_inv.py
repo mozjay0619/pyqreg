@@ -9,10 +9,37 @@ from numpy.linalg import inv
 def test_cholesky_inv():
 
 	rng = rng_generator(1)
+	n = 10
+
+	A = rng.normal(size=[n, n])
+	B = np.dot(A, A.transpose())
+	B = np.array(B, np.double, copy=False, order='F', ndmin=1)
+
+	assert np.all(np.isclose(lapack_cholesky_inv(B), inv(B)))
+
+	rng = rng_generator(11)
 	n = 100
 
 	A = rng.normal(size=[n, n])
 	B = np.dot(A, A.transpose())
 	B = np.array(B, np.double, copy=False, order='F', ndmin=1)
 
-	assert np.all(np.close(lapack_cholesky_inv(B), inv(B)))
+	assert np.all(np.isclose(lapack_cholesky_inv(B), inv(B)))
+
+	rng = rng_generator(111)
+	n = 1000
+
+	A = rng.normal(size=[n, n])
+	B = np.dot(A, A.transpose())
+	B = np.array(B, np.double, copy=False, order='F', ndmin=1)
+
+	assert np.all(np.isclose(lapack_cholesky_inv(B), inv(B)))
+
+	rng = rng_generator(1111)
+	n = 10000
+
+	A = rng.normal(size=[n, n])
+	B = np.dot(A, A.transpose())
+	B = np.array(B, np.double, copy=False, order='F', ndmin=1)
+
+	assert np.all(np.isclose(lapack_cholesky_inv(B), inv(B)))
