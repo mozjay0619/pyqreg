@@ -18,7 +18,7 @@ Pyqreg implements the quantile regression algorithm with fast estimation method 
 
 References
 ----------
-* Stephen Portnoy. Roger Koenker. "The Gaussian hare and the Laplacian tortoise: computability of squared-error versus absolute-error estimators." Statist. Sci. 12 (4) 279 - 300, November 1997. 
+* Stephen Portnoy. Roger Koenker. "The Gaussian hare and the Laplacian tortoise: computability of squared-error versus absolute-error estimators." Statist. Sci. 12 (4) 279 - 300 (1997). 
 * Koenker, R., Ng, P. A Frisch-Newton Algorithm for Sparse Quantile Regression. Acta Mathematicae Applicatae Sinica, English Series 21, 225–236 (2005). 
 * Parente, Paulo and Santos Silva, João, (2013), Quantile regression with clustered data, No 1305, Discussion Papers, University of Exeter, Department of Economics. 
 
