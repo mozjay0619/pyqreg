@@ -857,8 +857,8 @@ static const char *__pyx_filename;
 
 static const char *__pyx_f[] = {
   "src/pyqreg/c/fit_coefs.pyx",
-  "__init__.pxd",
-  "type.pxd",
+  "venv3/lib/python3.7/site-packages/numpy/__init__.pxd",
+  "venv3/lib/python3.7/site-packages/Cython/Includes/cpython/type.pxd",
 };
 /* BufferFormatStructs.proto */
 #define IS_UNSIGNED(type) (((type) -1) > 0)
@@ -897,7 +897,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":690
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":690
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -906,7 +906,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":691
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":691
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -915,7 +915,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":692
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":692
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -924,7 +924,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":693
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":693
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -933,7 +933,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":697
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":697
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -942,7 +942,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":698
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":698
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -951,7 +951,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":699
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":699
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -960,7 +960,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":700
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":700
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -969,7 +969,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":704
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":704
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -978,7 +978,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":705
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":705
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -987,7 +987,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":714
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":714
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -996,7 +996,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":715
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":715
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1005,7 +1005,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":716
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":716
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1014,7 +1014,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":718
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":718
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1023,7 +1023,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":719
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":719
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1032,7 +1032,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":720
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":720
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1041,7 +1041,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":722
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":722
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1050,7 +1050,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":723
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":723
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1059,7 +1059,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":725
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":725
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1068,7 +1068,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":726
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":726
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1077,7 +1077,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":727
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":727
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1166,7 +1166,7 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 
 /*--- Type declarations ---*/
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":729
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":729
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1175,7 +1175,7 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":730
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":730
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1184,7 +1184,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":731
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":731
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1193,7 +1193,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":733
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":733
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1793,6 +1793,7 @@ static const char __pyx_k_AQinvAt_pp_2[] = "AQinvAt_pp";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_pyqreg_c_fit_coefs[] = "pyqreg.c.fit_coefs";
 static const char __pyx_k_src_pyqreg_c_fit_coefs_pyx[] = "src/pyqreg/c/fit_coefs.pyx";
+static const char __pyx_k_A_Frisch_Newton_algorithm_as_de[] = "\nA Frisch-Newton algorithm as described in http://projecteuclid.org/euclid.ss/1030037960\nqreg_ip_coef is a modified lp_fnm of Daniel Morillo & Roger Koenker\nTranslated from Ox to Matlab by Paul Eilers 1999\nModified by Roger Koenker 2000\nMore changes by Paul Eilers 2004\nTranslated to Julia by Patrick Kofod Mogensen 2015\n";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static PyObject *__pyx_n_s_AQinvAt_pp;
@@ -1873,7 +1874,7 @@ static PyObject *__pyx_tuple__3;
 static PyObject *__pyx_codeobj__4;
 /* Late includes */
 
-/* "pyqreg/c/fit_coefs.pyx":28
+/* "pyqreg/c/fit_coefs.pyx":37
  * @wraparound(False)
  * @cdivision(True)
  * cdef double dot_sub_dot_plus_dot(double* c, double* x, double* y, double* b, double* w, double* u, int n, int p):             # <<<<<<<<<<<<<<
@@ -1891,7 +1892,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot(double *__pyx_v
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("dot_sub_dot_plus_dot", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":37
+  /* "pyqreg/c/fit_coefs.pyx":46
  *     """
  *     cdef int i
  *     cdef double gap = 0             # <<<<<<<<<<<<<<
@@ -1900,7 +1901,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot(double *__pyx_v
  */
   __pyx_v_gap = 0.0;
 
-  /* "pyqreg/c/fit_coefs.pyx":39
+  /* "pyqreg/c/fit_coefs.pyx":48
  *     cdef double gap = 0
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -1912,7 +1913,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot(double *__pyx_v
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":40
+    /* "pyqreg/c/fit_coefs.pyx":49
  * 
  *     for i in range(n):
  *         gap += (c[i] * x[i]) + (w[i] * u[i])             # <<<<<<<<<<<<<<
@@ -1922,7 +1923,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot(double *__pyx_v
     __pyx_v_gap = (__pyx_v_gap + (((__pyx_v_c[__pyx_v_i]) * (__pyx_v_x[__pyx_v_i])) + ((__pyx_v_w[__pyx_v_i]) * (__pyx_v_u[__pyx_v_i]))));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":42
+  /* "pyqreg/c/fit_coefs.pyx":51
  *         gap += (c[i] * x[i]) + (w[i] * u[i])
  * 
  *     for i in range(p):             # <<<<<<<<<<<<<<
@@ -1934,7 +1935,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot(double *__pyx_v
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":43
+    /* "pyqreg/c/fit_coefs.pyx":52
  * 
  *     for i in range(p):
  *         gap -= (y[i] * b[i])             # <<<<<<<<<<<<<<
@@ -1944,7 +1945,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot(double *__pyx_v
     __pyx_v_gap = (__pyx_v_gap - ((__pyx_v_y[__pyx_v_i]) * (__pyx_v_b[__pyx_v_i])));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":45
+  /* "pyqreg/c/fit_coefs.pyx":54
  *         gap -= (y[i] * b[i])
  * 
  *     return gap             # <<<<<<<<<<<<<<
@@ -1954,7 +1955,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot(double *__pyx_v
   __pyx_r = __pyx_v_gap;
   goto __pyx_L0;
 
-  /* "pyqreg/c/fit_coefs.pyx":28
+  /* "pyqreg/c/fit_coefs.pyx":37
  * @wraparound(False)
  * @cdivision(True)
  * cdef double dot_sub_dot_plus_dot(double* c, double* x, double* y, double* b, double* w, double* u, int n, int p):             # <<<<<<<<<<<<<<
@@ -1968,7 +1969,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot(double *__pyx_v
   return __pyx_r;
 }
 
-/* "pyqreg/c/fit_coefs.pyx":50
+/* "pyqreg/c/fit_coefs.pyx":59
  * @wraparound(False)
  * @cdivision(True)
  * cdef void div_div_plus_div(double* z, double* x, double* w, double* s, double* q, int n):             # <<<<<<<<<<<<<<
@@ -1984,7 +1985,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_div_plus_div(double *__pyx_v_z, do
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("div_div_plus_div", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":58
+  /* "pyqreg/c/fit_coefs.pyx":67
  *     cdef int i
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -1996,7 +1997,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_div_plus_div(double *__pyx_v_z, do
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":59
+    /* "pyqreg/c/fit_coefs.pyx":68
  * 
  *     for i in range(n):
  *         q[i] = 1 / (z[i]/x[i] + w[i]/s[i])             # <<<<<<<<<<<<<<
@@ -2006,7 +2007,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_div_plus_div(double *__pyx_v_z, do
     (__pyx_v_q[__pyx_v_i]) = (1.0 / (((__pyx_v_z[__pyx_v_i]) / (__pyx_v_x[__pyx_v_i])) + ((__pyx_v_w[__pyx_v_i]) / (__pyx_v_s[__pyx_v_i]))));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":50
+  /* "pyqreg/c/fit_coefs.pyx":59
  * @wraparound(False)
  * @cdivision(True)
  * cdef void div_div_plus_div(double* z, double* x, double* w, double* s, double* q, int n):             # <<<<<<<<<<<<<<
@@ -2018,7 +2019,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_div_plus_div(double *__pyx_v_z, do
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pyqreg/c/fit_coefs.pyx":64
+/* "pyqreg/c/fit_coefs.pyx":73
  * @wraparound(False)
  * @cdivision(True)
  * cdef void mul_sub(double* q, double* tmp1_n, double* r, double* dx, int n):             # <<<<<<<<<<<<<<
@@ -2034,7 +2035,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_sub(double *__pyx_v_q, double *__p
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("mul_sub", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":72
+  /* "pyqreg/c/fit_coefs.pyx":81
  *     cdef int i
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2046,7 +2047,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_sub(double *__pyx_v_q, double *__p
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":73
+    /* "pyqreg/c/fit_coefs.pyx":82
  * 
  *     for i in range(n):
  *         dx[i] = q[i] * (tmp1_n[i] - r[i])             # <<<<<<<<<<<<<<
@@ -2056,7 +2057,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_sub(double *__pyx_v_q, double *__p
     (__pyx_v_dx[__pyx_v_i]) = ((__pyx_v_q[__pyx_v_i]) * ((__pyx_v_tmp1_n[__pyx_v_i]) - (__pyx_v_r[__pyx_v_i])));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":64
+  /* "pyqreg/c/fit_coefs.pyx":73
  * @wraparound(False)
  * @cdivision(True)
  * cdef void mul_sub(double* q, double* tmp1_n, double* r, double* dx, int n):             # <<<<<<<<<<<<<<
@@ -2068,7 +2069,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_sub(double *__pyx_v_q, double *__p
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pyqreg/c/fit_coefs.pyx":78
+/* "pyqreg/c/fit_coefs.pyx":87
  * @wraparound(False)
  * @cdivision(True)
  * cdef void neg_mul_plus_div(double* z, double* dx, double* x, double* dz,             # <<<<<<<<<<<<<<
@@ -2084,7 +2085,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_neg_mul_plus_div(double *__pyx_v_z, do
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("neg_mul_plus_div", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":90
+  /* "pyqreg/c/fit_coefs.pyx":99
  *     cdef int i
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2096,7 +2097,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_neg_mul_plus_div(double *__pyx_v_z, do
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":91
+    /* "pyqreg/c/fit_coefs.pyx":100
  * 
  *     for i in range(n):
  *         dz[i] = -1 * z[i] * (1 + dx[i] / x[i])             # <<<<<<<<<<<<<<
@@ -2105,7 +2106,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_neg_mul_plus_div(double *__pyx_v_z, do
  */
     (__pyx_v_dz[__pyx_v_i]) = ((-1.0 * (__pyx_v_z[__pyx_v_i])) * (1.0 + ((__pyx_v_dx[__pyx_v_i]) / (__pyx_v_x[__pyx_v_i]))));
 
-    /* "pyqreg/c/fit_coefs.pyx":92
+    /* "pyqreg/c/fit_coefs.pyx":101
  *     for i in range(n):
  *         dz[i] = -1 * z[i] * (1 + dx[i] / x[i])
  *         dw[i] = -1 * w[i] * (1 + ds[i] / s[i])             # <<<<<<<<<<<<<<
@@ -2115,7 +2116,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_neg_mul_plus_div(double *__pyx_v_z, do
     (__pyx_v_dw[__pyx_v_i]) = ((-1.0 * (__pyx_v_w[__pyx_v_i])) * (1.0 + ((__pyx_v_ds[__pyx_v_i]) / (__pyx_v_s[__pyx_v_i]))));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":78
+  /* "pyqreg/c/fit_coefs.pyx":87
  * @wraparound(False)
  * @cdivision(True)
  * cdef void neg_mul_plus_div(double* z, double* dx, double* x, double* dz,             # <<<<<<<<<<<<<<
@@ -2127,7 +2128,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_neg_mul_plus_div(double *__pyx_v_z, do
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pyqreg/c/fit_coefs.pyx":97
+/* "pyqreg/c/fit_coefs.pyx":106
  * @wraparound(False)
  * @cdivision(True)
  * cdef double dot_plus_dot(double* z, double* x, double* w, double* s, int n):             # <<<<<<<<<<<<<<
@@ -2145,7 +2146,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_dot(double *__pyx_v_z, doub
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("dot_plus_dot", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":106
+  /* "pyqreg/c/fit_coefs.pyx":115
  *     """
  *     cdef int i
  *     cdef double mu = 0             # <<<<<<<<<<<<<<
@@ -2154,7 +2155,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_dot(double *__pyx_v_z, doub
  */
   __pyx_v_mu = 0.0;
 
-  /* "pyqreg/c/fit_coefs.pyx":108
+  /* "pyqreg/c/fit_coefs.pyx":117
  *     cdef double mu = 0
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2166,7 +2167,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_dot(double *__pyx_v_z, doub
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":109
+    /* "pyqreg/c/fit_coefs.pyx":118
  * 
  *     for i in range(n):
  *         mu += z[i] * x[i] + w[i] * s[i]             # <<<<<<<<<<<<<<
@@ -2176,7 +2177,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_dot(double *__pyx_v_z, doub
     __pyx_v_mu = (__pyx_v_mu + (((__pyx_v_z[__pyx_v_i]) * (__pyx_v_x[__pyx_v_i])) + ((__pyx_v_w[__pyx_v_i]) * (__pyx_v_s[__pyx_v_i]))));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":111
+  /* "pyqreg/c/fit_coefs.pyx":120
  *         mu += z[i] * x[i] + w[i] * s[i]
  * 
  *     return mu             # <<<<<<<<<<<<<<
@@ -2186,7 +2187,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_dot(double *__pyx_v_z, doub
   __pyx_r = __pyx_v_mu;
   goto __pyx_L0;
 
-  /* "pyqreg/c/fit_coefs.pyx":97
+  /* "pyqreg/c/fit_coefs.pyx":106
  * @wraparound(False)
  * @cdivision(True)
  * cdef double dot_plus_dot(double* z, double* x, double* w, double* s, int n):             # <<<<<<<<<<<<<<
@@ -2200,7 +2201,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_dot(double *__pyx_v_z, doub
   return __pyx_r;
 }
 
-/* "pyqreg/c/fit_coefs.pyx":116
+/* "pyqreg/c/fit_coefs.pyx":125
  * @wraparound(False)
  * @cdivision(True)
  * cdef double dot_plus_mul_plus_mul_plus_dot_plus_mul_plus_mul(             # <<<<<<<<<<<<<<
@@ -2218,7 +2219,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_mul_plus_mul_plus_dot_plus_
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("dot_plus_mul_plus_mul_plus_dot_plus_mul_plus_mul", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":128
+  /* "pyqreg/c/fit_coefs.pyx":137
  *     """
  *     cdef int i
  *     cdef double mu_1 = 0             # <<<<<<<<<<<<<<
@@ -2227,7 +2228,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_mul_plus_mul_plus_dot_plus_
  */
   __pyx_v_mu_1 = 0.0;
 
-  /* "pyqreg/c/fit_coefs.pyx":130
+  /* "pyqreg/c/fit_coefs.pyx":139
  *     cdef double mu_1 = 0
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2239,7 +2240,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_mul_plus_mul_plus_dot_plus_
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":131
+    /* "pyqreg/c/fit_coefs.pyx":140
  * 
  *     for i in range(n):
  *         mu_1 += (x[i] + alpha_p * dx[i]) * (z[i] + alpha_d * dz[i])             # <<<<<<<<<<<<<<
@@ -2248,7 +2249,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_mul_plus_mul_plus_dot_plus_
  */
     __pyx_v_mu_1 = (__pyx_v_mu_1 + (((__pyx_v_x[__pyx_v_i]) + (__pyx_v_alpha_p * (__pyx_v_dx[__pyx_v_i]))) * ((__pyx_v_z[__pyx_v_i]) + (__pyx_v_alpha_d * (__pyx_v_dz[__pyx_v_i])))));
 
-    /* "pyqreg/c/fit_coefs.pyx":132
+    /* "pyqreg/c/fit_coefs.pyx":141
  *     for i in range(n):
  *         mu_1 += (x[i] + alpha_p * dx[i]) * (z[i] + alpha_d * dz[i])
  *         mu_1 += (s[i] + alpha_p * ds[i]) * (w[i] + alpha_d * dw[i])             # <<<<<<<<<<<<<<
@@ -2258,7 +2259,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_mul_plus_mul_plus_dot_plus_
     __pyx_v_mu_1 = (__pyx_v_mu_1 + (((__pyx_v_s[__pyx_v_i]) + (__pyx_v_alpha_p * (__pyx_v_ds[__pyx_v_i]))) * ((__pyx_v_w[__pyx_v_i]) + (__pyx_v_alpha_d * (__pyx_v_dw[__pyx_v_i])))));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":134
+  /* "pyqreg/c/fit_coefs.pyx":143
  *         mu_1 += (s[i] + alpha_p * ds[i]) * (w[i] + alpha_d * dw[i])
  * 
  *     return mu_1             # <<<<<<<<<<<<<<
@@ -2268,7 +2269,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_mul_plus_mul_plus_dot_plus_
   __pyx_r = __pyx_v_mu_1;
   goto __pyx_L0;
 
-  /* "pyqreg/c/fit_coefs.pyx":116
+  /* "pyqreg/c/fit_coefs.pyx":125
  * @wraparound(False)
  * @cdivision(True)
  * cdef double dot_plus_mul_plus_mul_plus_dot_plus_mul_plus_mul(             # <<<<<<<<<<<<<<
@@ -2282,7 +2283,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_mul_plus_mul_plus_dot_plus_
   return __pyx_r;
 }
 
-/* "pyqreg/c/fit_coefs.pyx":139
+/* "pyqreg/c/fit_coefs.pyx":148
  * @wraparound(False)
  * @cdivision(True)
  * cdef void mul_div_sub_div(double* xi, double* x, double* s, double mu, int n):             # <<<<<<<<<<<<<<
@@ -2298,7 +2299,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_div_sub_div(double *__pyx_v_xi, do
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("mul_div_sub_div", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":147
+  /* "pyqreg/c/fit_coefs.pyx":156
  *     cdef int i
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2310,7 +2311,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_div_sub_div(double *__pyx_v_xi, do
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":148
+    /* "pyqreg/c/fit_coefs.pyx":157
  * 
  *     for i in range(n):
  *         xi[i] = mu * (1/x[i] - 1/s[i])             # <<<<<<<<<<<<<<
@@ -2320,7 +2321,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_div_sub_div(double *__pyx_v_xi, do
     (__pyx_v_xi[__pyx_v_i]) = (__pyx_v_mu * ((1.0 / (__pyx_v_x[__pyx_v_i])) - (1.0 / (__pyx_v_s[__pyx_v_i]))));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":139
+  /* "pyqreg/c/fit_coefs.pyx":148
  * @wraparound(False)
  * @cdivision(True)
  * cdef void mul_div_sub_div(double* xi, double* x, double* s, double mu, int n):             # <<<<<<<<<<<<<<
@@ -2332,7 +2333,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_div_sub_div(double *__pyx_v_xi, do
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pyqreg/c/fit_coefs.pyx":153
+/* "pyqreg/c/fit_coefs.pyx":162
  * @wraparound(False)
  * @cdivision(True)
  * cdef void add_sub_sub(double* ri, double* r, double* dxdz, double* dsdw, double* xi, int n):             # <<<<<<<<<<<<<<
@@ -2348,7 +2349,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_add_sub_sub(double *__pyx_v_ri, double
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("add_sub_sub", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":161
+  /* "pyqreg/c/fit_coefs.pyx":170
  *     cdef int i
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2360,7 +2361,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_add_sub_sub(double *__pyx_v_ri, double
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":162
+    /* "pyqreg/c/fit_coefs.pyx":171
  * 
  *     for i in range(n):
  *         ri[i] = r[i] + dxdz[i] - dsdw[i] - xi[i]             # <<<<<<<<<<<<<<
@@ -2370,7 +2371,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_add_sub_sub(double *__pyx_v_ri, double
     (__pyx_v_ri[__pyx_v_i]) = ((((__pyx_v_r[__pyx_v_i]) + (__pyx_v_dxdz[__pyx_v_i])) - (__pyx_v_dsdw[__pyx_v_i])) - (__pyx_v_xi[__pyx_v_i]));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":153
+  /* "pyqreg/c/fit_coefs.pyx":162
  * @wraparound(False)
  * @cdivision(True)
  * cdef void add_sub_sub(double* ri, double* r, double* dxdz, double* dsdw, double* xi, int n):             # <<<<<<<<<<<<<<
@@ -2382,7 +2383,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_add_sub_sub(double *__pyx_v_ri, double
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pyqreg/c/fit_coefs.pyx":167
+/* "pyqreg/c/fit_coefs.pyx":176
  * @wraparound(False)
  * @cdivision(True)
  * cdef void mul_add_sub_sub_add(             # <<<<<<<<<<<<<<
@@ -2398,7 +2399,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_add_sub_sub_add(double *__pyx_v_dx
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("mul_add_sub_sub_add", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":176
+  /* "pyqreg/c/fit_coefs.pyx":185
  *     cdef int i
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2410,7 +2411,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_add_sub_sub_add(double *__pyx_v_dx
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":177
+    /* "pyqreg/c/fit_coefs.pyx":186
  * 
  *     for i in range(n):
  *         dx[i] = Qinv[i] * (Atdy[i] + xi[i] - r[i] - dxdz[i] + dsdw[i])             # <<<<<<<<<<<<<<
@@ -2420,7 +2421,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_add_sub_sub_add(double *__pyx_v_dx
     (__pyx_v_dx[__pyx_v_i]) = ((__pyx_v_Qinv[__pyx_v_i]) * (((((__pyx_v_Atdy[__pyx_v_i]) + (__pyx_v_xi[__pyx_v_i])) - (__pyx_v_r[__pyx_v_i])) - (__pyx_v_dxdz[__pyx_v_i])) + (__pyx_v_dsdw[__pyx_v_i])));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":167
+  /* "pyqreg/c/fit_coefs.pyx":176
  * @wraparound(False)
  * @cdivision(True)
  * cdef void mul_add_sub_sub_add(             # <<<<<<<<<<<<<<
@@ -2432,7 +2433,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_mul_add_sub_sub_add(double *__pyx_v_dx
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pyqreg/c/fit_coefs.pyx":182
+/* "pyqreg/c/fit_coefs.pyx":191
  * @wraparound(False)
  * @cdivision(True)
  * cdef void div_sub_sub_mul_div_sub(double* z, double* dx, double* dz, double* x, double* dxdz,             # <<<<<<<<<<<<<<
@@ -2448,7 +2449,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_sub_sub_mul_div_sub(double *__pyx_
   int __pyx_t_3;
   __Pyx_RefNannySetupContext("div_sub_sub_mul_div_sub", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":193
+  /* "pyqreg/c/fit_coefs.pyx":202
  *     cdef int i
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2460,7 +2461,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_sub_sub_mul_div_sub(double *__pyx_
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":194
+    /* "pyqreg/c/fit_coefs.pyx":203
  * 
  *     for i in range(n):
  *         dz[i] = mu / x[i] - z[i] - z[i] * dx[i] / x[i] - dxdz[i]             # <<<<<<<<<<<<<<
@@ -2469,7 +2470,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_sub_sub_mul_div_sub(double *__pyx_
  */
     (__pyx_v_dz[__pyx_v_i]) = ((((__pyx_v_mu / (__pyx_v_x[__pyx_v_i])) - (__pyx_v_z[__pyx_v_i])) - (((__pyx_v_z[__pyx_v_i]) * (__pyx_v_dx[__pyx_v_i])) / (__pyx_v_x[__pyx_v_i]))) - (__pyx_v_dxdz[__pyx_v_i]));
 
-    /* "pyqreg/c/fit_coefs.pyx":195
+    /* "pyqreg/c/fit_coefs.pyx":204
  *     for i in range(n):
  *         dz[i] = mu / x[i] - z[i] - z[i] * dx[i] / x[i] - dxdz[i]
  *         dw[i] = mu / s[i] - w[i] - w[i] * ds[i] / s[i] - dsdw[i]             # <<<<<<<<<<<<<<
@@ -2479,7 +2480,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_sub_sub_mul_div_sub(double *__pyx_
     (__pyx_v_dw[__pyx_v_i]) = ((((__pyx_v_mu / (__pyx_v_s[__pyx_v_i])) - (__pyx_v_w[__pyx_v_i])) - (((__pyx_v_w[__pyx_v_i]) * (__pyx_v_ds[__pyx_v_i])) / (__pyx_v_s[__pyx_v_i]))) - (__pyx_v_dsdw[__pyx_v_i]));
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":182
+  /* "pyqreg/c/fit_coefs.pyx":191
  * @wraparound(False)
  * @cdivision(True)
  * cdef void div_sub_sub_mul_div_sub(double* z, double* dx, double* dz, double* x, double* dxdz,             # <<<<<<<<<<<<<<
@@ -2491,7 +2492,7 @@ static void __pyx_f_6pyqreg_1c_9fit_coefs_div_sub_sub_mul_div_sub(double *__pyx_
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pyqreg/c/fit_coefs.pyx":200
+/* "pyqreg/c/fit_coefs.pyx":209
  * @wraparound(False)
  * @cdivision(True)
  * cdef double min_step_length(double* x,             # <<<<<<<<<<<<<<
@@ -2510,7 +2511,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
   int __pyx_t_4;
   __Pyx_RefNannySetupContext("min_step_length", 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":207
+  /* "pyqreg/c/fit_coefs.pyx":216
  * 
  *     cdef int i
  *     cdef double min_d = 1e20             # <<<<<<<<<<<<<<
@@ -2519,7 +2520,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
  */
   __pyx_v_min_d = 1e20;
 
-  /* "pyqreg/c/fit_coefs.pyx":209
+  /* "pyqreg/c/fit_coefs.pyx":218
  *     cdef double min_d = 1e20
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2531,7 +2532,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":210
+    /* "pyqreg/c/fit_coefs.pyx":219
  * 
  *     for i in range(n):
  *         if dx[i] < 0.0:             # <<<<<<<<<<<<<<
@@ -2541,7 +2542,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
     __pyx_t_4 = (((__pyx_v_dx[__pyx_v_i]) < 0.0) != 0);
     if (__pyx_t_4) {
 
-      /* "pyqreg/c/fit_coefs.pyx":211
+      /* "pyqreg/c/fit_coefs.pyx":220
  *     for i in range(n):
  *         if dx[i] < 0.0:
  *             if -x[i]/dx[i] < min_d:             # <<<<<<<<<<<<<<
@@ -2551,7 +2552,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
       __pyx_t_4 = ((((-(__pyx_v_x[__pyx_v_i])) / (__pyx_v_dx[__pyx_v_i])) < __pyx_v_min_d) != 0);
       if (__pyx_t_4) {
 
-        /* "pyqreg/c/fit_coefs.pyx":212
+        /* "pyqreg/c/fit_coefs.pyx":221
  *         if dx[i] < 0.0:
  *             if -x[i]/dx[i] < min_d:
  *                 min_d = -x[i]/dx[i]             # <<<<<<<<<<<<<<
@@ -2560,7 +2561,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
  */
         __pyx_v_min_d = ((-(__pyx_v_x[__pyx_v_i])) / (__pyx_v_dx[__pyx_v_i]));
 
-        /* "pyqreg/c/fit_coefs.pyx":211
+        /* "pyqreg/c/fit_coefs.pyx":220
  *     for i in range(n):
  *         if dx[i] < 0.0:
  *             if -x[i]/dx[i] < min_d:             # <<<<<<<<<<<<<<
@@ -2569,7 +2570,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
  */
       }
 
-      /* "pyqreg/c/fit_coefs.pyx":210
+      /* "pyqreg/c/fit_coefs.pyx":219
  * 
  *     for i in range(n):
  *         if dx[i] < 0.0:             # <<<<<<<<<<<<<<
@@ -2579,7 +2580,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
     }
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":214
+  /* "pyqreg/c/fit_coefs.pyx":223
  *                 min_d = -x[i]/dx[i]
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2591,7 +2592,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":215
+    /* "pyqreg/c/fit_coefs.pyx":224
  * 
  *     for i in range(n):
  *         if ds[i] < 0.0:             # <<<<<<<<<<<<<<
@@ -2601,7 +2602,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
     __pyx_t_4 = (((__pyx_v_ds[__pyx_v_i]) < 0.0) != 0);
     if (__pyx_t_4) {
 
-      /* "pyqreg/c/fit_coefs.pyx":216
+      /* "pyqreg/c/fit_coefs.pyx":225
  *     for i in range(n):
  *         if ds[i] < 0.0:
  *             if -s[i]/ds[i] < min_d:             # <<<<<<<<<<<<<<
@@ -2611,7 +2612,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
       __pyx_t_4 = ((((-(__pyx_v_s[__pyx_v_i])) / (__pyx_v_ds[__pyx_v_i])) < __pyx_v_min_d) != 0);
       if (__pyx_t_4) {
 
-        /* "pyqreg/c/fit_coefs.pyx":217
+        /* "pyqreg/c/fit_coefs.pyx":226
  *         if ds[i] < 0.0:
  *             if -s[i]/ds[i] < min_d:
  *                 min_d = -s[i]/ds[i]             # <<<<<<<<<<<<<<
@@ -2620,7 +2621,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
  */
         __pyx_v_min_d = ((-(__pyx_v_s[__pyx_v_i])) / (__pyx_v_ds[__pyx_v_i]));
 
-        /* "pyqreg/c/fit_coefs.pyx":216
+        /* "pyqreg/c/fit_coefs.pyx":225
  *     for i in range(n):
  *         if ds[i] < 0.0:
  *             if -s[i]/ds[i] < min_d:             # <<<<<<<<<<<<<<
@@ -2629,7 +2630,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
  */
       }
 
-      /* "pyqreg/c/fit_coefs.pyx":215
+      /* "pyqreg/c/fit_coefs.pyx":224
  * 
  *     for i in range(n):
  *         if ds[i] < 0.0:             # <<<<<<<<<<<<<<
@@ -2639,7 +2640,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
     }
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":219
+  /* "pyqreg/c/fit_coefs.pyx":228
  *                 min_d = -s[i]/ds[i]
  * 
  *     return min_d             # <<<<<<<<<<<<<<
@@ -2649,7 +2650,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
   __pyx_r = __pyx_v_min_d;
   goto __pyx_L0;
 
-  /* "pyqreg/c/fit_coefs.pyx":200
+  /* "pyqreg/c/fit_coefs.pyx":209
  * @wraparound(False)
  * @cdivision(True)
  * cdef double min_step_length(double* x,             # <<<<<<<<<<<<<<
@@ -2663,7 +2664,7 @@ static double __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length(double *__pyx_v_x, d
   return __pyx_r;
 }
 
-/* "pyqreg/c/fit_coefs.pyx":225
+/* "pyqreg/c/fit_coefs.pyx":234
  * @wraparound(False)
  * @cdivision(True)
  * def fit_coefs(np.ndarray[DOUBLE_t, ndim=2] X_input,             # <<<<<<<<<<<<<<
@@ -2712,23 +2713,23 @@ static PyObject *__pyx_pw_6pyqreg_1c_9fit_coefs_1fit_coefs(PyObject *__pyx_self,
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y_input)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("fit_coefs", 1, 4, 4, 1); __PYX_ERR(0, 225, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("fit_coefs", 1, 4, 4, 1); __PYX_ERR(0, 234, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_tau)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("fit_coefs", 1, 4, 4, 2); __PYX_ERR(0, 225, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("fit_coefs", 1, 4, 4, 2); __PYX_ERR(0, 234, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_eps)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("fit_coefs", 1, 4, 4, 3); __PYX_ERR(0, 225, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("fit_coefs", 1, 4, 4, 3); __PYX_ERR(0, 234, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fit_coefs") < 0)) __PYX_ERR(0, 225, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fit_coefs") < 0)) __PYX_ERR(0, 234, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -2740,19 +2741,19 @@ static PyObject *__pyx_pw_6pyqreg_1c_9fit_coefs_1fit_coefs(PyObject *__pyx_self,
     }
     __pyx_v_X_input = ((PyArrayObject *)values[0]);
     __pyx_v_y_input = ((PyArrayObject *)values[1]);
-    __pyx_v_tau = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_tau == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 227, __pyx_L3_error)
-    __pyx_v_eps = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_eps == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 228, __pyx_L3_error)
+    __pyx_v_tau = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_tau == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 236, __pyx_L3_error)
+    __pyx_v_eps = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_eps == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 237, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("fit_coefs", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 225, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("fit_coefs", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 234, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyqreg.c.fit_coefs.fit_coefs", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_X_input), __pyx_ptype_5numpy_ndarray, 1, "X_input", 0))) __PYX_ERR(0, 225, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_y_input), __pyx_ptype_5numpy_ndarray, 1, "y_input", 0))) __PYX_ERR(0, 226, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_X_input), __pyx_ptype_5numpy_ndarray, 1, "X_input", 0))) __PYX_ERR(0, 234, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_y_input), __pyx_ptype_5numpy_ndarray, 1, "y_input", 0))) __PYX_ERR(0, 235, __pyx_L1_error)
   __pyx_r = __pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(__pyx_self, __pyx_v_X_input, __pyx_v_y_input, __pyx_v_tau, __pyx_v_eps);
 
   /* function exit code */
@@ -2877,16 +2878,16 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   __pyx_pybuffernd_y_input.rcbuffer = &__pyx_pybuffer_y_input;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_X_input.rcbuffer->pybuffer, (PyObject*)__pyx_v_X_input, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 225, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_X_input.rcbuffer->pybuffer, (PyObject*)__pyx_v_X_input, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 234, __pyx_L1_error)
   }
   __pyx_pybuffernd_X_input.diminfo[0].strides = __pyx_pybuffernd_X_input.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_X_input.diminfo[0].shape = __pyx_pybuffernd_X_input.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_X_input.diminfo[1].strides = __pyx_pybuffernd_X_input.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_X_input.diminfo[1].shape = __pyx_pybuffernd_X_input.rcbuffer->pybuffer.shape[1];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_y_input.rcbuffer->pybuffer, (PyObject*)__pyx_v_y_input, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 225, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_y_input.rcbuffer->pybuffer, (PyObject*)__pyx_v_y_input, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 234, __pyx_L1_error)
   }
   __pyx_pybuffernd_y_input.diminfo[0].strides = __pyx_pybuffernd_y_input.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_y_input.diminfo[0].shape = __pyx_pybuffernd_y_input.rcbuffer->pybuffer.shape[0];
 
-  /* "pyqreg/c/fit_coefs.pyx":234
+  /* "pyqreg/c/fit_coefs.pyx":243
  * 
  *     # Dimensions
  *     cdef int n = X_input.shape[0]             # <<<<<<<<<<<<<<
@@ -2895,7 +2896,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_n = (__pyx_v_X_input->dimensions[0]);
 
-  /* "pyqreg/c/fit_coefs.pyx":235
+  /* "pyqreg/c/fit_coefs.pyx":244
  *     # Dimensions
  *     cdef int n = X_input.shape[0]
  *     cdef int p = X_input.shape[1]             # <<<<<<<<<<<<<<
@@ -2904,7 +2905,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_p = (__pyx_v_X_input->dimensions[1]);
 
-  /* "pyqreg/c/fit_coefs.pyx":238
+  /* "pyqreg/c/fit_coefs.pyx":247
  * 
  *     # Model data
  *     cdef double* X = <double*>(np.PyArray_DATA(X_input))             # <<<<<<<<<<<<<<
@@ -2913,7 +2914,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_X = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v_X_input)));
 
-  /* "pyqreg/c/fit_coefs.pyx":239
+  /* "pyqreg/c/fit_coefs.pyx":248
  *     # Model data
  *     cdef double* X = <double*>(np.PyArray_DATA(X_input))
  *     cdef double* Y = <double*>(np.PyArray_DATA(y_input))             # <<<<<<<<<<<<<<
@@ -2922,7 +2923,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_Y = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v_y_input)));
 
-  /* "pyqreg/c/fit_coefs.pyx":242
+  /* "pyqreg/c/fit_coefs.pyx":251
  * 
  *     # Model constants
  *     cdef int max_it = 500             # <<<<<<<<<<<<<<
@@ -2931,7 +2932,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_max_it = 0x1F4;
 
-  /* "pyqreg/c/fit_coefs.pyx":243
+  /* "pyqreg/c/fit_coefs.pyx":252
  *     # Model constants
  *     cdef int max_it = 500
  *     cdef double sigma = 0.99995             # <<<<<<<<<<<<<<
@@ -2940,7 +2941,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_sigma = 0.99995;
 
-  /* "pyqreg/c/fit_coefs.pyx":246
+  /* "pyqreg/c/fit_coefs.pyx":255
  * 
  *     # Unit vector
  *     cdef double* u = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -2949,7 +2950,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_u = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":247
+  /* "pyqreg/c/fit_coefs.pyx":256
  *     # Unit vector
  *     cdef double* u = <double*>malloc(n * sizeof(double))
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2961,7 +2962,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":248
+    /* "pyqreg/c/fit_coefs.pyx":257
  *     cdef double* u = <double*>malloc(n * sizeof(double))
  *     for i in range(n):
  *         u[i] = 1.0             # <<<<<<<<<<<<<<
@@ -2971,7 +2972,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
     (__pyx_v_u[__pyx_v_i]) = 1.0;
   }
 
-  /* "pyqreg/c/fit_coefs.pyx":251
+  /* "pyqreg/c/fit_coefs.pyx":260
  * 
  *     # Primal constants
  *     cdef double* c = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -2980,7 +2981,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_c = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":252
+  /* "pyqreg/c/fit_coefs.pyx":261
  *     # Primal constants
  *     cdef double* c = <double*>malloc(n * sizeof(double))
  *     cdef double* b = <double*>malloc(p * sizeof(double))             # <<<<<<<<<<<<<<
@@ -2989,7 +2990,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_b = ((double *)malloc((__pyx_v_p * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":255
+  /* "pyqreg/c/fit_coefs.pyx":264
  * 
  *     # Primal variables
  *     cdef double* x = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -2998,7 +2999,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_x = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":256
+  /* "pyqreg/c/fit_coefs.pyx":265
  *     # Primal variables
  *     cdef double* x = <double*>malloc(n * sizeof(double))
  *     cdef double* s = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3007,7 +3008,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_s = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":259
+  /* "pyqreg/c/fit_coefs.pyx":268
  * 
  *     # Dual variables
  *     cdef double* w = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3016,7 +3017,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_w = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":260
+  /* "pyqreg/c/fit_coefs.pyx":269
  *     # Dual variables
  *     cdef double* w = <double*>malloc(n * sizeof(double))
  *     cdef double* y = <double*>malloc(p * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3025,7 +3026,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_y = ((double *)malloc((__pyx_v_p * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":261
+  /* "pyqreg/c/fit_coefs.pyx":270
  *     cdef double* w = <double*>malloc(n * sizeof(double))
  *     cdef double* y = <double*>malloc(p * sizeof(double))
  *     cdef double* z = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3034,7 +3035,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_z = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":264
+  /* "pyqreg/c/fit_coefs.pyx":273
  * 
  *     # Set up caches
  *     cdef double* Qinv = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3043,7 +3044,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_Qinv = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":265
+  /* "pyqreg/c/fit_coefs.pyx":274
  *     # Set up caches
  *     cdef double* Qinv = <double*>malloc(n * sizeof(double))
  *     cdef double* r = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3052,23 +3053,23 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_r = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":266
+  /* "pyqreg/c/fit_coefs.pyx":275
  *     cdef double* Qinv = <double*>malloc(n * sizeof(double))
  *     cdef double* r = <double*>malloc(n * sizeof(double))
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] AQinvT_np_ = np.empty([n, p], dtype=DTYPE, order="F")             # <<<<<<<<<<<<<<
  *     cdef double* AQinvT_np = <double*>(np.PyArray_DATA(AQinvT_np_))
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] AQinvAt_pp_ = np.empty([p, p], dtype=DTYPE, order="F")
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = PyList_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_4);
   PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_4);
@@ -3076,30 +3077,30 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_6);
   __pyx_t_4 = 0;
   __pyx_t_6 = 0;
-  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_7);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_7);
   __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 266, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 266, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 266, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 275, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 266, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 275, __pyx_L1_error)
   __pyx_t_8 = ((PyArrayObject *)__pyx_t_4);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_AQinvT_np_.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_F_CONTIGUOUS, 2, 0, __pyx_stack) == -1)) {
       __pyx_v_AQinvT_np_ = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_AQinvT_np_.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 266, __pyx_L1_error)
+      __PYX_ERR(0, 275, __pyx_L1_error)
     } else {__pyx_pybuffernd_AQinvT_np_.diminfo[0].strides = __pyx_pybuffernd_AQinvT_np_.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_AQinvT_np_.diminfo[0].shape = __pyx_pybuffernd_AQinvT_np_.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_AQinvT_np_.diminfo[1].strides = __pyx_pybuffernd_AQinvT_np_.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_AQinvT_np_.diminfo[1].shape = __pyx_pybuffernd_AQinvT_np_.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -3107,7 +3108,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   __pyx_v_AQinvT_np_ = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyqreg/c/fit_coefs.pyx":267
+  /* "pyqreg/c/fit_coefs.pyx":276
  *     cdef double* r = <double*>malloc(n * sizeof(double))
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] AQinvT_np_ = np.empty([n, p], dtype=DTYPE, order="F")
  *     cdef double* AQinvT_np = <double*>(np.PyArray_DATA(AQinvT_np_))             # <<<<<<<<<<<<<<
@@ -3116,23 +3117,23 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_AQinvT_np = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v_AQinvT_np_)));
 
-  /* "pyqreg/c/fit_coefs.pyx":268
+  /* "pyqreg/c/fit_coefs.pyx":277
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] AQinvT_np_ = np.empty([n, p], dtype=DTYPE, order="F")
  *     cdef double* AQinvT_np = <double*>(np.PyArray_DATA(AQinvT_np_))
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] AQinvAt_pp_ = np.empty([p, p], dtype=DTYPE, order="F")             # <<<<<<<<<<<<<<
  *     cdef double* AQinvAt_pp = <double*>(np.PyArray_DATA(AQinvAt_pp_))
  *     cdef double* Atdy = <double*>malloc(n * sizeof(double))
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_4);
   PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
@@ -3140,30 +3141,30 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   PyList_SET_ITEM(__pyx_t_5, 1, __pyx_t_6);
   __pyx_t_4 = 0;
   __pyx_t_6 = 0;
-  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 268, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 268, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_6, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 268, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 277, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_6, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 268, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 277, __pyx_L1_error)
   __pyx_t_9 = ((PyArrayObject *)__pyx_t_4);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_AQinvAt_pp_.rcbuffer->pybuffer, (PyObject*)__pyx_t_9, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_F_CONTIGUOUS, 2, 0, __pyx_stack) == -1)) {
       __pyx_v_AQinvAt_pp_ = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_AQinvAt_pp_.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 268, __pyx_L1_error)
+      __PYX_ERR(0, 277, __pyx_L1_error)
     } else {__pyx_pybuffernd_AQinvAt_pp_.diminfo[0].strides = __pyx_pybuffernd_AQinvAt_pp_.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_AQinvAt_pp_.diminfo[0].shape = __pyx_pybuffernd_AQinvAt_pp_.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_AQinvAt_pp_.diminfo[1].strides = __pyx_pybuffernd_AQinvAt_pp_.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_AQinvAt_pp_.diminfo[1].shape = __pyx_pybuffernd_AQinvAt_pp_.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -3171,7 +3172,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   __pyx_v_AQinvAt_pp_ = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyqreg/c/fit_coefs.pyx":269
+  /* "pyqreg/c/fit_coefs.pyx":278
  *     cdef double* AQinvT_np = <double*>(np.PyArray_DATA(AQinvT_np_))
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] AQinvAt_pp_ = np.empty([p, p], dtype=DTYPE, order="F")
  *     cdef double* AQinvAt_pp = <double*>(np.PyArray_DATA(AQinvAt_pp_))             # <<<<<<<<<<<<<<
@@ -3180,7 +3181,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_AQinvAt_pp = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v_AQinvAt_pp_)));
 
-  /* "pyqreg/c/fit_coefs.pyx":270
+  /* "pyqreg/c/fit_coefs.pyx":279
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] AQinvAt_pp_ = np.empty([p, p], dtype=DTYPE, order="F")
  *     cdef double* AQinvAt_pp = <double*>(np.PyArray_DATA(AQinvAt_pp_))
  *     cdef double* Atdy = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3189,7 +3190,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_Atdy = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":271
+  /* "pyqreg/c/fit_coefs.pyx":280
  *     cdef double* AQinvAt_pp = <double*>(np.PyArray_DATA(AQinvAt_pp_))
  *     cdef double* Atdy = <double*>malloc(n * sizeof(double))
  *     cdef double* dy = <double*>malloc(p * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3198,7 +3199,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_dy = ((double *)malloc((__pyx_v_p * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":272
+  /* "pyqreg/c/fit_coefs.pyx":281
  *     cdef double* Atdy = <double*>malloc(n * sizeof(double))
  *     cdef double* dy = <double*>malloc(p * sizeof(double))
  *     cdef double* dx = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3207,7 +3208,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_dx = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":273
+  /* "pyqreg/c/fit_coefs.pyx":282
  *     cdef double* dy = <double*>malloc(p * sizeof(double))
  *     cdef double* dx = <double*>malloc(n * sizeof(double))
  *     cdef double* ds = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3216,7 +3217,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_ds = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":274
+  /* "pyqreg/c/fit_coefs.pyx":283
  *     cdef double* dx = <double*>malloc(n * sizeof(double))
  *     cdef double* ds = <double*>malloc(n * sizeof(double))
  *     cdef double* dz = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3225,7 +3226,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_dz = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":275
+  /* "pyqreg/c/fit_coefs.pyx":284
  *     cdef double* ds = <double*>malloc(n * sizeof(double))
  *     cdef double* dz = <double*>malloc(n * sizeof(double))
  *     cdef double* dw = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3234,7 +3235,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_dw = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":276
+  /* "pyqreg/c/fit_coefs.pyx":285
  *     cdef double* dz = <double*>malloc(n * sizeof(double))
  *     cdef double* dw = <double*>malloc(n * sizeof(double))
  *     cdef double* dxdz = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3243,7 +3244,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_dxdz = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":277
+  /* "pyqreg/c/fit_coefs.pyx":286
  *     cdef double* dw = <double*>malloc(n * sizeof(double))
  *     cdef double* dxdz = <double*>malloc(n * sizeof(double))
  *     cdef double* dsdw = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3252,7 +3253,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_dsdw = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":278
+  /* "pyqreg/c/fit_coefs.pyx":287
  *     cdef double* dxdz = <double*>malloc(n * sizeof(double))
  *     cdef double* dsdw = <double*>malloc(n * sizeof(double))
  *     cdef double* xi = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3261,7 +3262,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_xi = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":279
+  /* "pyqreg/c/fit_coefs.pyx":288
  *     cdef double* dsdw = <double*>malloc(n * sizeof(double))
  *     cdef double* xi = <double*>malloc(n * sizeof(double))
  *     cdef double* ri = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3270,7 +3271,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_ri = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":280
+  /* "pyqreg/c/fit_coefs.pyx":289
  *     cdef double* xi = <double*>malloc(n * sizeof(double))
  *     cdef double* ri = <double*>malloc(n * sizeof(double))
  *     cdef double* d = <double*>malloc(2 * n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3279,7 +3280,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_d = ((double *)malloc(((2 * __pyx_v_n) * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":286
+  /* "pyqreg/c/fit_coefs.pyx":295
  *     cdef double mu
  *     cdef double mu_1
  *     cdef double* mus = <double*>malloc(2 * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3288,44 +3289,44 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_mus = ((double *)malloc((2 * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":289
+  /* "pyqreg/c/fit_coefs.pyx":298
  * 
  *     # Set up cache for return coefficient array
  *     cdef np.ndarray[DOUBLE_t, ndim=1, mode="fortran"] _coefs = np.empty(p, dtype=DTYPE, order="F")             # <<<<<<<<<<<<<<
  *     cdef double* coefs = <double*>(np.PyArray_DATA(_coefs))
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 289, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 289, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 289, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 289, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_7) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_7, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 289, __pyx_L1_error)
+  if (!(likely(((__pyx_t_7) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_7, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 298, __pyx_L1_error)
   __pyx_t_10 = ((PyArrayObject *)__pyx_t_7);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd__coefs.rcbuffer->pybuffer, (PyObject*)__pyx_t_10, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_F_CONTIGUOUS, 1, 0, __pyx_stack) == -1)) {
       __pyx_v__coefs = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd__coefs.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 289, __pyx_L1_error)
+      __PYX_ERR(0, 298, __pyx_L1_error)
     } else {__pyx_pybuffernd__coefs.diminfo[0].strides = __pyx_pybuffernd__coefs.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd__coefs.diminfo[0].shape = __pyx_pybuffernd__coefs.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -3333,7 +3334,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   __pyx_v__coefs = ((PyArrayObject *)__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "pyqreg/c/fit_coefs.pyx":290
+  /* "pyqreg/c/fit_coefs.pyx":299
  *     # Set up cache for return coefficient array
  *     cdef np.ndarray[DOUBLE_t, ndim=1, mode="fortran"] _coefs = np.empty(p, dtype=DTYPE, order="F")
  *     cdef double* coefs = <double*>(np.PyArray_DATA(_coefs))             # <<<<<<<<<<<<<<
@@ -3342,23 +3343,23 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_coefs = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v__coefs)));
 
-  /* "pyqreg/c/fit_coefs.pyx":293
+  /* "pyqreg/c/fit_coefs.pyx":302
  * 
  *     # Set up temporary caches
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _TMP1_pp = np.empty([p, p], dtype=DTYPE, order="F")             # <<<<<<<<<<<<<<
  *     cdef double* TMP1_pp = <double*>(np.PyArray_DATA(_TMP1_pp))
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _TMP1_np = np.empty([n, p], dtype=DTYPE, order="F")
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_7);
   PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_7);
@@ -3366,30 +3367,30 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   PyList_SET_ITEM(__pyx_t_5, 1, __pyx_t_6);
   __pyx_t_7 = 0;
   __pyx_t_6 = 0;
-  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 293, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 293, __pyx_L1_error)
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, __pyx_t_5); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 293, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 302, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, __pyx_t_5); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (!(likely(((__pyx_t_7) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_7, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 293, __pyx_L1_error)
+  if (!(likely(((__pyx_t_7) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_7, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 302, __pyx_L1_error)
   __pyx_t_11 = ((PyArrayObject *)__pyx_t_7);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd__TMP1_pp.rcbuffer->pybuffer, (PyObject*)__pyx_t_11, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_F_CONTIGUOUS, 2, 0, __pyx_stack) == -1)) {
       __pyx_v__TMP1_pp = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd__TMP1_pp.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 293, __pyx_L1_error)
+      __PYX_ERR(0, 302, __pyx_L1_error)
     } else {__pyx_pybuffernd__TMP1_pp.diminfo[0].strides = __pyx_pybuffernd__TMP1_pp.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd__TMP1_pp.diminfo[0].shape = __pyx_pybuffernd__TMP1_pp.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd__TMP1_pp.diminfo[1].strides = __pyx_pybuffernd__TMP1_pp.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd__TMP1_pp.diminfo[1].shape = __pyx_pybuffernd__TMP1_pp.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -3397,7 +3398,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   __pyx_v__TMP1_pp = ((PyArrayObject *)__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "pyqreg/c/fit_coefs.pyx":294
+  /* "pyqreg/c/fit_coefs.pyx":303
  *     # Set up temporary caches
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _TMP1_pp = np.empty([p, p], dtype=DTYPE, order="F")
  *     cdef double* TMP1_pp = <double*>(np.PyArray_DATA(_TMP1_pp))             # <<<<<<<<<<<<<<
@@ -3406,23 +3407,23 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_TMP1_pp = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v__TMP1_pp)));
 
-  /* "pyqreg/c/fit_coefs.pyx":295
+  /* "pyqreg/c/fit_coefs.pyx":304
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _TMP1_pp = np.empty([p, p], dtype=DTYPE, order="F")
  *     cdef double* TMP1_pp = <double*>(np.PyArray_DATA(_TMP1_pp))
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _TMP1_np = np.empty([n, p], dtype=DTYPE, order="F")             # <<<<<<<<<<<<<<
  *     cdef double* TMP1_np = <double*>(np.PyArray_DATA(_TMP1_np))
  *     cdef double* tmp1_p = <double*>malloc(p * sizeof(double))
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 295, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 295, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 295, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 295, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 295, __pyx_L1_error)
+  __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_7);
   PyList_SET_ITEM(__pyx_t_4, 0, __pyx_t_7);
@@ -3430,30 +3431,30 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   PyList_SET_ITEM(__pyx_t_4, 1, __pyx_t_6);
   __pyx_t_7 = 0;
   __pyx_t_6 = 0;
-  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 295, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 295, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 295, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_DTYPE); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 295, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_order, __pyx_n_s_F) < 0) __PYX_ERR(0, 304, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_7) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_7, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 295, __pyx_L1_error)
+  if (!(likely(((__pyx_t_7) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_7, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 304, __pyx_L1_error)
   __pyx_t_12 = ((PyArrayObject *)__pyx_t_7);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd__TMP1_np.rcbuffer->pybuffer, (PyObject*)__pyx_t_12, &__Pyx_TypeInfo_nn___pyx_t_6pyqreg_1c_9fit_coefs_DOUBLE_t, PyBUF_FORMAT| PyBUF_F_CONTIGUOUS, 2, 0, __pyx_stack) == -1)) {
       __pyx_v__TMP1_np = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd__TMP1_np.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 295, __pyx_L1_error)
+      __PYX_ERR(0, 304, __pyx_L1_error)
     } else {__pyx_pybuffernd__TMP1_np.diminfo[0].strides = __pyx_pybuffernd__TMP1_np.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd__TMP1_np.diminfo[0].shape = __pyx_pybuffernd__TMP1_np.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd__TMP1_np.diminfo[1].strides = __pyx_pybuffernd__TMP1_np.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd__TMP1_np.diminfo[1].shape = __pyx_pybuffernd__TMP1_np.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -3461,7 +3462,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   __pyx_v__TMP1_np = ((PyArrayObject *)__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "pyqreg/c/fit_coefs.pyx":296
+  /* "pyqreg/c/fit_coefs.pyx":305
  *     cdef double* TMP1_pp = <double*>(np.PyArray_DATA(_TMP1_pp))
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _TMP1_np = np.empty([n, p], dtype=DTYPE, order="F")
  *     cdef double* TMP1_np = <double*>(np.PyArray_DATA(_TMP1_np))             # <<<<<<<<<<<<<<
@@ -3470,7 +3471,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_TMP1_np = ((double *)PyArray_DATA(((PyArrayObject *)__pyx_v__TMP1_np)));
 
-  /* "pyqreg/c/fit_coefs.pyx":297
+  /* "pyqreg/c/fit_coefs.pyx":306
  *     cdef np.ndarray[DOUBLE_t, ndim=2, mode="fortran"] _TMP1_np = np.empty([n, p], dtype=DTYPE, order="F")
  *     cdef double* TMP1_np = <double*>(np.PyArray_DATA(_TMP1_np))
  *     cdef double* tmp1_p = <double*>malloc(p * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3479,7 +3480,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_tmp1_p = ((double *)malloc((__pyx_v_p * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":298
+  /* "pyqreg/c/fit_coefs.pyx":307
  *     cdef double* TMP1_np = <double*>(np.PyArray_DATA(_TMP1_np))
  *     cdef double* tmp1_p = <double*>malloc(p * sizeof(double))
  *     cdef double* tmp1_n = <double*>malloc(n * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3488,7 +3489,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_tmp1_n = ((double *)malloc((__pyx_v_n * (sizeof(double)))));
 
-  /* "pyqreg/c/fit_coefs.pyx":302
+  /* "pyqreg/c/fit_coefs.pyx":311
  *     # Initialize primal x
  *     # x = (1 - tau) * u
  *     vs_mul(&u[0], (1-tau), &x[0], n)             # <<<<<<<<<<<<<<
@@ -3497,7 +3498,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_f_6pyqreg_1c_11mat_vec_ops_vs_mul((&(__pyx_v_u[0])), (1.0 - __pyx_v_tau), (&(__pyx_v_x[0])), __pyx_v_n);
 
-  /* "pyqreg/c/fit_coefs.pyx":306
+  /* "pyqreg/c/fit_coefs.pyx":315
  *     # Set primal constants
  *     # c = -Y
  *     negative_assign(&Y[0], &c[0], n)             # <<<<<<<<<<<<<<
@@ -3506,7 +3507,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_negative_assign((&(__pyx_v_Y[0])), (&(__pyx_v_c[0])), __pyx_v_n));
 
-  /* "pyqreg/c/fit_coefs.pyx":309
+  /* "pyqreg/c/fit_coefs.pyx":318
  * 
  *     # b = X'x = Ax
  *     mv_dot(&X[0], &x[0], &b[0], n, p, n, 1)             # <<<<<<<<<<<<<<
@@ -3515,7 +3516,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_f_6pyqreg_1c_11blas_lapack_mv_dot((&(__pyx_v_X[0])), (&(__pyx_v_x[0])), (&(__pyx_v_b[0])), __pyx_v_n, __pyx_v_p, __pyx_v_n, 1);
 
-  /* "pyqreg/c/fit_coefs.pyx":313
+  /* "pyqreg/c/fit_coefs.pyx":322
  *     # Set initial feasible point
  *     # Initialize s = u - x
  *     vv_sub(&u[0], &x[0], &s[0], n)             # <<<<<<<<<<<<<<
@@ -3524,7 +3525,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_vv_sub((&(__pyx_v_u[0])), (&(__pyx_v_x[0])), (&(__pyx_v_s[0])), __pyx_v_n));
 
-  /* "pyqreg/c/fit_coefs.pyx":316
+  /* "pyqreg/c/fit_coefs.pyx":325
  * 
  *     # Initialize y = -((X'X)\(X'y))
  *     mm_dot(&X[0], &X[0], &TMP1_pp[0],             # <<<<<<<<<<<<<<
@@ -3533,7 +3534,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_f_6pyqreg_1c_11blas_lapack_mm_dot((&(__pyx_v_X[0])), (&(__pyx_v_X[0])), (&(__pyx_v_TMP1_pp[0])), __pyx_v_p, __pyx_v_p, __pyx_v_n, __pyx_v_n, __pyx_v_n, __pyx_v_p, 1.0, 0.0, 1, 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":320
+  /* "pyqreg/c/fit_coefs.pyx":329
  *            n, n, p,
  *            1.0, 0.0, 1, 0)
  *     mv_dot(&X[0], &Y[0], &tmp1_p[0], n, p, n, 1)             # <<<<<<<<<<<<<<
@@ -3542,7 +3543,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_f_6pyqreg_1c_11blas_lapack_mv_dot((&(__pyx_v_X[0])), (&(__pyx_v_Y[0])), (&(__pyx_v_tmp1_p[0])), __pyx_v_n, __pyx_v_p, __pyx_v_n, 1);
 
-  /* "pyqreg/c/fit_coefs.pyx":321
+  /* "pyqreg/c/fit_coefs.pyx":330
  *            1.0, 0.0, 1, 0)
  *     mv_dot(&X[0], &Y[0], &tmp1_p[0], n, p, n, 1)
  *     lapack_cholesky_decomp(&TMP1_pp[0], p)  # Since X'X post def             # <<<<<<<<<<<<<<
@@ -3551,7 +3552,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_f_6pyqreg_1c_11blas_lapack_lapack_cholesky_decomp((&(__pyx_v_TMP1_pp[0])), __pyx_v_p);
 
-  /* "pyqreg/c/fit_coefs.pyx":322
+  /* "pyqreg/c/fit_coefs.pyx":331
  *     mv_dot(&X[0], &Y[0], &tmp1_p[0], n, p, n, 1)
  *     lapack_cholesky_decomp(&TMP1_pp[0], p)  # Since X'X post def
  *     lapack_cholesky_solve(&TMP1_pp[0], &tmp1_p[0], p)             # <<<<<<<<<<<<<<
@@ -3560,7 +3561,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_f_6pyqreg_1c_11blas_lapack_lapack_cholesky_solve((&(__pyx_v_TMP1_pp[0])), (&(__pyx_v_tmp1_p[0])), __pyx_v_p);
 
-  /* "pyqreg/c/fit_coefs.pyx":323
+  /* "pyqreg/c/fit_coefs.pyx":332
  *     lapack_cholesky_decomp(&TMP1_pp[0], p)  # Since X'X post def
  *     lapack_cholesky_solve(&TMP1_pp[0], &tmp1_p[0], p)
  *     negative_assign(&tmp1_p[0], &y[0], p)             # <<<<<<<<<<<<<<
@@ -3569,7 +3570,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_negative_assign((&(__pyx_v_tmp1_p[0])), (&(__pyx_v_y[0])), __pyx_v_p));
 
-  /* "pyqreg/c/fit_coefs.pyx":326
+  /* "pyqreg/c/fit_coefs.pyx":335
  * 
  *     # Initialize r = c - A'y = c - Xy
  *     mv_dot(&X[0], &y[0], &tmp1_n[0], n, p, n, 0)             # <<<<<<<<<<<<<<
@@ -3578,7 +3579,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_f_6pyqreg_1c_11blas_lapack_mv_dot((&(__pyx_v_X[0])), (&(__pyx_v_y[0])), (&(__pyx_v_tmp1_n[0])), __pyx_v_n, __pyx_v_p, __pyx_v_n, 0);
 
-  /* "pyqreg/c/fit_coefs.pyx":327
+  /* "pyqreg/c/fit_coefs.pyx":336
  *     # Initialize r = c - A'y = c - Xy
  *     mv_dot(&X[0], &y[0], &tmp1_n[0], n, p, n, 0)
  *     vv_sub(&c[0], &tmp1_n[0], &r[0], n)             # <<<<<<<<<<<<<<
@@ -3587,7 +3588,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_vv_sub((&(__pyx_v_c[0])), (&(__pyx_v_tmp1_n[0])), (&(__pyx_v_r[0])), __pyx_v_n));
 
-  /* "pyqreg/c/fit_coefs.pyx":328
+  /* "pyqreg/c/fit_coefs.pyx":337
  *     mv_dot(&X[0], &y[0], &tmp1_n[0], n, p, n, 0)
  *     vv_sub(&c[0], &tmp1_n[0], &r[0], n)
  *     equals_0(&r[0], &tmp1_n[0], n)             # <<<<<<<<<<<<<<
@@ -3596,7 +3597,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_equals_0((&(__pyx_v_r[0])), (&(__pyx_v_tmp1_n[0])), __pyx_v_n));
 
-  /* "pyqreg/c/fit_coefs.pyx":329
+  /* "pyqreg/c/fit_coefs.pyx":338
  *     vv_sub(&c[0], &tmp1_n[0], &r[0], n)
  *     equals_0(&r[0], &tmp1_n[0], n)
  *     blas_axpy(&tmp1_n[0], 0.001, &r[0], n)             # <<<<<<<<<<<<<<
@@ -3605,7 +3606,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_f_6pyqreg_1c_11blas_lapack_blas_axpy((&(__pyx_v_tmp1_n[0])), 0.001, (&(__pyx_v_r[0])), __pyx_v_n);
 
-  /* "pyqreg/c/fit_coefs.pyx":332
+  /* "pyqreg/c/fit_coefs.pyx":341
  * 
  *     # Initialize z
  *     greater_than_0(&r[0], &tmp1_n[0], n)             # <<<<<<<<<<<<<<
@@ -3614,7 +3615,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_greater_than_0((&(__pyx_v_r[0])), (&(__pyx_v_tmp1_n[0])), __pyx_v_n));
 
-  /* "pyqreg/c/fit_coefs.pyx":333
+  /* "pyqreg/c/fit_coefs.pyx":342
  *     # Initialize z
  *     greater_than_0(&r[0], &tmp1_n[0], n)
  *     vv_mul(&r[0], &tmp1_n[0], &z[0], n)             # <<<<<<<<<<<<<<
@@ -3623,7 +3624,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_vv_mul((&(__pyx_v_r[0])), (&(__pyx_v_tmp1_n[0])), (&(__pyx_v_z[0])), __pyx_v_n));
 
-  /* "pyqreg/c/fit_coefs.pyx":336
+  /* "pyqreg/c/fit_coefs.pyx":345
  * 
  *     # Initialize w = z - r
  *     vv_sub(&z[0], &r[0], &w[0], n)             # <<<<<<<<<<<<<<
@@ -3632,7 +3633,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_vv_sub((&(__pyx_v_z[0])), (&(__pyx_v_r[0])), (&(__pyx_v_w[0])), __pyx_v_n));
 
-  /* "pyqreg/c/fit_coefs.pyx":339
+  /* "pyqreg/c/fit_coefs.pyx":348
  * 
  *     # gap = dot(c, x) - dot(y, b) + dot(w, u)
  *     gap = dot_sub_dot_plus_dot(&c[0], &x[0], &y[0], &b[0], &w[0], &u[0], n, p)             # <<<<<<<<<<<<<<
@@ -3641,7 +3642,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   __pyx_v_gap = __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot((&(__pyx_v_c[0])), (&(__pyx_v_x[0])), (&(__pyx_v_y[0])), (&(__pyx_v_b[0])), (&(__pyx_v_w[0])), (&(__pyx_v_u[0])), __pyx_v_n, __pyx_v_p);
 
-  /* "pyqreg/c/fit_coefs.pyx":341
+  /* "pyqreg/c/fit_coefs.pyx":350
  *     gap = dot_sub_dot_plus_dot(&c[0], &x[0], &y[0], &b[0], &w[0], &u[0], n, p)
  * 
  *     for i in range(max_it):             # <<<<<<<<<<<<<<
@@ -3653,7 +3654,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyqreg/c/fit_coefs.pyx":344
+    /* "pyqreg/c/fit_coefs.pyx":353
  * 
  *         # Qinv = 1 / (z / x + w / s)
  *         div_div_plus_div(&z[0], &x[0], &w[0], &s[0], &Qinv[0], n)             # <<<<<<<<<<<<<<
@@ -3662,7 +3663,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_9fit_coefs_div_div_plus_div((&(__pyx_v_z[0])), (&(__pyx_v_x[0])), (&(__pyx_v_w[0])), (&(__pyx_v_s[0])), (&(__pyx_v_Qinv[0])), __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":347
+    /* "pyqreg/c/fit_coefs.pyx":356
  * 
  *         # r = z - w
  *         vv_sub(&z[0], &w[0], &r[0], n)             # <<<<<<<<<<<<<<
@@ -3671,7 +3672,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_vv_sub((&(__pyx_v_z[0])), (&(__pyx_v_w[0])), (&(__pyx_v_r[0])), __pyx_v_n));
 
-    /* "pyqreg/c/fit_coefs.pyx":350
+    /* "pyqreg/c/fit_coefs.pyx":359
  * 
  *         # AQinvT_np = (AQinv)t [n, p]
  *         mv_mul(&X[0], &Qinv[0], &AQinvT_np[0], n, p, 1)             # <<<<<<<<<<<<<<
@@ -3680,7 +3681,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11mat_vec_ops_mv_mul((&(__pyx_v_X[0])), (&(__pyx_v_Qinv[0])), (&(__pyx_v_AQinvT_np[0])), __pyx_v_n, __pyx_v_p, 1);
 
-    /* "pyqreg/c/fit_coefs.pyx":353
+    /* "pyqreg/c/fit_coefs.pyx":362
  * 
  *         # AQinvAt_pp = AQinvAt [p, p]
  *         mm_dot(&AQinvT_np[0], &X[0], &AQinvAt_pp[0],             # <<<<<<<<<<<<<<
@@ -3689,7 +3690,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_mm_dot((&(__pyx_v_AQinvT_np[0])), (&(__pyx_v_X[0])), (&(__pyx_v_AQinvAt_pp[0])), __pyx_v_p, __pyx_v_p, __pyx_v_n, __pyx_v_n, __pyx_v_n, __pyx_v_p, 1.0, 0.0, 1, 0);
 
-    /* "pyqreg/c/fit_coefs.pyx":359
+    /* "pyqreg/c/fit_coefs.pyx":368
  * 
  *         # Cholesky factor AQinvAt
  *         lapack_cholesky_decomp(&AQinvAt_pp[0], p)             # <<<<<<<<<<<<<<
@@ -3698,7 +3699,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_lapack_cholesky_decomp((&(__pyx_v_AQinvAt_pp[0])), __pyx_v_p);
 
-    /* "pyqreg/c/fit_coefs.pyx":362
+    /* "pyqreg/c/fit_coefs.pyx":371
  * 
  *         # dy = (AQinvQt)inv(AQinv)r
  *         mv_dot(&AQinvT_np[0], &r[0], &dy[0], n, p, n, 1)             # <<<<<<<<<<<<<<
@@ -3707,7 +3708,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_mv_dot((&(__pyx_v_AQinvT_np[0])), (&(__pyx_v_r[0])), (&(__pyx_v_dy[0])), __pyx_v_n, __pyx_v_p, __pyx_v_n, 1);
 
-    /* "pyqreg/c/fit_coefs.pyx":363
+    /* "pyqreg/c/fit_coefs.pyx":372
  *         # dy = (AQinvQt)inv(AQinv)r
  *         mv_dot(&AQinvT_np[0], &r[0], &dy[0], n, p, n, 1)
  *         lapack_cholesky_solve(&AQinvAt_pp[0], &dy[0], p)             # <<<<<<<<<<<<<<
@@ -3716,7 +3717,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_lapack_cholesky_solve((&(__pyx_v_AQinvAt_pp[0])), (&(__pyx_v_dy[0])), __pyx_v_p);
 
-    /* "pyqreg/c/fit_coefs.pyx":366
+    /* "pyqreg/c/fit_coefs.pyx":375
  * 
  *         # Atdy
  *         mv_dot(&X[0], &dy[0], &Atdy[0], n, p, n, 0)             # <<<<<<<<<<<<<<
@@ -3725,7 +3726,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_mv_dot((&(__pyx_v_X[0])), (&(__pyx_v_dy[0])), (&(__pyx_v_Atdy[0])), __pyx_v_n, __pyx_v_p, __pyx_v_n, 0);
 
-    /* "pyqreg/c/fit_coefs.pyx":370
+    /* "pyqreg/c/fit_coefs.pyx":379
  *         # Affine steps
  *         # dx = Qinv(Atdy - r)
  *         mul_sub(&Qinv[0], &Atdy[0], &r[0], &dx[0], n)             # <<<<<<<<<<<<<<
@@ -3734,7 +3735,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_9fit_coefs_mul_sub((&(__pyx_v_Qinv[0])), (&(__pyx_v_Atdy[0])), (&(__pyx_v_r[0])), (&(__pyx_v_dx[0])), __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":373
+    /* "pyqreg/c/fit_coefs.pyx":382
  * 
  *         # ds = -dx
  *         vs_mul(&dx[0], -1.0, &ds[0], n)             # <<<<<<<<<<<<<<
@@ -3743,7 +3744,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11mat_vec_ops_vs_mul((&(__pyx_v_dx[0])), -1.0, (&(__pyx_v_ds[0])), __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":377
+    /* "pyqreg/c/fit_coefs.pyx":386
  *         # dz = -z * (1 + Xinvdx)
  *         # dw = -w * (1 + Sinvds)
  *         neg_mul_plus_div(&z[0], &dx[0], &x[0], &dz[0],             # <<<<<<<<<<<<<<
@@ -3752,7 +3753,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_9fit_coefs_neg_mul_plus_div((&(__pyx_v_z[0])), (&(__pyx_v_dx[0])), (&(__pyx_v_x[0])), (&(__pyx_v_dz[0])), (&(__pyx_v_w[0])), (&(__pyx_v_ds[0])), (&(__pyx_v_s[0])), (&(__pyx_v_dw[0])), __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":381
+    /* "pyqreg/c/fit_coefs.pyx":390
  *                          n)
  * 
  *         alpha_p = min_step_length(&x[0], &dx[0], &s[0], &ds[0], n)             # <<<<<<<<<<<<<<
@@ -3761,7 +3762,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_v_alpha_p = __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length((&(__pyx_v_x[0])), (&(__pyx_v_dx[0])), (&(__pyx_v_s[0])), (&(__pyx_v_ds[0])), __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":382
+    /* "pyqreg/c/fit_coefs.pyx":391
  * 
  *         alpha_p = min_step_length(&x[0], &dx[0], &s[0], &ds[0], n)
  *         alpha_p = min(sigma * alpha_p, 1.0)             # <<<<<<<<<<<<<<
@@ -3777,7 +3778,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
     }
     __pyx_v_alpha_p = __pyx_t_15;
 
-    /* "pyqreg/c/fit_coefs.pyx":383
+    /* "pyqreg/c/fit_coefs.pyx":392
  *         alpha_p = min_step_length(&x[0], &dx[0], &s[0], &ds[0], n)
  *         alpha_p = min(sigma * alpha_p, 1.0)
  *         alpha_d = min_step_length(&w[0], &dw[0], &z[0], &dz[0], n)             # <<<<<<<<<<<<<<
@@ -3786,7 +3787,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_v_alpha_d = __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length((&(__pyx_v_w[0])), (&(__pyx_v_dw[0])), (&(__pyx_v_z[0])), (&(__pyx_v_dz[0])), __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":384
+    /* "pyqreg/c/fit_coefs.pyx":393
  *         alpha_p = min(sigma * alpha_p, 1.0)
  *         alpha_d = min_step_length(&w[0], &dw[0], &z[0], &dz[0], n)
  *         alpha_d = min(sigma * alpha_d, 1.0)             # <<<<<<<<<<<<<<
@@ -3802,7 +3803,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
     }
     __pyx_v_alpha_d = __pyx_t_14;
 
-    /* "pyqreg/c/fit_coefs.pyx":386
+    /* "pyqreg/c/fit_coefs.pyx":395
  *         alpha_d = min(sigma * alpha_d, 1.0)
  * 
  *         if min(alpha_p, alpha_d) < 1:             # <<<<<<<<<<<<<<
@@ -3819,7 +3820,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
     __pyx_t_16 = ((__pyx_t_13 < 1.0) != 0);
     if (__pyx_t_16) {
 
-      /* "pyqreg/c/fit_coefs.pyx":390
+      /* "pyqreg/c/fit_coefs.pyx":399
  *             # Current mu
  *             # mu = xz + sw
  *             mu = dot_plus_dot(&z[0], &x[0], &w[0], &s[0], n)             # <<<<<<<<<<<<<<
@@ -3828,7 +3829,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_v_mu = __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_dot((&(__pyx_v_z[0])), (&(__pyx_v_x[0])), (&(__pyx_v_w[0])), (&(__pyx_v_s[0])), __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":394
+      /* "pyqreg/c/fit_coefs.pyx":403
  *             # Potential mu
  *             # mu_1 = (x + alpha_p*dx)(z + alpha_d*dz) + (s + alpha_p*ds)(w + alpha_d*dw)
  *             mu_1 = dot_plus_mul_plus_mul_plus_dot_plus_mul_plus_mul(             # <<<<<<<<<<<<<<
@@ -3837,7 +3838,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_v_mu_1 = __pyx_f_6pyqreg_1c_9fit_coefs_dot_plus_mul_plus_mul_plus_dot_plus_mul_plus_mul((&(__pyx_v_z[0])), (&(__pyx_v_x[0])), (&(__pyx_v_w[0])), (&(__pyx_v_s[0])), (&(__pyx_v_dz[0])), (&(__pyx_v_dx[0])), (&(__pyx_v_dw[0])), (&(__pyx_v_ds[0])), __pyx_v_alpha_p, __pyx_v_alpha_d, __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":400
+      /* "pyqreg/c/fit_coefs.pyx":409
  * 
  *             # Update rule
  *             mu = mu * (mu_1 / mu)**3 / (2 * n)             # <<<<<<<<<<<<<<
@@ -3846,7 +3847,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_v_mu = ((__pyx_v_mu * pow((__pyx_v_mu_1 / __pyx_v_mu), 3.0)) / (2 * __pyx_v_n));
 
-      /* "pyqreg/c/fit_coefs.pyx":403
+      /* "pyqreg/c/fit_coefs.pyx":412
  * 
  *             # dxdz = dx * dz
  *             vv_mul(&dx[0], &dz[0], &dxdz[0], n)             # <<<<<<<<<<<<<<
@@ -3855,7 +3856,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_vv_mul((&(__pyx_v_dx[0])), (&(__pyx_v_dz[0])), (&(__pyx_v_dxdz[0])), __pyx_v_n));
 
-      /* "pyqreg/c/fit_coefs.pyx":406
+      /* "pyqreg/c/fit_coefs.pyx":415
  * 
  *             # dsdw = ds * dw
  *             vv_mul(&ds[0], &dw[0], &dsdw[0], n)             # <<<<<<<<<<<<<<
@@ -3864,7 +3865,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_vv_mul((&(__pyx_v_ds[0])), (&(__pyx_v_dw[0])), (&(__pyx_v_dsdw[0])), __pyx_v_n));
 
-      /* "pyqreg/c/fit_coefs.pyx":409
+      /* "pyqreg/c/fit_coefs.pyx":418
  * 
  *             # xi = mu * (Xinv - Sinv)
  *             mul_div_sub_div(&xi[0], &x[0], &s[0], mu, n)             # <<<<<<<<<<<<<<
@@ -3873,7 +3874,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_f_6pyqreg_1c_9fit_coefs_mul_div_sub_div((&(__pyx_v_xi[0])), (&(__pyx_v_x[0])), (&(__pyx_v_s[0])), __pyx_v_mu, __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":412
+      /* "pyqreg/c/fit_coefs.pyx":421
  * 
  *             # ri = r + dxdz - dsdw - xi
  *             add_sub_sub(&ri[0], &r[0], &dxdz[0], &dsdw[0], &xi[0], n)             # <<<<<<<<<<<<<<
@@ -3882,7 +3883,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_f_6pyqreg_1c_9fit_coefs_add_sub_sub((&(__pyx_v_ri[0])), (&(__pyx_v_r[0])), (&(__pyx_v_dxdz[0])), (&(__pyx_v_dsdw[0])), (&(__pyx_v_xi[0])), __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":415
+      /* "pyqreg/c/fit_coefs.pyx":424
  * 
  *             # dy = (AQinvQt)inv(AQinv)r
  *             mv_dot(&AQinvT_np[0], &ri[0], &dy[0], n, p, n, 1)             # <<<<<<<<<<<<<<
@@ -3891,7 +3892,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_f_6pyqreg_1c_11blas_lapack_mv_dot((&(__pyx_v_AQinvT_np[0])), (&(__pyx_v_ri[0])), (&(__pyx_v_dy[0])), __pyx_v_n, __pyx_v_p, __pyx_v_n, 1);
 
-      /* "pyqreg/c/fit_coefs.pyx":416
+      /* "pyqreg/c/fit_coefs.pyx":425
  *             # dy = (AQinvQt)inv(AQinv)r
  *             mv_dot(&AQinvT_np[0], &ri[0], &dy[0], n, p, n, 1)
  *             lapack_cholesky_solve(&AQinvAt_pp[0], &dy[0], p)             # <<<<<<<<<<<<<<
@@ -3900,7 +3901,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_f_6pyqreg_1c_11blas_lapack_lapack_cholesky_solve((&(__pyx_v_AQinvAt_pp[0])), (&(__pyx_v_dy[0])), __pyx_v_p);
 
-      /* "pyqreg/c/fit_coefs.pyx":419
+      /* "pyqreg/c/fit_coefs.pyx":428
  * 
  *             # Atdy
  *             mv_dot(&X[0], &dy[0], &Atdy[0], n, p, n, 0)             # <<<<<<<<<<<<<<
@@ -3909,7 +3910,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_f_6pyqreg_1c_11blas_lapack_mv_dot((&(__pyx_v_X[0])), (&(__pyx_v_dy[0])), (&(__pyx_v_Atdy[0])), __pyx_v_n, __pyx_v_p, __pyx_v_n, 0);
 
-      /* "pyqreg/c/fit_coefs.pyx":423
+      /* "pyqreg/c/fit_coefs.pyx":432
  *             # Corrector steps
  *             # dx = Qinv(Atdy + xi - r - dxdz + dsdw)
  *             mul_add_sub_sub_add(&dx[0], &Qinv[0], &Atdy[0], &xi[0], &r[0], &dxdz[0], &dsdw[0], n)             # <<<<<<<<<<<<<<
@@ -3918,7 +3919,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_f_6pyqreg_1c_9fit_coefs_mul_add_sub_sub_add((&(__pyx_v_dx[0])), (&(__pyx_v_Qinv[0])), (&(__pyx_v_Atdy[0])), (&(__pyx_v_xi[0])), (&(__pyx_v_r[0])), (&(__pyx_v_dxdz[0])), (&(__pyx_v_dsdw[0])), __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":426
+      /* "pyqreg/c/fit_coefs.pyx":435
  * 
  *             # ds = -dx
  *             vs_mul(&dx[0], -1.0, &ds[0], n)             # <<<<<<<<<<<<<<
@@ -3927,7 +3928,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_f_6pyqreg_1c_11mat_vec_ops_vs_mul((&(__pyx_v_dx[0])), -1.0, (&(__pyx_v_ds[0])), __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":430
+      /* "pyqreg/c/fit_coefs.pyx":439
  *             # dz = mu / x - z - z * dx / x - dxdz
  *             # dw = mu / s - w - w * ds / s - dsdw
  *             div_sub_sub_mul_div_sub(&z[0], &dx[0], &dz[0], &x[0], &dxdz[0],             # <<<<<<<<<<<<<<
@@ -3936,7 +3937,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_f_6pyqreg_1c_9fit_coefs_div_sub_sub_mul_div_sub((&(__pyx_v_z[0])), (&(__pyx_v_dx[0])), (&(__pyx_v_dz[0])), (&(__pyx_v_x[0])), (&(__pyx_v_dxdz[0])), (&(__pyx_v_w[0])), (&(__pyx_v_ds[0])), (&(__pyx_v_dw[0])), (&(__pyx_v_s[0])), (&(__pyx_v_dsdw[0])), __pyx_v_mu, __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":434
+      /* "pyqreg/c/fit_coefs.pyx":443
  *                                     mu, n)
  * 
  *             alpha_p = min_step_length(&x[0], &dx[0], &s[0], &ds[0], n)             # <<<<<<<<<<<<<<
@@ -3945,7 +3946,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_v_alpha_p = __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length((&(__pyx_v_x[0])), (&(__pyx_v_dx[0])), (&(__pyx_v_s[0])), (&(__pyx_v_ds[0])), __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":435
+      /* "pyqreg/c/fit_coefs.pyx":444
  * 
  *             alpha_p = min_step_length(&x[0], &dx[0], &s[0], &ds[0], n)
  *             alpha_p = min(sigma * alpha_p, 1.0)             # <<<<<<<<<<<<<<
@@ -3961,7 +3962,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
       }
       __pyx_v_alpha_p = __pyx_t_15;
 
-      /* "pyqreg/c/fit_coefs.pyx":436
+      /* "pyqreg/c/fit_coefs.pyx":445
  *             alpha_p = min_step_length(&x[0], &dx[0], &s[0], &ds[0], n)
  *             alpha_p = min(sigma * alpha_p, 1.0)
  *             alpha_d = min_step_length(&w[0], &dw[0], &z[0], &dz[0], n)             # <<<<<<<<<<<<<<
@@ -3970,7 +3971,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       __pyx_v_alpha_d = __pyx_f_6pyqreg_1c_9fit_coefs_min_step_length((&(__pyx_v_w[0])), (&(__pyx_v_dw[0])), (&(__pyx_v_z[0])), (&(__pyx_v_dz[0])), __pyx_v_n);
 
-      /* "pyqreg/c/fit_coefs.pyx":437
+      /* "pyqreg/c/fit_coefs.pyx":446
  *             alpha_p = min(sigma * alpha_p, 1.0)
  *             alpha_d = min_step_length(&w[0], &dw[0], &z[0], &dz[0], n)
  *             alpha_d = min(sigma * alpha_d, 1.0)             # <<<<<<<<<<<<<<
@@ -3986,7 +3987,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
       }
       __pyx_v_alpha_d = __pyx_t_14;
 
-      /* "pyqreg/c/fit_coefs.pyx":386
+      /* "pyqreg/c/fit_coefs.pyx":395
  *         alpha_d = min(sigma * alpha_d, 1.0)
  * 
  *         if min(alpha_p, alpha_d) < 1:             # <<<<<<<<<<<<<<
@@ -3995,7 +3996,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     }
 
-    /* "pyqreg/c/fit_coefs.pyx":439
+    /* "pyqreg/c/fit_coefs.pyx":448
  *             alpha_d = min(sigma * alpha_d, 1.0)
  * 
  *         blas_axpy(dx, alpha_p, x, n)             # <<<<<<<<<<<<<<
@@ -4004,7 +4005,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_blas_axpy(__pyx_v_dx, __pyx_v_alpha_p, __pyx_v_x, __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":440
+    /* "pyqreg/c/fit_coefs.pyx":449
  * 
  *         blas_axpy(dx, alpha_p, x, n)
  *         blas_axpy(ds, alpha_p, s, n)             # <<<<<<<<<<<<<<
@@ -4013,7 +4014,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_blas_axpy(__pyx_v_ds, __pyx_v_alpha_p, __pyx_v_s, __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":441
+    /* "pyqreg/c/fit_coefs.pyx":450
  *         blas_axpy(dx, alpha_p, x, n)
  *         blas_axpy(ds, alpha_p, s, n)
  *         blas_axpy(dy, alpha_d, y, p)             # <<<<<<<<<<<<<<
@@ -4022,7 +4023,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_blas_axpy(__pyx_v_dy, __pyx_v_alpha_d, __pyx_v_y, __pyx_v_p);
 
-    /* "pyqreg/c/fit_coefs.pyx":442
+    /* "pyqreg/c/fit_coefs.pyx":451
  *         blas_axpy(ds, alpha_p, s, n)
  *         blas_axpy(dy, alpha_d, y, p)
  *         blas_axpy(dw, alpha_d, w, n)             # <<<<<<<<<<<<<<
@@ -4031,7 +4032,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_blas_axpy(__pyx_v_dw, __pyx_v_alpha_d, __pyx_v_w, __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":443
+    /* "pyqreg/c/fit_coefs.pyx":452
  *         blas_axpy(dy, alpha_d, y, p)
  *         blas_axpy(dw, alpha_d, w, n)
  *         blas_axpy(dz, alpha_d, z, n)             # <<<<<<<<<<<<<<
@@ -4040,7 +4041,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_f_6pyqreg_1c_11blas_lapack_blas_axpy(__pyx_v_dz, __pyx_v_alpha_d, __pyx_v_z, __pyx_v_n);
 
-    /* "pyqreg/c/fit_coefs.pyx":446
+    /* "pyqreg/c/fit_coefs.pyx":455
  * 
  *         # gap = dot(c, x) - dot(y, b) + dot(w, u)
  *         gap = dot_sub_dot_plus_dot(&c[0], &x[0], &y[0], &b[0], &w[0], &u[0], n, p)             # <<<<<<<<<<<<<<
@@ -4049,7 +4050,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
     __pyx_v_gap = __pyx_f_6pyqreg_1c_9fit_coefs_dot_sub_dot_plus_dot((&(__pyx_v_c[0])), (&(__pyx_v_x[0])), (&(__pyx_v_y[0])), (&(__pyx_v_b[0])), (&(__pyx_v_w[0])), (&(__pyx_v_u[0])), __pyx_v_n, __pyx_v_p);
 
-    /* "pyqreg/c/fit_coefs.pyx":448
+    /* "pyqreg/c/fit_coefs.pyx":457
  *         gap = dot_sub_dot_plus_dot(&c[0], &x[0], &y[0], &b[0], &w[0], &u[0], n, p)
  * 
  *         if gap < eps:             # <<<<<<<<<<<<<<
@@ -4059,7 +4060,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
     __pyx_t_16 = ((__pyx_v_gap < __pyx_v_eps) != 0);
     if (__pyx_t_16) {
 
-      /* "pyqreg/c/fit_coefs.pyx":449
+      /* "pyqreg/c/fit_coefs.pyx":458
  * 
  *         if gap < eps:
  *             break             # <<<<<<<<<<<<<<
@@ -4068,7 +4069,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
       goto __pyx_L6_break;
 
-      /* "pyqreg/c/fit_coefs.pyx":448
+      /* "pyqreg/c/fit_coefs.pyx":457
  *         gap = dot_sub_dot_plus_dot(&c[0], &x[0], &y[0], &b[0], &w[0], &u[0], n, p)
  * 
  *         if gap < eps:             # <<<<<<<<<<<<<<
@@ -4079,7 +4080,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   }
   __pyx_L6_break:;
 
-  /* "pyqreg/c/fit_coefs.pyx":452
+  /* "pyqreg/c/fit_coefs.pyx":461
  * 
  *     # Regression coefficients
  *     negative_assign(&y[0], &coefs[0], p)             # <<<<<<<<<<<<<<
@@ -4088,7 +4089,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   (void)(__pyx_f_6pyqreg_1c_11mat_vec_ops_negative_assign((&(__pyx_v_y[0])), (&(__pyx_v_coefs[0])), __pyx_v_p));
 
-  /* "pyqreg/c/fit_coefs.pyx":455
+  /* "pyqreg/c/fit_coefs.pyx":464
  * 
  *     # Free memory
  *     free(u)             # <<<<<<<<<<<<<<
@@ -4097,7 +4098,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_u);
 
-  /* "pyqreg/c/fit_coefs.pyx":456
+  /* "pyqreg/c/fit_coefs.pyx":465
  *     # Free memory
  *     free(u)
  *     free(c)             # <<<<<<<<<<<<<<
@@ -4106,7 +4107,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_c);
 
-  /* "pyqreg/c/fit_coefs.pyx":457
+  /* "pyqreg/c/fit_coefs.pyx":466
  *     free(u)
  *     free(c)
  *     free(b)             # <<<<<<<<<<<<<<
@@ -4115,7 +4116,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_b);
 
-  /* "pyqreg/c/fit_coefs.pyx":458
+  /* "pyqreg/c/fit_coefs.pyx":467
  *     free(c)
  *     free(b)
  *     free(x)             # <<<<<<<<<<<<<<
@@ -4124,7 +4125,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_x);
 
-  /* "pyqreg/c/fit_coefs.pyx":459
+  /* "pyqreg/c/fit_coefs.pyx":468
  *     free(b)
  *     free(x)
  *     free(s)             # <<<<<<<<<<<<<<
@@ -4133,7 +4134,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_s);
 
-  /* "pyqreg/c/fit_coefs.pyx":460
+  /* "pyqreg/c/fit_coefs.pyx":469
  *     free(x)
  *     free(s)
  *     free(w)             # <<<<<<<<<<<<<<
@@ -4142,7 +4143,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_w);
 
-  /* "pyqreg/c/fit_coefs.pyx":461
+  /* "pyqreg/c/fit_coefs.pyx":470
  *     free(s)
  *     free(w)
  *     free(y)             # <<<<<<<<<<<<<<
@@ -4151,7 +4152,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_y);
 
-  /* "pyqreg/c/fit_coefs.pyx":462
+  /* "pyqreg/c/fit_coefs.pyx":471
  *     free(w)
  *     free(y)
  *     free(z)             # <<<<<<<<<<<<<<
@@ -4160,7 +4161,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_z);
 
-  /* "pyqreg/c/fit_coefs.pyx":463
+  /* "pyqreg/c/fit_coefs.pyx":472
  *     free(y)
  *     free(z)
  *     free(Qinv)             # <<<<<<<<<<<<<<
@@ -4169,7 +4170,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_Qinv);
 
-  /* "pyqreg/c/fit_coefs.pyx":464
+  /* "pyqreg/c/fit_coefs.pyx":473
  *     free(z)
  *     free(Qinv)
  *     free(r)             # <<<<<<<<<<<<<<
@@ -4178,7 +4179,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_r);
 
-  /* "pyqreg/c/fit_coefs.pyx":465
+  /* "pyqreg/c/fit_coefs.pyx":474
  *     free(Qinv)
  *     free(r)
  *     free(Atdy)             # <<<<<<<<<<<<<<
@@ -4187,7 +4188,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_Atdy);
 
-  /* "pyqreg/c/fit_coefs.pyx":466
+  /* "pyqreg/c/fit_coefs.pyx":475
  *     free(r)
  *     free(Atdy)
  *     free(dy)             # <<<<<<<<<<<<<<
@@ -4196,7 +4197,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_dy);
 
-  /* "pyqreg/c/fit_coefs.pyx":467
+  /* "pyqreg/c/fit_coefs.pyx":476
  *     free(Atdy)
  *     free(dy)
  *     free(dx)             # <<<<<<<<<<<<<<
@@ -4205,7 +4206,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_dx);
 
-  /* "pyqreg/c/fit_coefs.pyx":468
+  /* "pyqreg/c/fit_coefs.pyx":477
  *     free(dy)
  *     free(dx)
  *     free(ds)             # <<<<<<<<<<<<<<
@@ -4214,7 +4215,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_ds);
 
-  /* "pyqreg/c/fit_coefs.pyx":469
+  /* "pyqreg/c/fit_coefs.pyx":478
  *     free(dx)
  *     free(ds)
  *     free(dz)             # <<<<<<<<<<<<<<
@@ -4223,7 +4224,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_dz);
 
-  /* "pyqreg/c/fit_coefs.pyx":470
+  /* "pyqreg/c/fit_coefs.pyx":479
  *     free(ds)
  *     free(dz)
  *     free(dw)             # <<<<<<<<<<<<<<
@@ -4232,7 +4233,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_dw);
 
-  /* "pyqreg/c/fit_coefs.pyx":471
+  /* "pyqreg/c/fit_coefs.pyx":480
  *     free(dz)
  *     free(dw)
  *     free(dxdz)             # <<<<<<<<<<<<<<
@@ -4241,7 +4242,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_dxdz);
 
-  /* "pyqreg/c/fit_coefs.pyx":472
+  /* "pyqreg/c/fit_coefs.pyx":481
  *     free(dw)
  *     free(dxdz)
  *     free(dsdw)             # <<<<<<<<<<<<<<
@@ -4250,7 +4251,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_dsdw);
 
-  /* "pyqreg/c/fit_coefs.pyx":473
+  /* "pyqreg/c/fit_coefs.pyx":482
  *     free(dxdz)
  *     free(dsdw)
  *     free(xi)             # <<<<<<<<<<<<<<
@@ -4259,7 +4260,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_xi);
 
-  /* "pyqreg/c/fit_coefs.pyx":474
+  /* "pyqreg/c/fit_coefs.pyx":483
  *     free(dsdw)
  *     free(xi)
  *     free(ri)             # <<<<<<<<<<<<<<
@@ -4268,7 +4269,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_ri);
 
-  /* "pyqreg/c/fit_coefs.pyx":475
+  /* "pyqreg/c/fit_coefs.pyx":484
  *     free(xi)
  *     free(ri)
  *     free(d)             # <<<<<<<<<<<<<<
@@ -4277,7 +4278,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_d);
 
-  /* "pyqreg/c/fit_coefs.pyx":476
+  /* "pyqreg/c/fit_coefs.pyx":485
  *     free(ri)
  *     free(d)
  *     free(mus)             # <<<<<<<<<<<<<<
@@ -4286,7 +4287,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_mus);
 
-  /* "pyqreg/c/fit_coefs.pyx":477
+  /* "pyqreg/c/fit_coefs.pyx":486
  *     free(d)
  *     free(mus)
  *     free(tmp1_p)             # <<<<<<<<<<<<<<
@@ -4295,7 +4296,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_tmp1_p);
 
-  /* "pyqreg/c/fit_coefs.pyx":478
+  /* "pyqreg/c/fit_coefs.pyx":487
  *     free(mus)
  *     free(tmp1_p)
  *     free(tmp1_n)             # <<<<<<<<<<<<<<
@@ -4304,18 +4305,17 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
  */
   free(__pyx_v_tmp1_n);
 
-  /* "pyqreg/c/fit_coefs.pyx":480
+  /* "pyqreg/c/fit_coefs.pyx":489
  *     free(tmp1_n)
  * 
  *     return _coefs             # <<<<<<<<<<<<<<
- * 
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(((PyObject *)__pyx_v__coefs));
   __pyx_r = ((PyObject *)__pyx_v__coefs);
   goto __pyx_L0;
 
-  /* "pyqreg/c/fit_coefs.pyx":225
+  /* "pyqreg/c/fit_coefs.pyx":234
  * @wraparound(False)
  * @cdivision(True)
  * def fit_coefs(np.ndarray[DOUBLE_t, ndim=2] X_input,             # <<<<<<<<<<<<<<
@@ -4363,7 +4363,7 @@ static PyObject *__pyx_pf_6pyqreg_1c_9fit_coefs_fit_coefs(CYTHON_UNUSED PyObject
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":735
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":735
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -4380,7 +4380,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":736
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":736
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -4394,7 +4394,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":735
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":735
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -4413,7 +4413,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":738
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":738
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -4430,7 +4430,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":739
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":739
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -4444,7 +4444,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":738
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":738
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -4463,7 +4463,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":741
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":741
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -4480,7 +4480,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":742
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":742
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -4494,7 +4494,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":741
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":741
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -4513,7 +4513,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":744
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":744
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -4530,7 +4530,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":745
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":745
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -4544,7 +4544,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":744
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":744
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -4563,7 +4563,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":747
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":747
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -4580,7 +4580,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":748
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":748
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -4594,7 +4594,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":747
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":747
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -4613,7 +4613,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":750
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":750
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -4627,7 +4627,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":751
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":751
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -4637,7 +4637,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":752
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":752
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -4649,7 +4649,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":751
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":751
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -4658,7 +4658,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":754
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":754
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -4672,7 +4672,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":750
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":750
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -4687,7 +4687,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":929
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":929
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -4699,7 +4699,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":930
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":930
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -4708,7 +4708,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":931
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":931
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -4717,7 +4717,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":929
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":929
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -4729,7 +4729,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":933
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":933
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -4744,7 +4744,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":934
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":934
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -4753,7 +4753,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":935
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":935
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -4763,7 +4763,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":936
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":936
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -4774,7 +4774,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":935
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":935
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -4783,7 +4783,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":937
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":937
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -4795,7 +4795,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":933
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":933
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -4810,7 +4810,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":941
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":941
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -4834,7 +4834,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":942
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4850,7 +4850,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":943
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":943
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -4859,7 +4859,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 943, __pyx_L3_error)
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":942
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4873,7 +4873,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":944
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":944
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -4888,7 +4888,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":945
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":945
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -4904,7 +4904,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":942
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4919,7 +4919,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":941
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":941
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -4942,7 +4942,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":947
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":947
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -4966,7 +4966,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":948
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4982,7 +4982,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":949
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":949
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -4991,7 +4991,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 949, __pyx_L3_error)
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":948
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -5005,7 +5005,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":950
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":950
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -5020,7 +5020,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":951
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":951
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -5036,7 +5036,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":948
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -5051,7 +5051,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":947
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":947
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -5074,7 +5074,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":953
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":953
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -5098,7 +5098,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":954
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -5114,7 +5114,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":955
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":955
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -5123,7 +5123,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 955, __pyx_L3_error)
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":954
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -5137,7 +5137,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":956
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":956
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -5152,7 +5152,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":957
+      /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":957
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -5168,7 +5168,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":954
+    /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -5183,7 +5183,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":953
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":953
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -5206,7 +5206,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":967
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":967
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -5219,7 +5219,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_timedelta64_object", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":979
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":979
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyTimedeltaArrType_Type)             # <<<<<<<<<<<<<<
@@ -5229,7 +5229,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyTimedeltaArrType_Type));
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":967
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":967
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -5243,7 +5243,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":982
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":982
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -5256,7 +5256,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_datetime64_object", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":994
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":994
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyDatetimeArrType_Type)             # <<<<<<<<<<<<<<
@@ -5266,7 +5266,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyDatetimeArrType_Type));
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":982
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":982
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -5280,7 +5280,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":997
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":997
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5291,7 +5291,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
 static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *__pyx_v_obj) {
   npy_datetime __pyx_r;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":1004
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":1004
  *     also needed.  That can be found using `get_datetime64_unit`.
  *     """
  *     return (<PyDatetimeScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -5301,7 +5301,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   __pyx_r = ((PyDatetimeScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":997
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":997
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5314,7 +5314,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":1007
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":1007
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5325,7 +5325,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
 static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject *__pyx_v_obj) {
   npy_timedelta __pyx_r;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":1011
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":1011
  *     returns the int64 value underlying scalar numpy timedelta64 object
  *     """
  *     return (<PyTimedeltaScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -5335,7 +5335,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   __pyx_r = ((PyTimedeltaScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":1007
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":1007
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5348,7 +5348,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   return __pyx_r;
 }
 
-/* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":1014
+/* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":1014
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5359,7 +5359,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
 static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObject *__pyx_v_obj) {
   NPY_DATETIMEUNIT __pyx_r;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":1018
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":1018
  *     returns the unit part of the dtype for a numpy datetime64 object.
  *     """
  *     return <NPY_DATETIMEUNIT>(<PyDatetimeScalarObject*>obj).obmeta.base             # <<<<<<<<<<<<<<
@@ -5367,7 +5367,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   __pyx_r = ((NPY_DATETIMEUNIT)((PyDatetimeScalarObject *)__pyx_v_obj)->obmeta.base);
   goto __pyx_L0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":1014
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":1014
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5398,7 +5398,7 @@ static PyModuleDef_Slot __pyx_moduledef_slots[] = {
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
     "fit_coefs",
-    0, /* m_doc */
+    __pyx_k_A_Frisch_Newton_algorithm_as_de, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
   #else
@@ -5500,7 +5500,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 48, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(1, 945, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
@@ -5511,7 +5511,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":945
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":945
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -5522,7 +5522,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":951
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":951
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -5533,17 +5533,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "pyqreg/c/fit_coefs.pyx":225
+  /* "pyqreg/c/fit_coefs.pyx":234
  * @wraparound(False)
  * @cdivision(True)
  * def fit_coefs(np.ndarray[DOUBLE_t, ndim=2] X_input,             # <<<<<<<<<<<<<<
  *               np.ndarray[DOUBLE_t, ndim=1] y_input,
  *               DOUBLE_t tau,
  */
-  __pyx_tuple__3 = PyTuple_Pack(51, __pyx_n_s_X_input, __pyx_n_s_y_input, __pyx_n_s_tau, __pyx_n_s_eps, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_n, __pyx_n_s_p, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_max_it, __pyx_n_s_sigma, __pyx_n_s_u, __pyx_n_s_c, __pyx_n_s_b, __pyx_n_s_x, __pyx_n_s_s, __pyx_n_s_w, __pyx_n_s_y, __pyx_n_s_z, __pyx_n_s_Qinv, __pyx_n_s_r, __pyx_n_s_AQinvT_np, __pyx_n_s_AQinvT_np_2, __pyx_n_s_AQinvAt_pp, __pyx_n_s_AQinvAt_pp_2, __pyx_n_s_Atdy, __pyx_n_s_dy, __pyx_n_s_dx, __pyx_n_s_ds, __pyx_n_s_dz, __pyx_n_s_dw, __pyx_n_s_dxdz, __pyx_n_s_dsdw, __pyx_n_s_xi, __pyx_n_s_ri, __pyx_n_s_d, __pyx_n_s_alpha_d, __pyx_n_s_alpha_p, __pyx_n_s_gap, __pyx_n_s_mu, __pyx_n_s_mu_1, __pyx_n_s_mus, __pyx_n_s_coefs, __pyx_n_s_coefs_2, __pyx_n_s_TMP1_pp, __pyx_n_s_TMP1_pp_2, __pyx_n_s_TMP1_np, __pyx_n_s_TMP1_np_2, __pyx_n_s_tmp1_p, __pyx_n_s_tmp1_n); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(51, __pyx_n_s_X_input, __pyx_n_s_y_input, __pyx_n_s_tau, __pyx_n_s_eps, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_n, __pyx_n_s_p, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_max_it, __pyx_n_s_sigma, __pyx_n_s_u, __pyx_n_s_c, __pyx_n_s_b, __pyx_n_s_x, __pyx_n_s_s, __pyx_n_s_w, __pyx_n_s_y, __pyx_n_s_z, __pyx_n_s_Qinv, __pyx_n_s_r, __pyx_n_s_AQinvT_np, __pyx_n_s_AQinvT_np_2, __pyx_n_s_AQinvAt_pp, __pyx_n_s_AQinvAt_pp_2, __pyx_n_s_Atdy, __pyx_n_s_dy, __pyx_n_s_dx, __pyx_n_s_ds, __pyx_n_s_dz, __pyx_n_s_dw, __pyx_n_s_dxdz, __pyx_n_s_dsdw, __pyx_n_s_xi, __pyx_n_s_ri, __pyx_n_s_d, __pyx_n_s_alpha_d, __pyx_n_s_alpha_p, __pyx_n_s_gap, __pyx_n_s_mu, __pyx_n_s_mu_1, __pyx_n_s_mus, __pyx_n_s_coefs, __pyx_n_s_coefs_2, __pyx_n_s_TMP1_pp, __pyx_n_s_TMP1_pp_2, __pyx_n_s_TMP1_np, __pyx_n_s_TMP1_np_2, __pyx_n_s_tmp1_p, __pyx_n_s_tmp1_n); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 234, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(4, 0, 51, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pyqreg_c_fit_coefs_pyx, __pyx_n_s_fit_coefs, 225, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(4, 0, 51, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pyqreg_c_fit_coefs_pyx, __pyx_n_s_fit_coefs, 234, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 234, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5873,7 +5873,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("fit_coefs", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("fit_coefs", __pyx_methods, __pyx_k_A_Frisch_Newton_algorithm_as_de, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -5919,65 +5919,65 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyqreg/c/fit_coefs.pyx":4
+  /* "pyqreg/c/fit_coefs.pyx":13
  * from libc.stdlib cimport malloc, free
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * np.import_array()
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyqreg/c/fit_coefs.pyx":6
+  /* "pyqreg/c/fit_coefs.pyx":15
  * import numpy as np
  * cimport numpy as np
  * np.import_array()             # <<<<<<<<<<<<<<
  * 
  * from .blas_lapack cimport lapack_cholesky_decomp
  */
-  __pyx_t_2 = __pyx_f_5numpy_import_array(); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_5numpy_import_array(); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 15, __pyx_L1_error)
 
-  /* "pyqreg/c/fit_coefs.pyx":22
+  /* "pyqreg/c/fit_coefs.pyx":31
  * 
  * 
  * DTYPE = np.float64             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_float64); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_float64); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DTYPE, __pyx_t_3) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DTYPE, __pyx_t_3) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "pyqreg/c/fit_coefs.pyx":225
+  /* "pyqreg/c/fit_coefs.pyx":234
  * @wraparound(False)
  * @cdivision(True)
  * def fit_coefs(np.ndarray[DOUBLE_t, ndim=2] X_input,             # <<<<<<<<<<<<<<
  *               np.ndarray[DOUBLE_t, ndim=1] y_input,
  *               DOUBLE_t tau,
  */
-  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_6pyqreg_1c_9fit_coefs_1fit_coefs, NULL, __pyx_n_s_pyqreg_c_fit_coefs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __pyx_t_3 = PyCFunction_NewEx(&__pyx_mdef_6pyqreg_1c_9fit_coefs_1fit_coefs, NULL, __pyx_n_s_pyqreg_c_fit_coefs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 234, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_fit_coefs, __pyx_t_3) < 0) __PYX_ERR(0, 225, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_fit_coefs, __pyx_t_3) < 0) __PYX_ERR(0, 234, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "pyqreg/c/fit_coefs.pyx":1
- * from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil             # <<<<<<<<<<<<<<
- * from libc.stdlib cimport malloc, free
- * 
+ * """             # <<<<<<<<<<<<<<
+ * A Frisch-Newton algorithm as described in http://projecteuclid.org/euclid.ss/1030037960
+ * qreg_ip_coef is a modified lp_fnm of Daniel Morillo & Roger Koenker
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_3) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "../venv3/lib/python3.9/site-packages/numpy/__init__.pxd":1014
+  /* "venv3/lib/python3.7/site-packages/numpy/__init__.pxd":1014
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
