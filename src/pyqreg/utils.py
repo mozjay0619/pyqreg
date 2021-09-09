@@ -4,14 +4,17 @@ import numpy as np
 def rng_generator(seed=None, n=1):
     """Numpy random Generator generator.
     
-    Refer: https://numpy.org/doc/stable/reference/random/generator.html#numpy.random.Generator
-    
     Parameters
     ----------
     seed : int or None
-    
+        Random seed.
+
     n : int
-        The number of Generators to return
+        The number of Generators to return.
+
+    Reference
+    ---------
+    https://numpy.org/doc/stable/reference/random/generator.html#numpy.random.Generator
     """
     if n > 1:
 
