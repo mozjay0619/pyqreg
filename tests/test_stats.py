@@ -1,5 +1,7 @@
 import pytest
 
+from scipy.stats import norm
+
 from src.pyqreg.c.stats import invnormal
 from src.pyqreg.c.stats import normalden
 
@@ -16,4 +18,3 @@ def test_normalden():
 	assert np.isclose(norm.pdf(0.95), normalden(0.95))
 	assert np.isclose(norm.pdf(0.1), normalden(0.1))
 	assert np.isclose(norm.pdf(0.999), normalden(0.999))
-	
