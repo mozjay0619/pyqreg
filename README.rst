@@ -19,7 +19,7 @@ Pyqreg implements the quantile regression algorithm with fast estimation method 
 Reference
 ---------
 * Stephen Portnoy. Roger Koenker. "The Gaussian hare and the Laplacian tortoise: computability of squared-error versus absolute-error estimators." Statist. Sci. 12 (4) 279 - 300, November 1997. https://doi.org/10.1214/ss/1030037960
-* https://people.eecs.berkeley.edu/~jordan/sail/readings/portnoy-koenker.pdf
+* Parente, Paulo and Santos Silva, João, (2013), Quantile regression with clustered data, No 1305, Discussion Papers, University of Exeter, Department of Economics.
 * http://people.exeter.ac.uk/RePEc/dpapers/DP1305.pdf
 
 Install
