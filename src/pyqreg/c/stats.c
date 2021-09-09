@@ -1853,8 +1853,8 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
   /* "pyqreg/c/stats.pyx":66
  *     cdef double q, r, u, e
  * 
- *     if ((0 < p) & (p < P_LOW)):             # <<<<<<<<<<<<<<
- *         q = sqrt(-2*log(p))
+ *     if ((0.0 < p) & (p < P_LOW)):             # <<<<<<<<<<<<<<
+ *         q = sqrt(-2.0*log(p))
  *         x = (((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)
  */
   __pyx_t_1 = (((0.0 < __pyx_v_p) & (__pyx_v_p < __pyx_v_P_LOW)) != 0);
@@ -1862,16 +1862,16 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
 
     /* "pyqreg/c/stats.pyx":67
  * 
- *     if ((0 < p) & (p < P_LOW)):
- *         q = sqrt(-2*log(p))             # <<<<<<<<<<<<<<
+ *     if ((0.0 < p) & (p < P_LOW)):
+ *         q = sqrt(-2.0*log(p))             # <<<<<<<<<<<<<<
  *         x = (((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)
  * 
  */
     __pyx_v_q = sqrt((-2.0 * log(__pyx_v_p)));
 
     /* "pyqreg/c/stats.pyx":68
- *     if ((0 < p) & (p < P_LOW)):
- *         q = sqrt(-2*log(p))
+ *     if ((0.0 < p) & (p < P_LOW)):
+ *         q = sqrt(-2.0*log(p))
  *         x = (((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)             # <<<<<<<<<<<<<<
  * 
  *     else:
@@ -1881,8 +1881,8 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
     /* "pyqreg/c/stats.pyx":66
  *     cdef double q, r, u, e
  * 
- *     if ((0 < p) & (p < P_LOW)):             # <<<<<<<<<<<<<<
- *         q = sqrt(-2*log(p))
+ *     if ((0.0 < p) & (p < P_LOW)):             # <<<<<<<<<<<<<<
+ *         q = sqrt(-2.0*log(p))
  *         x = (((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)
  */
     goto __pyx_L3;
@@ -1904,7 +1904,7 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
  *         if ((P_LOW <= p) & (p <= P_HIGH)):
  *             q = p - 0.5             # <<<<<<<<<<<<<<
  *             r = q*q
- *             x = (((((A1*r+A2)*r+A3)*r+A4)*r+A5)*r+A6)*q /(((((B1*r+B2)*r+B3)*r+B4)*r+B5)*r+1)
+ *             x = (((((A1*r+A2)*r+A3)*r+A4)*r+A5)*r+A6)*q /(((((B1*r+B2)*r+B3)*r+B4)*r+B5)*r+1.0)
  */
       __pyx_v_q = (__pyx_v_p - 0.5);
 
@@ -1912,7 +1912,7 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
  *         if ((P_LOW <= p) & (p <= P_HIGH)):
  *             q = p - 0.5
  *             r = q*q             # <<<<<<<<<<<<<<
- *             x = (((((A1*r+A2)*r+A3)*r+A4)*r+A5)*r+A6)*q /(((((B1*r+B2)*r+B3)*r+B4)*r+B5)*r+1)
+ *             x = (((((A1*r+A2)*r+A3)*r+A4)*r+A5)*r+A6)*q /(((((B1*r+B2)*r+B3)*r+B4)*r+B5)*r+1.0)
  * 
  */
       __pyx_v_r = (__pyx_v_q * __pyx_v_q);
@@ -1920,7 +1920,7 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
       /* "pyqreg/c/stats.pyx":75
  *             q = p - 0.5
  *             r = q*q
- *             x = (((((A1*r+A2)*r+A3)*r+A4)*r+A5)*r+A6)*q /(((((B1*r+B2)*r+B3)*r+B4)*r+B5)*r+1)             # <<<<<<<<<<<<<<
+ *             x = (((((A1*r+A2)*r+A3)*r+A4)*r+A5)*r+A6)*q /(((((B1*r+B2)*r+B3)*r+B4)*r+B5)*r+1.0)             # <<<<<<<<<<<<<<
  * 
  *         else:
  */
@@ -1939,9 +1939,9 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
     /* "pyqreg/c/stats.pyx":79
  *         else:
  * 
- *             if ((P_HIGH < p) & (p < 1)):             # <<<<<<<<<<<<<<
- *                 q = sqrt(-2*log(1-p))
- *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)
+ *             if ((P_HIGH < p) & (p < 1.0)):             # <<<<<<<<<<<<<<
+ *                 q = sqrt(-2.0*log(1.0-p))
+ *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1.0)
  */
     /*else*/ {
       __pyx_t_1 = (((__pyx_v_P_HIGH < __pyx_v_p) & (__pyx_v_p < 1.0)) != 0);
@@ -1949,17 +1949,17 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
 
         /* "pyqreg/c/stats.pyx":80
  * 
- *             if ((P_HIGH < p) & (p < 1)):
- *                 q = sqrt(-2*log(1-p))             # <<<<<<<<<<<<<<
- *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)
+ *             if ((P_HIGH < p) & (p < 1.0)):
+ *                 q = sqrt(-2.0*log(1.0-p))             # <<<<<<<<<<<<<<
+ *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1.0)
  * 
  */
         __pyx_v_q = sqrt((-2.0 * log((1.0 - __pyx_v_p))));
 
         /* "pyqreg/c/stats.pyx":81
- *             if ((P_HIGH < p) & (p < 1)):
- *                 q = sqrt(-2*log(1-p))
- *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)             # <<<<<<<<<<<<<<
+ *             if ((P_HIGH < p) & (p < 1.0)):
+ *                 q = sqrt(-2.0*log(1.0-p))
+ *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1.0)             # <<<<<<<<<<<<<<
  * 
  *     if((0 < p) & (p < 1)):
  */
@@ -1968,9 +1968,9 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
         /* "pyqreg/c/stats.pyx":79
  *         else:
  * 
- *             if ((P_HIGH < p) & (p < 1)):             # <<<<<<<<<<<<<<
- *                 q = sqrt(-2*log(1-p))
- *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)
+ *             if ((P_HIGH < p) & (p < 1.0)):             # <<<<<<<<<<<<<<
+ *                 q = sqrt(-2.0*log(1.0-p))
+ *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1.0)
  */
       }
     }
@@ -1979,11 +1979,11 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
   __pyx_L3:;
 
   /* "pyqreg/c/stats.pyx":83
- *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)
+ *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1.0)
  * 
  *     if((0 < p) & (p < 1)):             # <<<<<<<<<<<<<<
  * 
- *         e = 0.5 * erfc(-x/sqrt(2)) - p
+ *         e = 0.5 * erfc(-x/sqrt(2.0)) - p
  */
   __pyx_t_1 = (((0.0 < __pyx_v_p) & (__pyx_v_p < 1.0)) != 0);
   if (__pyx_t_1) {
@@ -1991,41 +1991,41 @@ static double __pyx_f_6pyqreg_1c_5stats__invnormal(double __pyx_v_p) {
     /* "pyqreg/c/stats.pyx":85
  *     if((0 < p) & (p < 1)):
  * 
- *         e = 0.5 * erfc(-x/sqrt(2)) - p             # <<<<<<<<<<<<<<
- *         u = e * sqrt(2*pi) * exp(x*x/2)
- *         x = x - u/(1 + x*u/2)
+ *         e = 0.5 * erfc(-x/sqrt(2.0)) - p             # <<<<<<<<<<<<<<
+ *         u = e * sqrt(2.0*pi) * exp(x*x/2.0)
+ *         x = x - u/(1.0 + x*u/2.0)
  */
     __pyx_v_e = ((0.5 * erfc(((-__pyx_v_x) / sqrt(2.0)))) - __pyx_v_p);
 
     /* "pyqreg/c/stats.pyx":86
  * 
- *         e = 0.5 * erfc(-x/sqrt(2)) - p
- *         u = e * sqrt(2*pi) * exp(x*x/2)             # <<<<<<<<<<<<<<
- *         x = x - u/(1 + x*u/2)
+ *         e = 0.5 * erfc(-x/sqrt(2.0)) - p
+ *         u = e * sqrt(2.0*pi) * exp(x*x/2.0)             # <<<<<<<<<<<<<<
+ *         x = x - u/(1.0 + x*u/2.0)
  * 
  */
     __pyx_v_u = ((__pyx_v_e * sqrt((2.0 * M_PI))) * exp(((__pyx_v_x * __pyx_v_x) / 2.0)));
 
     /* "pyqreg/c/stats.pyx":87
- *         e = 0.5 * erfc(-x/sqrt(2)) - p
- *         u = e * sqrt(2*pi) * exp(x*x/2)
- *         x = x - u/(1 + x*u/2)             # <<<<<<<<<<<<<<
+ *         e = 0.5 * erfc(-x/sqrt(2.0)) - p
+ *         u = e * sqrt(2.0*pi) * exp(x*x/2.0)
+ *         x = x - u/(1.0 + x*u/2.0)             # <<<<<<<<<<<<<<
  * 
  *     return x
  */
     __pyx_v_x = (__pyx_v_x - (__pyx_v_u / (1.0 + ((__pyx_v_x * __pyx_v_u) / 2.0))));
 
     /* "pyqreg/c/stats.pyx":83
- *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1)
+ *                 x = -(((((C1*q+C2)*q+C3)*q+C4)*q+C5)*q+C6) / ((((D1*q+D2)*q+D3)*q+D4)*q+1.0)
  * 
  *     if((0 < p) & (p < 1)):             # <<<<<<<<<<<<<<
  * 
- *         e = 0.5 * erfc(-x/sqrt(2)) - p
+ *         e = 0.5 * erfc(-x/sqrt(2.0)) - p
  */
   }
 
   /* "pyqreg/c/stats.pyx":89
- *         x = x - u/(1 + x*u/2)
+ *         x = x - u/(1.0 + x*u/2.0)
  * 
  *     return x             # <<<<<<<<<<<<<<
  * 
@@ -2141,7 +2141,7 @@ static double __pyx_f_6pyqreg_1c_5stats__normalden(double __pyx_v_z) {
   /* "pyqreg/c/stats.pyx":111
  * 
  *     """
- *     return exp(-z**2 / 2) / (sqrt(pi * 2))             # <<<<<<<<<<<<<<
+ *     return exp(-z**2.0 / 2.0) / (sqrt(pi * 2.0))             # <<<<<<<<<<<<<<
  * 
  * @boundscheck(False)
  */

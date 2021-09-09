@@ -1,6 +1,6 @@
 from .c.fit_coefs import fit_coefs
-from .c.stats import invnormal
-from .c.stats import normalden
+# from .c.stats import invnormal
+# from .c.stats import normalden
 
 from .utils import rng_generator
 
