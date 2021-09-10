@@ -3548,6 +3548,7 @@ static int __Pyx_modinit_function_export_code(void) {
   if (__Pyx_ExportFunction("mm_dot", (void (*)(void))__pyx_f_6pyqreg_1c_11blas_lapack_mm_dot, "void (double *, double *, double *, int, int, int, int, int, int, double, double, int, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   if (__Pyx_ExportFunction("blas_axpy", (void (*)(void))__pyx_f_6pyqreg_1c_11blas_lapack_blas_axpy, "void (double *, __pyx_t_6pyqreg_1c_11blas_lapack_DOUBLE_t, double *, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   if (__Pyx_ExportFunction("mv_dot", (void (*)(void))__pyx_f_6pyqreg_1c_11blas_lapack_mv_dot, "void (double *, double *, double *, int, int, int, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ExportFunction("_lapack_cholesky_inv", (void (*)(void))__pyx_f_6pyqreg_1c_11blas_lapack__lapack_cholesky_inv, "void (double *, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;

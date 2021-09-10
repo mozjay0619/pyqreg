@@ -1,4 +1,8 @@
 from .c.fit_coefs import fit_coefs
+from .c.blas_lapack import lapack_cholesky_inv
+from .c.stats import normalden, invnormal
+from .c.cluster_cov import psi_function
+from .c.matrix_opaccum import matrix_opaccum
 
 from .utils import rng_generator
 
@@ -13,7 +17,8 @@ class QuantReg():
 		self.X = np.array(X, np.double, copy=False, order='F', ndmin=1)
 		self.y = np.array(y, np.double, copy=False, order='F', ndmin=1)
 
-	def fit(self, q, fit_method=None, seed=None, eps=1e-6, Mm_factor=0.8, max_bad_fixup=3, kappa_eps=1e-6):
+	def fit(self, q, vcov=None, fit_method=None, seed=None, eps=1e-6, 
+			Mm_factor=0.8, max_bad_fixup=3, kappa_eps=1e-6, cov_kwds=dict()):
 		"""Solve by interior point method (Mehrotra's predictor corrector
 		algorithm). If n >= 100,000, it will use preprocessing step following
 		Portnoy and Koenker (1997).
@@ -42,21 +47,49 @@ class QuantReg():
 
 				rng = rng_generator(seed)
 
-				return self.fit_preproc_ipm(q, rng, Mm_factor, max_bad_fixup, kappa_eps)
+				self.params = self.fit_preproc_ipm(q, rng, Mm_factor, max_bad_fixup, kappa_eps)
 
 			else:
 
-				return self.fit_ipm(q, eps)
+				self.params = self.fit_ipm(q, eps)
 
 		elif fit_method=='ipm':
 
-			return self.fit_ipm(q, eps)
+			self.params = self.fit_ipm(q, eps)
 
 		elif fit_method=='preproc-ipm':
 
 			rng = rng_generator(seed)
 
-			return self.fit_preproc_ipm(q, rng, Mm_factor, max_bad_fixup, kappa_eps)
+			self.params = self.fit_preproc_ipm(q, rng, Mm_factor, max_bad_fixup, kappa_eps)
+
+		# Estimate covariance matrix
+
+		if vcov=='cluster':
+
+			if 'groups' not in cov_kwds:
+				raise ValueError('You must provide "groups" keyword value in cov_kwds if data is clustered')
+			else:
+				groups = cov_kwds['groups']
+
+			if 'kappa_type' not in cov_kwds:
+				kappa_type = 2
+			else:
+				kappa_type = cov_kwds['kappa_type']
+
+			if 'kappa_multiplier' not in cov_kwds:
+				kappa_multiplier = 1.0
+			else:
+				kappa_multiplier = cov_kwds['kappa_multiplier']
+
+			self.vcov = self.cluster_cov(groups, self.params, q, kappa_type, kappa_multiplier)
+			self.bse = np.sqrt(np.diag(self.vcov))
+
+		else:
+
+			self.vcov = None
+			self.bse = None
+
 
 	def fit_ipm(self, q, eps=1e-6):
 		"""Estimate coefficients using the interior point method.
@@ -169,3 +202,68 @@ class QuantReg():
 
 		return coefs
 
+	def cluster_cov(self, groups, beta, q, kappa_type=2, kappa_multiplier=0.65):
+		"""Covariance matrix estimator as proposed by Parente and Silva (2013).
+
+		Translated from Stata code of qreg2. 
+
+		Parameters
+		----------
+		groups : ndarray
+			The group index array.
+
+		beta : ndarray
+			The estimated parameter values.
+
+		q : double
+			The quantile strictly between 0 and 1.
+
+		kappa_type : int
+			1 or 2, defaults to 2.
+
+		kappa_multiplier : double
+			The hyperparameter for the covariance estimation.
+		"""
+		theta = q
+		n = len(self.X)
+
+		# Compute residuals
+		resid = self.y - self.X@beta
+
+		# Compute A
+
+		# psi
+		psi_resid = psi_function(resid, theta)
+
+		A = matrix_opaccum(self.X, groups, psi_resid)
+
+		# Compute B
+
+		# h_nG
+		h_nG = (invnormal(0.975)**(2/3)) * \
+		((1.5 * ((normalden(invnormal(theta)))**2) / (2 * ((invnormal(theta))**2) + 1))**(1/3)) * \
+		(n)**(-1/3)
+
+		# kappa
+		if kappa_type==1:
+			k = np.median(np.abs(resid))
+		elif kappa_type==2:
+			k = min(np.std(resid),(np.percentile(resid, 75)-np.percentile(resid, 25))/1.34)
+
+		k = k*kappa_multiplier
+
+		# c^_G
+		chat_G = k * (invnormal(theta + h_nG) - invnormal(theta - h_nG))
+
+		# B weights
+		dens = (np.abs(resid) < chat_G).astype(np.float64) / (2 * chat_G) 
+
+		B = matrix_opaccum(self.X, groups, dens)
+
+		# Compute Binv A Binv
+		B = np.array(B, np.double, copy=False, order='F', ndmin=1)
+		lapack_cholesky_inv(B)
+
+		return B@A@B
+
+		

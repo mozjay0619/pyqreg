@@ -35,14 +35,12 @@ cdef void mm_dot(
     int transposeB
 )
 
-
 cdef void blas_axpy(
     double* X, 
     DOUBLE_t A,
     double* Y,
     int N
 )
-
 
 cdef void mv_dot(
     double* A, 
@@ -53,3 +51,9 @@ cdef void mv_dot(
     int LDA,
     int transposeA
 )
+
+cdef void _lapack_cholesky_inv(
+    double* A, 
+    int N
+)
+

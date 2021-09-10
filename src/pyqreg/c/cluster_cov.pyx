@@ -5,6 +5,12 @@ import numpy as np
 cimport numpy as np
 np.import_array()
 
+from .blas_lapack cimport mm_dot, _lapack_cholesky_inv
+from .mat_vec_ops cimport mv_mul
+from .cluster_cov cimport _psi_function
+from .matrix_opaccum cimport get_num_groups, _matrix_opaccum
+from .stats cimport _invnormal, _normalden
+
 
 DTYPE = np.float64
 
@@ -28,8 +34,7 @@ cdef void _psi_function(double* a,
         else:
             
             b[i] = theta 
-        
-        
+
 @boundscheck(False)
 @wraparound(False)
 @cdivision(True)
@@ -46,4 +51,3 @@ def psi_function(np.ndarray[DOUBLE_t, ndim=1] _a,
     _psi_function(a, b, theta, n)
     
     return _b
-
