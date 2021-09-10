@@ -78,7 +78,7 @@ class QuantReg():
 				kappa_type = cov_kwds['kappa_type']
 
 			if 'kappa_multiplier' not in cov_kwds:
-				kappa_multiplier = 0.65
+				kappa_multiplier = 1.0
 			else:
 				kappa_multiplier = cov_kwds['kappa_multiplier']
 
@@ -225,7 +225,7 @@ class QuantReg():
 			The hyperparameter for the covariance estimation.
 		"""
 		theta = q
-		n = len(resid)
+		n = len(self.X)
 
 		# Compute residuals
 		resid = self.y - self.X@beta
