@@ -8,7 +8,7 @@ np.import_array()
 from .blas_lapack cimport mm_dot, _lapack_cholesky_inv
 from .mat_vec_ops cimport mv_mul
 from .cluster_cov cimport _psi_function
-from .matrix_opaccum cimport get_num_groups, _matrix_opaccum
+from .matrix_opaccum cimport _get_num_groups, _matrix_opaccum
 from .stats cimport _invnormal, _normalden
 
 
