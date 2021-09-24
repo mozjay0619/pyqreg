@@ -15,7 +15,7 @@ DTYPE = np.float64
 @boundscheck(False)  
 @wraparound(False)
 @cdivision(True)
-cdef int get_num_groups(int* group, int n):
+cdef int _get_num_groups(int* group, int n):
     
     cdef int i, G = 0
     cdef int prev = group[0]
@@ -27,6 +27,16 @@ cdef int get_num_groups(int* group, int n):
             prev = group[i]
     
     return G + 1  # the last index didn't have chance to increment
+
+@boundscheck(False)
+@wraparound(False)
+@cdivision(True)
+def get_num_groups(np.ndarray[int, ndim=1] _group, int n):
+    
+    cdef int* group = <int*>(np.PyArray_DATA(_group))
+    cdef int G = _get_num_groups(group, n)
+    
+    return G
 
 @boundscheck(False)  
 @wraparound(False)
@@ -98,7 +108,8 @@ cdef void _matrix_opaccum(double* varlist,
 @cdivision(True)
 def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,
                    np.ndarray[int, ndim=1] _group,
-                   np.ndarray[DOUBLE_t, ndim=1] _opvar):
+                   np.ndarray[DOUBLE_t, ndim=1] _opvar,
+                   int G):
     """Computes $$\sum_{g=1}^{G} X_g^T e_g e_g^T X_g$$,
     using the following identity:
     $$
@@ -127,9 +138,8 @@ def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,
     """
     cdef int n = _varlist.shape[0]
     cdef int p = _varlist.shape[1]
-    
+
     cdef int* group = <int*>(np.PyArray_DATA(_group))
-    cdef int G = get_num_groups(group, n)
     
     cdef double* varlist = <double*>(np.PyArray_DATA(_varlist))
     cdef double* opvar = <double*>(np.PyArray_DATA(_opvar))

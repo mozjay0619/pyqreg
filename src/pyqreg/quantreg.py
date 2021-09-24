@@ -17,7 +17,7 @@ class QuantReg():
 		self.X = np.array(X, np.double, copy=False, order='F', ndmin=1)
 		self.y = np.array(y, np.double, copy=False, order='F', ndmin=1)
 
-	def fit(self, q, vcov=None, fit_method=None, seed=None, eps=1e-6, 
+	def fit(self, q, cov_type='robust', fit_method=None, seed=None, eps=1e-6, 
 			Mm_factor=0.8, max_bad_fixup=3, kappa_eps=1e-6, cov_kwds=dict()):
 		"""Solve by interior point method (Mehrotra's predictor corrector
 		algorithm). If n >= 100,000, it will use preprocessing step following
@@ -28,67 +28,87 @@ class QuantReg():
 		q : double
 			Quantile value strictly between 0 and 1
 
-		fit_method : str or None
-			Coefficient estimation method. Default is None.
+		fit_method : str or None. Default None.
+			Coefficient estimation method. 
 
 			- None : uses ipm if n < 100000, else, preproc-ipm.
 			- ipm : interior point method.
 			- preproc-ipm : interior point method with preprocessing.
 
+		cov_type : str. Default 'robust'.
+			Type of covariance estimator to use. Available types are
+			``iid`` for iid errors, ``robust`` for heteroskedastic errors,
+			and ``cluster`` for clustered errors.
+
 		seed : int or None
 			Random seed to use if preproc-ipm is used for subsampling.
 
+		cov_kwds : dict 
+			Additional keywords used in the covariance specification.
+
+			- groups : ndarray int type
+				Integer-valued index of clusters or groups. Required if using
+				the ``cluster`` cov_type.
+			- kappa_type : str. Default 'silverman'.
+				The scaling factor for the bandwidth. Available rule of thumbs
+				type are ``silverman`` and ``median``.
+
 		"""
+
+		n = len(self.X)
+
 		if fit_method is None:
 
-			n = len(self.X)
-
 			if n >= 100000:
-
 				rng = rng_generator(seed)
-
 				self.params = self.fit_preproc_ipm(q, rng, Mm_factor, max_bad_fixup, kappa_eps)
-
 			else:
-
 				self.params = self.fit_ipm(q, eps)
 
 		elif fit_method=='ipm':
-
 			self.params = self.fit_ipm(q, eps)
 
 		elif fit_method=='preproc-ipm':
-
 			rng = rng_generator(seed)
-
 			self.params = self.fit_preproc_ipm(q, rng, Mm_factor, max_bad_fixup, kappa_eps)
 
 		# Estimate covariance matrix
 
-		if vcov=='cluster':
+		if cov_type=='cluster':
 
 			if 'groups' not in cov_kwds:
 				raise ValueError('You must provide "groups" keyword value in cov_kwds if data is clustered')
 			else:
 				groups = cov_kwds['groups']
 
+				if not np.issubdtype(groups.dtype, np.integer):
+					raise TypeError('groups array must be integer type. Instead it is {}.'.format(groups.dtype))
+
+				groups = groups.astype(np.int32)
+
 			if 'kappa_type' not in cov_kwds:
-				kappa_type = 2
+				kappa_type = 'silverman'
 			else:
 				kappa_type = cov_kwds['kappa_type']
 
-			if 'kappa_multiplier' not in cov_kwds:
-				kappa_multiplier = 1.0
-			else:
-				kappa_multiplier = cov_kwds['kappa_multiplier']
-
-			self.vcov = self.cluster_cov(groups, self.params, q, kappa_type, kappa_multiplier)
+			self.vcov = self.cluster_cov(groups, self.params, q, kappa_type)
 			self.bse = np.sqrt(np.diag(self.vcov))
 
-		else:
+		elif cov_type=='robust':
 
-			self.vcov = None
-			self.bse = None
+			if 'kappa_type' not in cov_kwds:
+				kappa_type = 'silverman'
+			else:
+				kappa_type = cov_kwds['kappa_type']
+
+			groups = np.arange(n).astype(np.int32)
+
+			self.vcov = self.cluster_cov(groups, self.params, q, kappa_type)
+			self.bse = np.sqrt(np.diag(self.vcov))
+
+		elif cov_type=='iid':
+
+			raise NotImplementedError
 
 
 	def fit_ipm(self, q, eps=1e-6):
@@ -202,7 +222,7 @@ class QuantReg():
 
 		return coefs
 
-	def cluster_cov(self, groups, beta, q, kappa_type=2, kappa_multiplier=0.65):
+	def cluster_cov(self, groups, beta, q, kappa_type='silverman'):
 		"""Covariance matrix estimator as proposed by Parente and Silva (2013).
 
 		Translated from Stata code of qreg2. 
@@ -218,14 +238,28 @@ class QuantReg():
 		q : double
 			The quantile strictly between 0 and 1.
 
-		kappa_type : int
-			1 or 2, defaults to 2.
-
-		kappa_multiplier : double
-			The hyperparameter for the covariance estimation.
+		kappa_type : str. Default 'silverman'.
+			The scaling factor for the bandwidth. Available rule of thumbs
+			type are ``silverman`` and ``median``.
 		"""
 		theta = q
 		n = len(self.X)
+
+		# print(groups)
+		# print(np.mean(self.X))
+		# print(np.mean(self.y))
+
+
+		sort_args = groups.argsort(kind='mergesort')
+		self.X = self.X[sort_args]
+		self.y = self.y[sort_args]
+		groups = groups[sort_args]
+
+		self.X = np.array(self.X, np.double, copy=False, order='F', ndmin=1)
+		self.y = np.array(self.y, np.double, copy=False, order='F', ndmin=1)
+		groups = np.array(groups, np.int32, copy=False, order='F', ndmin=1)
+
+		G = len(np.unique(groups))
 
 		# Compute residuals
 		resid = self.y - self.X@beta
@@ -235,7 +269,7 @@ class QuantReg():
 		# psi
 		psi_resid = psi_function(resid, theta)
 
-		A = matrix_opaccum(self.X, groups, psi_resid)
+		A = matrix_opaccum(self.X, groups, psi_resid, G)
 
 		# Compute B
 
@@ -245,20 +279,21 @@ class QuantReg():
 		(n)**(-1/3)
 
 		# kappa
-		if kappa_type==1:
+		if kappa_type=='median':
 			k = np.median(np.abs(resid))
-		elif kappa_type==2:
+		elif kappa_type=='silverman':
 			k = min(np.std(resid),(np.percentile(resid, 75)-np.percentile(resid, 25))/1.34)
-
-		k = k*kappa_multiplier
 
 		# c^_G
 		chat_G = k * (invnormal(theta + h_nG) - invnormal(theta - h_nG))
 
 		# B weights
-		dens = (np.abs(resid) < chat_G).astype(np.float64) / (2 * chat_G) 
+		dens = np.sqrt(
+			(np.abs(resid) < chat_G).astype(np.float64) / (2 * chat_G)
+		)
+		_groups = np.arange(len(groups)).astype(np.int32)
 
-		B = matrix_opaccum(self.X, groups, dens)
+		B = matrix_opaccum(self.X, _groups, dens, n)
 
 		# Compute Binv A Binv
 		B = np.array(B, np.double, copy=False, order='F', ndmin=1)

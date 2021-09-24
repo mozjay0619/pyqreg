@@ -5,7 +5,7 @@ ctypedef np.npy_float32 DTYPE_t
 ctypedef np.npy_float64 DOUBLE_t
 
 
-cdef int get_num_groups(
+cdef int _get_num_groups(
     int* group, 
     int n
 )

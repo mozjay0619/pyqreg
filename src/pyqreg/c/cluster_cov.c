@@ -1732,7 +1732,7 @@ static void (*__pyx_f_6pyqreg_1c_11blas_lapack__lapack_cholesky_inv)(double *, i
 static void (*__pyx_f_6pyqreg_1c_11mat_vec_ops_mv_mul)(double *, double *, double *, int, int, int); /*proto*/
 
 /* Module declarations from 'pyqreg.c.matrix_opaccum' */
-static int (*__pyx_f_6pyqreg_1c_14matrix_opaccum_get_num_groups)(int *, int); /*proto*/
+static int (*__pyx_f_6pyqreg_1c_14matrix_opaccum__get_num_groups)(int *, int); /*proto*/
 static void (*__pyx_f_6pyqreg_1c_14matrix_opaccum__matrix_opaccum)(double *, double *, int *, double *, double *, int, int, int); /*proto*/
 
 /* Module declarations from 'pyqreg.c.stats' */
@@ -3414,7 +3414,7 @@ static int __Pyx_modinit_function_import_code(void) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = PyImport_ImportModule("pyqreg.c.matrix_opaccum"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_ImportFunction(__pyx_t_1, "get_num_groups", (void (**)(void))&__pyx_f_6pyqreg_1c_14matrix_opaccum_get_num_groups, "int (int *, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_ImportFunction(__pyx_t_1, "_get_num_groups", (void (**)(void))&__pyx_f_6pyqreg_1c_14matrix_opaccum__get_num_groups, "int (int *, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   if (__Pyx_ImportFunction(__pyx_t_1, "_matrix_opaccum", (void (**)(void))&__pyx_f_6pyqreg_1c_14matrix_opaccum__matrix_opaccum, "void (double *, double *, int *, double *, double *, int, int, int)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = PyImport_ImportModule("pyqreg.c.stats"); if (!__pyx_t_1) __PYX_ERR(0, 1, __pyx_L1_error)

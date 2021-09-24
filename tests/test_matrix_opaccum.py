@@ -26,7 +26,7 @@ def test_group_matrix_opaccum_using_identity():
 
 	assert np.all(np.isclose(
 		tmp@tmp.T, 
-		matrix_opaccum(X, group_array, e.ravel())
+		matrix_opaccum(X, group_array, e.ravel(), 9)
 		)
 	)
 
@@ -36,7 +36,7 @@ def test_group_matrix_opaccum_using_identity():
 
 	assert np.all(np.isclose(
 		tmp@tmp.T, 
-		matrix_opaccum(X, group_array, e.ravel())
+		matrix_opaccum(X, group_array, e.ravel(), 9)
 		)
 	)
 
@@ -59,7 +59,7 @@ def test_group_matrix_opaccum_using_formula():
 
 	assert np.all(np.isclose(
 		output_array, 
-		matrix_opaccum(X, group_array, e.ravel())
+		matrix_opaccum(X, group_array, e.ravel(), 9)
 		)
 	)
 
