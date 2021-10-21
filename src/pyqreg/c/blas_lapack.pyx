@@ -1,12 +1,13 @@
-from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil
-
-# https://github.com/scipy/scipy/blob/v1.7.1/scipy/linalg/lapack.py
-from scipy.linalg.cython_lapack cimport dpotrf, dpotrs, dpotri
+from cython cimport boundscheck, cdivision, nogil, nonecheck, wraparound
 # https://github.com/scipy/scipy/blob/v1.7.1/scipy/linalg/blas.py
-from scipy.linalg.cython_blas cimport dgemv, daxpy, dgemm, dscal, dcopy 
+from scipy.linalg.cython_blas cimport daxpy, dcopy, dgemm, dgemv, dscal
+# https://github.com/scipy/scipy/blob/v1.7.1/scipy/linalg/lapack.py
+from scipy.linalg.cython_lapack cimport dpotrf, dpotri, dpotrs
 
 import numpy as np
+
 cimport numpy as np
+
 np.import_array()
 
 

@@ -1,7 +1,9 @@
-from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil
+from cython cimport boundscheck, cdivision, nogil, nonecheck, wraparound
 
 import numpy as np
+
 cimport numpy as np
+
 np.import_array()
 
 

@@ -1,2 +1,1 @@
 from .quantreg import QuantReg
-
