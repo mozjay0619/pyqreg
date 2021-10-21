@@ -7,12 +7,13 @@ Written in C by V. Natarajan (Kanchipuram (near Madras), India)
 https://web.archive.org/web/20151030215621/http://home.online.no/~pjacklam/notes/invnorm/impl/natarajan/
 """
 
-from libc.math cimport erfc, sqrt, log, pi, exp
-
-from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil
+from cython cimport boundscheck, cdivision, nogil, nonecheck, wraparound
+from libc.math cimport erfc, exp, log, pi, sqrt
 
 import numpy as np
+
 cimport numpy as np
+
 np.import_array()
 
 
@@ -114,6 +115,3 @@ cdef double _normalden(double z):
 def normalden(double z):
     
     return _normalden(z)
-
-    
-

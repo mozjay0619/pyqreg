@@ -1,13 +1,14 @@
-from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil
-from libc.stdlib cimport malloc, free
+from cython cimport boundscheck, cdivision, nogil, nonecheck, wraparound
+from libc.stdlib cimport free, malloc
 
 import numpy as np
+
 cimport numpy as np
+
 np.import_array()
 
 from .blas_lapack cimport mm_dot
-from .mat_vec_ops cimport row_add, mv_mul
-
+from .mat_vec_ops cimport mv_mul, row_add
 
 DTYPE = np.float64
 
@@ -153,9 +154,3 @@ def matrix_opaccum(np.ndarray[DOUBLE_t, ndim=2] _varlist,
     _matrix_opaccum(varlist, opvar, group, Xe, XeeX, n, p, G)
     
     return _XeeX
-
-
-
-
-
-

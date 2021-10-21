@@ -7,26 +7,19 @@ More changes by Paul Eilers 2004
 Translated to Julia by Patrick Kofod Mogensen 2015
 """
 
-from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil
-from libc.stdlib cimport malloc, free
+from cython cimport boundscheck, cdivision, nogil, nonecheck, wraparound
+from libc.stdlib cimport free, malloc
 
 import numpy as np
+
 cimport numpy as np
+
 np.import_array()
 
-from .blas_lapack cimport lapack_cholesky_decomp
-from .blas_lapack cimport lapack_cholesky_solve
-from .blas_lapack cimport mm_dot
-from .blas_lapack cimport blas_axpy
-from .blas_lapack cimport mv_dot
-from .mat_vec_ops cimport mv_mul
-from .mat_vec_ops cimport negative_assign
-from .mat_vec_ops cimport vs_mul
-from .mat_vec_ops cimport vv_sub
-from .mat_vec_ops cimport vv_mul
-from .mat_vec_ops cimport greater_than_0
-from .mat_vec_ops cimport equals_0
-
+from .blas_lapack cimport (blas_axpy, lapack_cholesky_decomp,
+                           lapack_cholesky_solve, mm_dot, mv_dot)
+from .mat_vec_ops cimport (equals_0, greater_than_0, mv_mul, negative_assign,
+                           vs_mul, vv_mul, vv_sub)
 
 DTYPE = np.float64
 

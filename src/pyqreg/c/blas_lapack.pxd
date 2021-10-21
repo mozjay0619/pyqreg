@@ -1,8 +1,8 @@
-from cython cimport boundscheck, wraparound, cdivision, nonecheck, nogil
+from cython cimport boundscheck, cdivision, nogil, nonecheck, wraparound
 
 import numpy as np
-cimport numpy as np
 
+cimport numpy as np
 
 ctypedef np.npy_float32 DTYPE_t
 ctypedef np.npy_float64 DOUBLE_t

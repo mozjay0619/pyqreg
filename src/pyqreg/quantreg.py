@@ -1,13 +1,14 @@
-from .c.fit_coefs import fit_coefs
-from .c.blas_lapack import lapack_cholesky_inv
-from .c.stats import normalden, invnormal
-from .c.cluster_cov import psi_function
-from .c.matrix_opaccum import matrix_opaccum
-
-from .utils import rng_generator
-
 import numpy as np
+import scipy.stats as stats
 from numpy.linalg import pinv
+from scipy.stats import norm
+
+from .c.blas_lapack import lapack_cholesky_inv
+from .c.cluster_cov import psi_function
+from .c.fit_coefs import fit_coefs
+from .c.matrix_opaccum import matrix_opaccum
+from .c.stats import invnormal, normalden
+from .utils import rng_generator
 
 
 class QuantReg():
@@ -17,8 +18,8 @@ class QuantReg():
 		self.X = np.array(X, np.double, copy=False, order='F', ndmin=1)
 		self.y = np.array(y, np.double, copy=False, order='F', ndmin=1)
 
-	def fit(self, q, cov_type='robust', fit_method=None, seed=None, eps=1e-6, 
-			Mm_factor=0.8, max_bad_fixup=3, kappa_eps=1e-6, cov_kwds=dict()):
+	def fit(self, q, cov_type='robust', fit_method=None, seed=None, eps=1e-6, Mm_factor=0.8, 
+		max_bad_fixup=3, kappa_eps=1e-6, kernel='epa', bandwidth='hsheather', cov_kwds=dict()):
 		"""Solve by interior point method (Mehrotra's predictor corrector
 		algorithm). If n >= 100,000, it will use preprocessing step following
 		Portnoy and Koenker (1997).
@@ -43,6 +44,22 @@ class QuantReg():
 		seed : int or None
 			Random seed to use if preproc-ipm is used for subsampling.
 
+		kernel : str, kernel to use in the kernel density estimation for the
+			asymptotic covariance matrix:
+
+			- epa: Epanechnikov
+			- cos: Cosine
+			- gau: Gaussian
+			- par: Parzene
+
+		bandwidth : str, Bandwidth selection method in kernel density
+			estimation for asymptotic covariance estimate (full
+			references in QuantReg docstring):
+
+			- hsheather: Hall-Sheather (1988)
+			- bofinger: Bofinger (1975)
+			- chamberlain: Chamberlain (1994)
+
 		cov_kwds : dict 
 			Additional keywords used in the covariance specification.
 
@@ -54,7 +71,6 @@ class QuantReg():
 				type are ``silverman`` and ``median``.
 
 		"""
-
 		n = len(self.X)
 
 		if fit_method is None:
@@ -108,8 +124,13 @@ class QuantReg():
 
 		elif cov_type=='iid':
 
-			raise NotImplementedError
+			self.vcov = self.iid_cov(self.params, q, kernel, bandwidth)
+			self.bse = np.sqrt(np.diag(self.vcov))
 
+		else:
+
+			cov_type_names = ['a', 'b']
+			raise Exception("cov_type must be one of " + ', '.join(cov_type_names))
 
 	def fit_ipm(self, q, eps=1e-6):
 		"""Estimate coefficients using the interior point method.
@@ -244,12 +265,7 @@ class QuantReg():
 		"""
 		theta = q
 		n = len(self.X)
-
-		# print(groups)
-		# print(np.mean(self.X))
-		# print(np.mean(self.y))
-
-
+		
 		sort_args = groups.argsort(kind='mergesort')
 		self.X = self.X[sort_args]
 		self.y = self.y[sort_args]
@@ -301,4 +317,92 @@ class QuantReg():
 
 		return B@A@B
 
-		
+	def iid_cov(self, beta, q, kernel, bandwidth):
+		"""Covariance matrix estimation for iid data as written in the statsmodels:
+
+		https://www.statsmodels.org/stable/_modules/statsmodels/regression/quantile_regression.html#QuantReg
+
+		Parameters
+		----------
+		kernel : str, kernel to use in the kernel density estimation for the
+			asymptotic covariance matrix:
+
+			- epa: Epanechnikov
+			- cos: Cosine
+			- gau: Gaussian
+			- par: Parzene
+
+		bandwidth : str, Bandwidth selection method in kernel density
+			estimation for asymptotic covariance estimate (full
+			references in QuantReg docstring):
+
+			- hsheather: Hall-Sheather (1988)
+			- bofinger: Bofinger (1975)
+			- chamberlain: Chamberlain (1994)
+		"""
+		kern_names = ['biw', 'cos', 'epa', 'gau', 'par']
+		if kernel not in kern_names:
+			raise Exception("kernel must be one of " + ', '.join(kern_names))
+		else:
+			kernel = kernels[kernel]
+
+		if bandwidth == 'hsheather':
+			bandwidth = hall_sheather
+		elif bandwidth == 'bofinger':
+			bandwidth = bofinger
+		elif bandwidth == 'chamberlain':
+			bandwidth = chamberlain
+		else:
+			raise Exception("bandwidth must be in 'hsheather', 'bofinger', 'chamberlain'")
+
+		# Compute residuals
+		resid = self.y - self.X@beta
+
+		nobs = len(self.X)
+
+		iqre = stats.scoreatpercentile(resid, 75) - stats.scoreatpercentile(resid, 25)
+		h = bandwidth(nobs, q)
+		h = min(np.std(self.y),
+				iqre / 1.34) * (norm.ppf(q + h) - norm.ppf(q - h))
+
+		fhat0 = 1. / (nobs * h) * np.sum(kernel(resid / h))
+
+		d = np.where(resid > 0, (q/fhat0)**2, ((1-q)/fhat0)**2)
+		xtxi = pinv(np.dot(self.X.T, self.X))
+		xtdx = np.dot(self.X.T * d[np.newaxis, :], self.X)
+		vcov = xtxi @ xtdx @ xtxi
+
+		return vcov
+
+# From https://www.statsmodels.org/stable/_modules/statsmodels/regression/quantile_regression.html#QuantReg.
+def _parzen(u):
+	z = np.where(np.abs(u) <= .5, 4./3 - 8. * u**2 + 8. * np.abs(u)**3,
+				 8. * (1 - np.abs(u))**3 / 3.)
+	z[np.abs(u) > 1] = 0
+	return z
+
+
+kernels = {}
+kernels['biw'] = lambda u: 15. / 16 * (1 - u**2)**2 * np.where(np.abs(u) <= 1, 1, 0)
+kernels['cos'] = lambda u: np.where(np.abs(u) <= .5, 1 + np.cos(2 * np.pi * u), 0)
+kernels['epa'] = lambda u: 3. / 4 * (1-u**2) * np.where(np.abs(u) <= 1, 1, 0)
+kernels['par'] = _parzen
+
+
+def hall_sheather(n, q, alpha=.05):
+	z = norm.ppf(q)
+	num = 1.5 * norm.pdf(z)**2.
+	den = 2. * z**2. + 1.
+	h = n**(-1. / 3) * norm.ppf(1. - alpha / 2.)**(2./3) * (num / den)**(1./3)
+	return h
+
+
+def bofinger(n, q):
+	num = 9. / 2 * norm.pdf(2 * norm.ppf(q))**4
+	den = (2 * norm.ppf(q)**2 + 1)**2
+	h = n**(-1. / 5) * (num / den)**(1. / 5)
+	return h
+
+
+def chamberlain(n, q, alpha=.05):
+	return norm.ppf(1 - alpha / 2) * np.sqrt(q*(1 - q) / n)
