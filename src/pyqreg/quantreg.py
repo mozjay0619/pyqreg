@@ -374,7 +374,7 @@ class QuantReg():
 
 		return vcov
 
-
+# From https://www.statsmodels.org/stable/_modules/statsmodels/regression/quantile_regression.html#QuantReg.
 def _parzen(u):
 	z = np.where(np.abs(u) <= .5, 4./3 - 8. * u**2 + 8. * np.abs(u)**3,
 				 8. * (1 - np.abs(u))**3 / 3.)
