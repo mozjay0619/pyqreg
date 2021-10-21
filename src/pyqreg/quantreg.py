@@ -44,6 +44,22 @@ class QuantReg():
 		seed : int or None
 			Random seed to use if preproc-ipm is used for subsampling.
 
+		kernel : str, kernel to use in the kernel density estimation for the
+			asymptotic covariance matrix:
+
+			- epa: Epanechnikov
+			- cos: Cosine
+			- gau: Gaussian
+			- par: Parzene
+
+		bandwidth : str, Bandwidth selection method in kernel density
+			estimation for asymptotic covariance estimate (full
+			references in QuantReg docstring):
+
+			- hsheather: Hall-Sheather (1988)
+			- bofinger: Bofinger (1975)
+			- chamberlain: Chamberlain (1994)
+
 		cov_kwds : dict 
 			Additional keywords used in the covariance specification.
 
@@ -358,17 +374,20 @@ class QuantReg():
 
 		return vcov
 
+
 def _parzen(u):
 	z = np.where(np.abs(u) <= .5, 4./3 - 8. * u**2 + 8. * np.abs(u)**3,
 				 8. * (1 - np.abs(u))**3 / 3.)
 	z[np.abs(u) > 1] = 0
 	return z
 
+
 kernels = {}
 kernels['biw'] = lambda u: 15. / 16 * (1 - u**2)**2 * np.where(np.abs(u) <= 1, 1, 0)
 kernels['cos'] = lambda u: np.where(np.abs(u) <= .5, 1 + np.cos(2 * np.pi * u), 0)
 kernels['epa'] = lambda u: 3. / 4 * (1-u**2) * np.where(np.abs(u) <= 1, 1, 0)
 kernels['par'] = _parzen
+
 
 def hall_sheather(n, q, alpha=.05):
 	z = norm.ppf(q)
