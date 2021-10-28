@@ -15,8 +15,11 @@ class QuantReg():
 
 	def __init__(self, y, X):
 
-		self.X = np.array(X, np.double, copy=False, order='F', ndmin=1)
-		self.y = np.array(y, np.double, copy=False, order='F', ndmin=1)
+		if not X.flags['F_CONTIGUOUS']:
+			self.X = np.array(X, np.double, copy=False, order='F', ndmin=1)
+
+		if not y.flags['F_CONTIGUOUS']:
+			self.y = np.array(y, np.double, copy=False, order='F', ndmin=1)
 
 	def fit(self, q, cov_type='robust', fit_method=None, seed=None, eps=1e-6, Mm_factor=0.8, 
 		max_bad_fixup=3, kappa_eps=1e-6, kernel='epa', bandwidth='hsheather', cov_kwds=dict()):
