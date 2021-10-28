@@ -15,10 +15,13 @@ class QuantReg:
     def __init__(self, y, X):
 
         if not X.flags["F_CONTIGUOUS"]:
-            self.X = np.array(X, np.double, copy=False, order="F", ndmin=1)
+            X = np.array(X, np.double, copy=False, order="F", ndmin=1)
 
         if not y.flags["F_CONTIGUOUS"]:
-            self.y = np.array(y, np.double, copy=False, order="F", ndmin=1)
+            y = np.array(y, np.double, copy=False, order="F", ndmin=1)
+
+        self.X = X
+        self.y = y
 
     def fit(
         self,
