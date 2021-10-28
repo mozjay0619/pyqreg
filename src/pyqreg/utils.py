@@ -29,6 +29,7 @@ def rng_generator(seed=None, n=1):
 
         return np.random.default_rng(seed)
 
+
 def get_icc(pdf):
     """
     Calculate the intraclass correlation coefficient
@@ -57,7 +58,7 @@ def get_icc(pdf):
 
 
 def generate_clustered_data(G, Gn, cross_cluster_var, rng):
-    
+
     group_means = rng.normal(0, cross_cluster_var, size=G)
 
     errors = []
@@ -66,8 +67,8 @@ def generate_clustered_data(G, Gn, cross_cluster_var, rng):
 
     for i in range(G):
         errors.append(rng.normal(group_means[i], 10, size=Gn))
-        groups.append([i]*Gn)
-        indicators.append([rng.choice(2)]*Gn)
+        groups.append([i] * Gn)
+        indicators.append([rng.choice(2)] * Gn)
 
     errors = np.hstack(errors)
     groups = np.hstack(groups)
@@ -80,7 +81,6 @@ def generate_clustered_data(G, Gn, cross_cluster_var, rng):
     X = np.zeros([n, 2])
     X[:, 0] = 1
     X[:, 1] = indicators
-    y = X[:, 0]*10 + samples + errors
+    y = X[:, 0] * 10 + samples + errors
 
     return y, X, groups
-
