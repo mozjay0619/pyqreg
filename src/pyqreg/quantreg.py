@@ -156,8 +156,16 @@ class QuantReg:
 
         else:
 
-            cov_type_names = ["a", "b"]
+            cov_type_names = ["iid", "robust", "cluster"]
             raise Exception("cov_type must be one of " + ", ".join(cov_type_names))
+
+        # Compute p-values.
+        zs = self.params / self.bse
+        self.pvalues = np.empty(len(zs))
+        for i, z in enumerate(np.abs(zs)):
+            self.pvalues[i] = (1 - norm.cdf(x=z, loc=0, scale=1)) * 2
+
+        self.nobs = n
 
     def fit_ipm(self, q, eps=1e-6):
         """Estimate coefficients using the interior point method.
@@ -234,7 +242,10 @@ class QuantReg:
                 yy = y[~su & ~sl]
 
                 if any(sl):
-                    glob_x = X[sl].T @ np.ones(np.sum(sl))
+                    glob_x = X[sl].T @ np.ones(np.sum(sl))  
+                    # Notes:
+                    # 1. The resulting matrix is transposed one more time because np.ones is 1 dimensional.
+                    # 2. Summing data with same residual signs will not change the residual sign of the summed.
                     glob_y = np.sum(y[sl])
                     xx = np.vstack([xx, glob_x])
                     yy = np.r_[yy, glob_y]
@@ -333,6 +344,8 @@ class QuantReg:
                 np.std(resid),
                 (np.percentile(resid, 75) - np.percentile(resid, 25)) / 1.34,
             )
+        else:
+            raise ValueError("Incorrect kappa_type {}. Please choose between median and silverman".format(kappa_type))
 
         # c^_G
         chat_G = k * (invnormal(theta + h_nG) - invnormal(theta - h_nG))
