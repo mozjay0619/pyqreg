@@ -31,8 +31,7 @@ def rng_generator(seed=None, n=1):
 
 
 def get_icc(pdf):
-    """
-    Calculate the intraclass correlation coefficient
+    """Calculate the intraclass correlation coefficient
     using one way ANOVA random effects model.
 
     Parameters
@@ -58,7 +57,7 @@ def get_icc(pdf):
 
 
 def generate_clustered_data(G, Gn, cross_cluster_var, rng):
-
+    """Helper method to generate sample clustered data."""
     group_means = rng.normal(0, cross_cluster_var, size=G)
 
     errors = []

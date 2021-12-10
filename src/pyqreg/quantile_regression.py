@@ -1,7 +1,7 @@
 import numpy as np
 import scipy.stats as stats
 from numpy.linalg import pinv
-from scipy.stats import norm
+from scipy.stats import norm, t
 
 from .c.blas_lapack import lapack_cholesky_inv
 from .c.cluster_cov import psi_function
@@ -20,8 +20,8 @@ class QuantReg:
         if not y.flags["F_CONTIGUOUS"]:
             y = np.array(y, np.double, copy=False, order="F", ndmin=1)
 
-        self.X = X
         self.y = y
+        self.X = X
 
     def fit(
         self,
@@ -139,19 +139,16 @@ class QuantReg:
 
         elif cov_type == "robust":
 
-            if "kappa_type" not in cov_kwds:
-                kappa_type = "silverman"
-            else:
-                kappa_type = cov_kwds["kappa_type"]
-
-            groups = np.arange(n).astype(np.int32)
-
-            self.vcov = self.cluster_cov(groups, self.params, q, kappa_type)
+            self.vcov = self.iid_robust_cov(
+                self.params, q, kernel, bandwidth, vcov="robust"
+            )
             self.bse = np.sqrt(np.diag(self.vcov))
 
         elif cov_type == "iid":
 
-            self.vcov = self.iid_cov(self.params, q, kernel, bandwidth)
+            self.vcov = self.iid_robust_cov(
+                self.params, q, kernel, bandwidth, vcov="iid"
+            )
             self.bse = np.sqrt(np.diag(self.vcov))
 
         else:
@@ -159,13 +156,35 @@ class QuantReg:
             cov_type_names = ["iid", "robust", "cluster"]
             raise Exception("cov_type must be one of " + ", ".join(cov_type_names))
 
-        # Compute p-values.
-        zs = self.params / self.bse
-        self.pvalues = np.empty(len(zs))
-        for i, z in enumerate(np.abs(zs)):
-            self.pvalues[i] = (1 - norm.cdf(x=z, loc=0, scale=1)) * 2
+        # Compute two-sided p-values.
+        self.tvalues = self.params / self.bse
+        self.pvalues = np.empty(len(self.tvalues))
+        for i, z in enumerate(np.abs(self.tvalues)):
+            self.pvalues[i] = (
+                1 - t.cdf(x=z, loc=0, scale=1, df=n - self.X.shape[1])
+            ) * 2
 
         self.nobs = n
+
+        return self
+
+    def conf_int(self, alpha=0.05):
+        """Compute the confidence intervals.
+
+        Parameters
+        ----------
+        alpha : float
+        """
+        self.upb = (
+            self.params
+            + t.ppf(q=1 - alpha / 2.0, df=self.nobs - self.X.shape[1]) * self.bse
+        )
+        self.lob = (
+            self.params
+            - t.ppf(q=1 - alpha / 2.0, df=self.nobs - self.X.shape[1]) * self.bse
+        )
+
+        return np.squeeze(np.dstack([self.lob, self.upb]))
 
     def fit_ipm(self, q, eps=1e-6):
         """Estimate coefficients using the interior point method.
@@ -178,7 +197,7 @@ class QuantReg:
         eps : double
             Duality gap stopping criterion
         """
-        coefs = fit_coefs(self.X, self.y, q, eps)
+        coefs = _fit_coefs(self.X, self.y, q, eps)
 
         return coefs
 
@@ -209,7 +228,7 @@ class QuantReg:
             if m < n:
                 s = rng.choice(n, m, replace=False)
             else:
-                return fit_coefs(X, y, q, eps)
+                return _fit_coefs(X, y, q, eps)
 
             xx = X[s]
             yy = y[s]
@@ -217,7 +236,7 @@ class QuantReg:
             xx = np.array(xx, np.double, copy=False, order="F", ndmin=1)
             yy = np.array(yy, np.double, copy=False, order="F", ndmin=1)
 
-            first_coefs = fit_coefs(xx, yy, q, eps)
+            first_coefs = _fit_coefs(xx, yy, q, eps)
 
             xxinv = pinv(xx.T @ xx)
             band = np.sqrt(((X @ xxinv) ** 2) @ np.ones(p))
@@ -242,7 +261,7 @@ class QuantReg:
                 yy = y[~su & ~sl]
 
                 if any(sl):
-                    glob_x = X[sl].T @ np.ones(np.sum(sl))  
+                    glob_x = X[sl].T @ np.ones(np.sum(sl))
                     # Notes:
                     # 1. The resulting matrix is transposed one more time because np.ones is 1 dimensional.
                     # 2. Summing data with same residual signs will not change the residual sign of the summed.
@@ -258,10 +277,7 @@ class QuantReg:
                 xx = np.array(xx, np.double, copy=False, order="F", ndmin=1)
                 yy = np.array(yy, np.double, copy=False, order="F", ndmin=1)
 
-                coefs = fit_coefs(xx, yy, q, eps)
-
-                if np.isnan(coefs[0]):
-                    coefs = first_coefs
+                coefs = _fit_coefs(xx, yy, q, eps)
 
                 r = y - X @ coefs
                 su_bad = (r < 0) & su
@@ -345,7 +361,11 @@ class QuantReg:
                 (np.percentile(resid, 75) - np.percentile(resid, 25)) / 1.34,
             )
         else:
-            raise ValueError("Incorrect kappa_type {}. Please choose between median and silverman".format(kappa_type))
+            raise ValueError(
+                "Incorrect kappa_type {}. Please choose between median and silverman".format(
+                    kappa_type
+                )
+            )
 
         # c^_G
         chat_G = k * (invnormal(theta + h_nG) - invnormal(theta - h_nG))
@@ -362,7 +382,7 @@ class QuantReg:
 
         return B @ A @ B
 
-    def iid_cov(self, beta, q, kernel, bandwidth):
+    def iid_robust_cov(self, beta, q, kernel, bandwidth, vcov="robust"):
         """Covariance matrix estimation for iid data as written in the statsmodels:
 
         https://www.statsmodels.org/stable/_modules/statsmodels/regression/quantile_regression.html#QuantReg
@@ -413,10 +433,13 @@ class QuantReg:
 
         fhat0 = 1.0 / (nobs * h) * np.sum(kernel(resid / h))
 
-        d = np.where(resid > 0, (q / fhat0) ** 2, ((1 - q) / fhat0) ** 2)
-        xtxi = pinv(np.dot(self.X.T, self.X))
-        xtdx = np.dot(self.X.T * d[np.newaxis, :], self.X)
-        vcov = xtxi @ xtdx @ xtxi
+        if vcov == "robust":
+            d = np.where(resid > 0, (q / fhat0) ** 2, ((1 - q) / fhat0) ** 2)
+            xtxi = pinv(np.dot(self.X.T, self.X))
+            xtdx = np.dot(self.X.T * d[np.newaxis, :], self.X)
+            vcov = xtxi @ xtdx @ xtxi
+        elif vcov == "iid":
+            vcov = (1.0 / fhat0) ** 2 * q * (1 - q) * pinv(np.dot(self.X.T, self.X))
 
         return vcov
 
@@ -455,3 +478,17 @@ def bofinger(n, q):
 def chamberlain(n, q, alpha=.05):
     return norm.ppf(1 - alpha / 2) * np.sqrt(q*(1 - q) / n)
 # fmt: on
+
+
+def _fit_coefs(X, y, q, eps):
+    """In cases of convergence issues, we increase the duality gap
+    tolerance.
+    """
+    coefs = fit_coefs(X, y, q, eps)
+
+    while any(np.isnan(coefs)):
+
+        eps *= 5.0
+        coefs = fit_coefs(X, y, q, eps)
+
+    return coefs
