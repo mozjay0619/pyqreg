@@ -1,1 +1,2 @@
-from .quantreg import QuantReg
+from .formula_api import quantreg
+from .quantile_regression import QuantReg
