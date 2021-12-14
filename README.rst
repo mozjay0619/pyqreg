@@ -54,7 +54,7 @@ We replicate the example codes of `statsmodels quantile regression <https://www.
 	data = sm.datasets.engel.load_pandas().data
 	data.head()
 
-
+.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img1.png
 
 
 Speed comparisons
