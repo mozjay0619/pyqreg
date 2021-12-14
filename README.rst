@@ -45,7 +45,7 @@ We replicate the study in `statsmodels quantile regression <https://www.statsmod
 
 .. code:: python
 
-	import statsmodels.formula.api as smf
+	import statsmodels.api as sm
 
 	data = sm.datasets.engel.load_pandas().data
 	data.head()
@@ -55,7 +55,8 @@ We replicate the study in `statsmodels quantile regression <https://www.statsmod
 Fit the quantile regression model using the statsmodels.
 
 .. code:: python
-
+	
+	import statsmodels.formula.api as smf
 	mod = smf.quantreg("foodexp ~ income", data)
 	res = mod.fit(q=0.5)
 	res.summary()
