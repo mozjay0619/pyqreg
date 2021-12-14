@@ -79,4 +79,7 @@ Instead of using statsmodels quantile regression, we use that of pyqreg. Observe
 Speed comparisons
 -----------------
 
+Despite the identical regression results and similar APIs, pyqreg uses completely different optimization algorithm under the hood. It can be anywhere between 20 to 30 times faster than the statsmodels quantile regression.
+
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img5.png
+
