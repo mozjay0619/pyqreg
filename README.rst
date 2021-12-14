@@ -134,4 +134,17 @@ The above code runs a simulation study, using fake generated clustered data. We 
 	[1.80114321 2.57927198]
 	[1.80116269 2.57933355]
 
-As you can see, 
+As expected, the standard deviation of the estimated betas of the two models are very similar to each other. However, we see a huge divergence in the estimations in standard errors:
+
+.. code:: python
+
+	print(np.asarray(statsmodels_ses).mean(axis=0))
+	print(np.asarray(pyqreg_ses).mean(axis=0))
+
+.. code:: 
+
+	[1.80114321 2.57927198]
+	[1.80116269 2.57933355]
+
+The pyqreg produces a much more asymptotically accurate standard error estimations.
+
