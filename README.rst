@@ -16,7 +16,7 @@
 Pyqreg
 ======
 
-Pyqreg implements the quantile regression algorithm with fast estimation method using the interior point method following the preprocessing procedure in Portnoy and Koenker (1997). It provides methods for estimating the asymptotic covariance matrix for i.i.d and heteroskedastic errors, as well as clustered errors following Parente and Silva (2013).
+Pyqreg implements the quantile regression algorithm with fast estimation method using the linear programming interior point method following the preprocessing procedure in Portnoy and Koenker (1997). It provides methods for estimating the asymptotic covariance matrix for i.i.d and heteroskedastic errors, as well as clustered errors following Parente and Silva (2013).
 
 References
 ----------
@@ -89,4 +89,47 @@ Cluster robust standard error
 
 Unlike the statsmodels quantile regression, which only supports iid and heteroskedasticity robust standard errors, pyqreg also supports the cluster robust standard error estimation.
 
+.. code:: python
 
+	from pyqreg.utils import generate_clustered_data, rng_generator
+
+	pyqreg_params = []
+	pyqreg_ses = []
+
+	statsmodels_params = []
+	statsmodels_ses = []
+
+	for i in range(300):
+	    
+	    rng = rng_generator(i)
+	    
+	    # Generate fake clustered data, with 150 groups,
+	    # 500 data points in each group, using 15
+	    # as cross cluster variance (normal distribution).
+	    y, X, groups = generate_clustered_data(150, 500, 15, rng)
+	    
+	    from pyqreg import QuantReg
+	    mod = QuantReg(y, X)
+	    res = mod.fit(0.5, cov_type='cluster', cov_kwds={'groups': groups})
+	    
+	    pyqreg_params.append(res.params)
+	    pyqreg_ses.append(res.bse)
+	    
+	    from statsmodels.regression.quantile_regression import QuantReg
+	    mod = QuantReg(y, X)
+	    res = mod.fit(0.5)
+	    
+	    statsmodels_params.append(res.params)
+	    statsmodels_ses.append(res.bse)
+
+The above code runs a simulation study, using fake generated clustered data. We will take a look at the simulated standard deviation of betas, and the two models' estimated standard errors.
+
+.. code:: python
+
+	print(np.asarray(statsmodels_params).std(axis=0))
+	print(np.asarray(pyqreg_params).std(axis=0))
+
+[1.80114321 2.57927198]
+[1.80116269 2.57933355]
+
+As you can see, 
