@@ -52,7 +52,7 @@ We replicate the study in `statsmodels quantile regression <https://www.statsmod
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img1.png
 
-Fit the quantile regression model using the statsmodels.
+Let's first fit the quantile regression model using the statsmodels.
 
 .. code:: python
 	
@@ -63,8 +63,7 @@ Fit the quantile regression model using the statsmodels.
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img6.png
 
-
-Instead of using statsmodels quantile regression, we use that of pyqreg. Observe that the results are identical to that of statsmodels.
+Now instead of using statsmodels quantile regression, we use that of pyqreg. Observe that the results are identical to that of statsmodels.
 
 .. code:: python
 
@@ -79,7 +78,15 @@ Instead of using statsmodels quantile regression, we use that of pyqreg. Observe
 Speed comparisons
 -----------------
 
-Despite the identical regression results and similar APIs, pyqreg uses completely different optimization algorithm under the hood. It can be anywhere between 20 to 30 times faster than the statsmodels quantile regression.
+Despite the identical regression results and similar APIs, pyqreg uses completely different optimization algorithm under the hood, and it can be anywhere between 20 to 30 times faster than the statsmodels quantile regression, especially for large data.
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img5.png
+
+The above plots the median time to convergence for each data size, which shows a large and growing difference in absolute speed. 
+
+Cluster robust standard error
+-----------------------------
+
+Unlike the statsmodels quantile regression, which only supports iid and heteroskedasticity robust standard errors, pyqreg also supports the cluster robust standard error estimation.
+
 
