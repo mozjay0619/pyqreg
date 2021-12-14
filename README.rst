@@ -129,7 +129,9 @@ The above code runs a simulation study, using fake generated clustered data. We 
 	print(np.asarray(statsmodels_params).std(axis=0))
 	print(np.asarray(pyqreg_params).std(axis=0))
 
-[1.80114321 2.57927198]
-[1.80116269 2.57933355]
+.. code:: 
+
+	[1.80114321 2.57927198]
+	[1.80116269 2.57933355]
 
 As you can see, 
