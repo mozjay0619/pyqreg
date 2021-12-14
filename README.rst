@@ -67,7 +67,7 @@ Instead of using statsmodels quantile regression, we use that of pyqreg. Observe
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img2.png
 
-We will also replicate the visualizations of many quantiles that are plotted against the OLS fit.
+We will also replicate the visualizations of many quantiles that are plotted against the OLS fit. We will use the exact codes used in the statsmodels example that places the results in a Pandas DataFrame.
 
 .. code:: python
 
@@ -89,6 +89,10 @@ We will also replicate the visualizations of many quantiles that are plotted aga
 	    a=ols.params["Intercept"], b=ols.params["income"], lb=ols_ci[0], ub=ols_ci[1]
 	)
 
+Plotting best fit lines for 10 quantile regression models to the least squares fit, again using the same exact codes for reproducibility:
+
+.. code:: python
+
 	x = np.arange(data.income.min(), data.income.max(), 50)
 	get_y = lambda a, b: a + b * x
 
@@ -107,6 +111,9 @@ We will also replicate the visualizations of many quantiles that are plotted aga
 	legend = ax.legend()
 	ax.set_xlabel("Income", fontsize=16)
 	ax.set_ylabel("Food expenditure", fontsize=16)
+
+.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img3.png
+
 
 
 Speed comparisons
