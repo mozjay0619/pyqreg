@@ -63,6 +63,7 @@ Fit the quantile regression model using the statsmodels.
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img6.png
 
+
 Instead of using statsmodels quantile regression, we use that of pyqreg. Observe that the results are identical to that of statsmodels.
 
 .. code:: python
