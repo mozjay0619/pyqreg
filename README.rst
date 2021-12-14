@@ -41,20 +41,24 @@ You can install the latest release with:
 Example
 -------
 
-We replicate the example codes of `statsmodels quantile regression <https://www.statsmodels.org/dev/examples/notebooks/generated/quantile_regression.html>`_ that looks at the relationship between income and expenditures on food for a sample of working class Belgian households in 1857 (the Engel data).
+We replicate the study in `statsmodels quantile regression <https://www.statsmodels.org/dev/examples/notebooks/generated/quantile_regression.html>`_ that looks at the relationship between income and expenditures on food for a sample of working class Belgian households in 1857 (the Engel data) using pyqreg.
 
 .. code:: python
 
-	import numpy as np
-	import pandas as pd
-	import statsmodels.api as sm
 	import statsmodels.formula.api as smf
-	import matplotlib.pyplot as plt
 
 	data = sm.datasets.engel.load_pandas().data
 	data.head()
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img1.png
+
+Fit the quantile regression model using the statsmodels.
+
+.. code:: python
+
+	mod = smf.quantreg("foodexp ~ income", data)
+	res = mod.fit(q=0.5)
+	res.summary()
 
 Instead of using statsmodels quantile regression, we use that of pyqreg. Observe that the results are identical to that of statsmodels.
 
@@ -65,7 +69,7 @@ Instead of using statsmodels quantile regression, we use that of pyqreg. Observe
 	res = mod.fit(q=0.5)
 	res.summary()
 
-.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img2.png
+.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img6.png
 
 We will also replicate the visualizations of many quantiles that are plotted against the OLS fit. We will use the exact codes used in the statsmodels example that places the results in a Pandas DataFrame.
 
