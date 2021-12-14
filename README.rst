@@ -136,7 +136,7 @@ The above code runs a simulation study, using fake generated clustered data. We 
 	[1.81944934 2.52755859]
 	[1.81947597 2.52758232]
 
-As expected, the standard deviation of the estimated betas of the two models are very similar to each other. However, we see a huge divergence in the estimations in standard errors:
+As expected, the standard deviation of the estimated betas of the two models are very similar to each other. However, we see a huge divergence in the estimations in standard errors. The heteroskedasticity robust standard error completely underestimates the standard deviation. 
 
 .. code:: python
 
