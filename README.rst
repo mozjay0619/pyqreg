@@ -41,5 +41,13 @@ You can install the latest release with:
 Improvements over statsmodels 1: Speed up
 -----------------------------------------
 
-Improvements over statsmodels 1: Cluster robust standard error
+Compared to the statsmodels quantile regression, Pyqreg quantile regression method achieves 20-30X speed up. The below plot shows a median time to fit for each data size. 
+
+
+
+
+
+Improvements over statsmodels 2: Cluster robust standard error
 --------------------------------------------------------------
+
+The second improvement over the statsmodels quantile regression is that Pyqreg supports consistent estimation of the cluster robust standard error.
