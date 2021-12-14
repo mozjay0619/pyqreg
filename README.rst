@@ -136,7 +136,7 @@ The above code runs a simulation study, using fake generated clustered data. We 
 	[1.81944934 2.52755859]
 	[1.81947597 2.52758232]
 
-As expected, the standard deviation of the estimated betas of the two models are very similar to each other. However, we see a huge divergence in the estimations in standard errors. The heteroskedasticity robust standard error completely underestimates the standard deviation. 
+As expected, the standard deviation of the estimated betas of the two models are very similar to each other. However, we see a huge divergence in the estimations in standard errors. The heteroskedasticity robust standard error completely underestimates the standard deviation, where as pyqreg produces an estimate that is asymptotically much more accurate:
 
 .. code:: python
 
@@ -148,7 +148,7 @@ As expected, the standard deviation of the estimated betas of the two models are
 	[0.14290666 0.20251073]
 	[1.75910926 2.49862904]
 
-The pyqreg produces a much more asymptotically accurate standard error estimations. But of course, if we run the same simulation with 0 cross cluster variance, both models' standard errors are consistent, which makes sense since all the off-diagonal terms in the covariance matrix will be close to 0, making the block diagonal matrix look more like the heteroskedasticity robust (or even iid) covariance diagonal matrix:
+But of course, if we run the same simulation with 0 cross cluster variance, both models' standard errors are consistent, which makes sense since all the off-diagonal terms in the covariance matrix will be close to 0, making the block diagonal matrix look more like the heteroskedasticity robust (or even iid) covariance diagonal matrix:
 
 .. code:: python
 
