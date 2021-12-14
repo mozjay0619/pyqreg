@@ -78,11 +78,11 @@ Now instead of using statsmodels quantile regression, we use that of pyqreg. Obs
 Speed comparisons
 -----------------
 
-Despite the identical regression results and similar APIs, pyqreg uses completely different optimization algorithm under the hood, and it can be anywhere between 20 to 30 times faster than the statsmodels quantile regression, especially for large data.
+Despite the identical regression results and similar APIs, pyqreg uses completely different optimization algorithm under the hood, making it anywhere between 20 to 30 times faster than the statsmodels quantile regression.
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img5.png
 
-The above plots the median time to convergence for each data size, which shows a large and growing difference in absolute speed. 
+The above plots the median time to convergence for each data size, which shows a large and growing difference in absolute speed with data size. 
 
 Cluster robust standard error
 -----------------------------
