@@ -74,13 +74,6 @@ Instead of using statsmodels quantile regression, we use that of pyqreg. Observe
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img2.png
 
-We will also replicate the visualizations of many quantiles that are plotted against the OLS fit. We will use the exact codes used in the statsmodels example that places the results in a Pandas DataFrame.
-
-.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img3.png
-
-.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img4.png
-
-
 
 Speed comparisons
 -----------------
