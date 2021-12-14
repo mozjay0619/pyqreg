@@ -56,6 +56,14 @@ We replicate the example codes of `statsmodels quantile regression <https://www.
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img1.png
 
+Instead of using statsmodels quantile regression, we use that of Pyqreg:
+
+.. code:: python
+
+	from pyqreg import quantreg
+	mod = quantreg("foodexp ~ income", data)
+	res = mod.fit(q=0.5)
+	print(res.summary())
 
 Speed comparisons
 -----------------
