@@ -43,12 +43,21 @@ Example
 
 We replicate the example codes of `statsmodels quantile regression <https://www.statsmodels.org/dev/examples/notebooks/generated/quantile_regression.html>`_ that looks at the relationship between income and expenditures on food for a sample of working class Belgian households in 1857 (the Engel data).
 
+.. code:: python
+
+	import numpy as np
+	import pandas as pd
+	import statsmodels.api as sm
+	import statsmodels.formula.api as smf
+	import matplotlib.pyplot as plt
+
+	data = sm.datasets.engel.load_pandas().data
+	data.head()
 
 
 
 
-
-Improvements over statsmodels 2: Cluster robust standard error
---------------------------------------------------------------
+Speed comparisons
+-----------------
 
 The second improvement over the statsmodels quantile regression is that Pyqreg supports consistent estimation of the cluster robust standard error.
