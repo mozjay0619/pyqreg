@@ -99,7 +99,7 @@ Unlike the statsmodels quantile regression, which only supports iid and heterosk
 	statsmodels_params = []
 	statsmodels_ses = []
 
-	for i in range(300):
+	for i in range(500):
 	    
 	    rng = rng_generator(i)
 	    
@@ -130,9 +130,9 @@ The above code runs a simulation study, using fake generated clustered data. We 
 	print(np.asarray(pyqreg_params).std(axis=0))
 
 .. code:: 
-
-	[1.80114321 2.57927198]
-	[1.80116269 2.57933355]
+	
+	[1.81944934 2.52755859]
+	[1.81947597 2.52758232]
 
 As expected, the standard deviation of the estimated betas of the two models are very similar to each other. However, we see a huge divergence in the estimations in standard errors:
 
@@ -142,9 +142,28 @@ As expected, the standard deviation of the estimated betas of the two models are
 	print(np.asarray(pyqreg_ses).mean(axis=0))
 
 .. code:: 
+	
+	[0.14290666 0.20251073]
+	[1.75910926 2.49862904]
 
-	[1.80114321 2.57927198]
-	[1.80116269 2.57933355]
+The pyqreg produces a much more asymptotically accurate standard error estimations. But of course, if we run the same simulation with 0 cross cluster variance, both models' standard errors are consistent, which makes sense since all the off-diagonal terms in the covariance matrix will be close to 0, making the block diagonal matrix look more like the heteroskedasticity robust (or even iid) covariance diagonal matrix:
 
-The pyqreg produces a much more asymptotically accurate standard error estimations.
+.. code:: python
 
+	print(np.asarray(statsmodels_params).std(axis=0))
+	print(np.asarray(pyqreg_params).std(axis=0))
+
+.. code:: 
+	
+	[1.81944934 2.52755859]
+	[1.81947597 2.52758232]
+
+.. code:: python
+
+	print(np.asarray(statsmodels_ses).mean(axis=0))
+	print(np.asarray(pyqreg_ses).mean(axis=0))
+
+.. code:: 
+	
+	[0.14290666 0.20251073]
+	[1.75910926 2.49862904]
