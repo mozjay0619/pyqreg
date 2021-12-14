@@ -160,6 +160,8 @@ But of course, if we run the same simulation with 0 cross cluster variance, both
 	[0.09985114 0.14226425]
 	[0.09984286 0.14225007]
 
+This time, both models produce the accurate standard errors:
+
 .. code:: python
 
 	print(np.asarray(statsmodels_ses).mean(axis=0))
