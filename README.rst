@@ -27,7 +27,7 @@ References
 Install
 -------
 
-pyqreg requires
+pyqreg pre-install requirements are:
 
 * Python >= 3.6
 * Numpy
@@ -38,3 +38,8 @@ You can install the latest release with:
 
 	pip3 install pyqreg
 
+Improvements over statsmodels 1: Speed up
+-----------------------------------------
+
+Improvements over statsmodels 1: Cluster robust standard error
+--------------------------------------------------------------
