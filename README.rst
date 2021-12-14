@@ -38,10 +38,11 @@ You can install the latest release with:
 
 	pip3 install pyqreg
 
-Improvements over statsmodels 1: Speed up
------------------------------------------
+Example
+-------
 
-Compared to the statsmodels quantile regression, Pyqreg quantile regression method achieves 20-30X speed up. The below plot shows a median time to fit for each data size. 
+We replicate the example codes of `statsmodels quantile regression <https://www.statsmodels.org/dev/examples/notebooks/generated/quantile_regression.html>`_ that looks at the relationship between income and expenditures on food for a sample of working class Belgian households in 1857 (the Engel data).
+
 
 
 
