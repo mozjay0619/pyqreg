@@ -71,9 +71,11 @@ We will also replicate the visualizations of many quantiles that are plotted aga
 
 .. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img3.png
 
+.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img4.png
+
 
 
 Speed comparisons
 -----------------
 
-The second improvement over the statsmodels quantile regression is that Pyqreg supports consistent estimation of the cluster robust standard error.
+.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img5.png
