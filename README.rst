@@ -60,6 +60,8 @@ Fit the quantile regression model using the statsmodels.
 	res = mod.fit(q=0.5)
 	res.summary()
 
+.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img6.png
+
 Instead of using statsmodels quantile regression, we use that of pyqreg. Observe that the results are identical to that of statsmodels.
 
 .. code:: python
@@ -69,7 +71,7 @@ Instead of using statsmodels quantile regression, we use that of pyqreg. Observe
 	res = mod.fit(q=0.5)
 	res.summary()
 
-.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img6.png
+.. figure:: https://github.com/mozjay0619/pyqreg/blob/master/media/img2.png
 
 We will also replicate the visualizations of many quantiles that are plotted against the OLS fit. We will use the exact codes used in the statsmodels example that places the results in a Pandas DataFrame.
 
