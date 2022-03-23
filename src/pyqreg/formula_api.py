@@ -10,9 +10,7 @@ def quantreg(formula, data, missing="drop"):
 
     y, X = dmatrices(formula, data, return_type="matrix", NA_action=na_action)
 
-    _, X_names = [elem.strip() for elem in formula.split("~")]
-    X_names = [elem.strip() for elem in X_names.split("+")]
-    X_names.insert(0, "Intercept")
+    X_names = X.design_info.column_names
 
     return QuantRegFormulaWrapper(y.ravel(), X, X_names)
 
